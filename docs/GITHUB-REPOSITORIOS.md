@@ -15,8 +15,16 @@ Propietario confirmado: `danielviquez-collab`, cuenta de
   Nuevo repositorio privado, ID `1418074031`. Titulo de README:
   **NUEVO Sitio LIF Versión Completa**. Todas las secciones publicas visibles.
 
-Estado de este documento: repositorios creados/renombrados y copias verificadas;
-subida en curso. Los commits remotos se registran solo despues de comprobarlos.
+Estado: las dos versiones subidas a `main` y verificadas en GitHub.
+Commits de entrega comprobados antes del cierre documental:
+
+- WorkInProgress: `90ebdf204a55d2375d5148a5b1d78b96699d5661`, 640 archivos.
+- Completa: `a5186e87c73248d3ea9187cfecde06df63f69bc1`, 672 archivos.
+
+Todos los objetos de archivo remotos coinciden con su copia local verificada.
+El commit inicial del repositorio original se conserva en el historial; no hubo
+subida forzada. Un commit posterior registra este cierre y actualiza el manifiesto,
+sin cambiar la distribucion ni las secciones publicadas.
 
 ## Contenido
 
@@ -62,6 +70,8 @@ ni el historial; solo registra las versiones del sitio en GitHub.
 - Sin archivos de 100 MiB o mas ni credenciales detectadas en las copias.
 - Safari/iPhone fisico y carga alta siguen pendientes, como en las publicaciones.
 
-Evidencia local: `work/github-qa-2026-10-13/` y las copias de
-`../repositorios-github-2026-10-13/`. Este documento no afirma una subida terminada
-hasta que los commits remotos esten confirmados.
+Evidencia local: `work/github-qa-2026-10-13/`,
+`work/github-upload-verified-2026-10-13.json` y las copias de
+`../repositorios-github-2026-10-13/`. La verificacion remota compara el propietario,
+ID, visibilidad, referencia `main` y todos los objetos de archivo, no solo
+la presencia del README.

@@ -70,9 +70,14 @@ no secretos ni datos personales. Cuenta propietaria confirmada por autorizacion
 directa: `danielviquez-collab`, correo `daniel.viquez@garnierbbdo.com`.
 Repositorio original renombrado a `NUEVO-Sitio-LIF-Version-WorkInProgress`, conserva
 ID `1393879941` y visibilidad publica. Repositorio completo creado privado,
-ID `1418074031`. Estado: copias verificadas, subida en curso. Ver
-`GITHUB-REPOSITORIOS.md`. No hay cambios de alojamiento por esta solicitud;
-conservar los deploys indicados arriba.
+ID `1418074031`. Ambas subidas verificadas en `main`: WorkInProgress,
+commit de entrega `90ebdf204a55d2375d5148a5b1d78b96699d5661`, 640 archivos;
+Completa, `a5186e87c73248d3ea9187cfecde06df63f69bc1`, 672 archivos.
+Se comprobaron todos los objetos remotos contra la copia local, los 13 renders
+y las politicas distintas de Confesiones; el cierre documental se agrega despues
+de esos commits de entrega. El repositorio original conserva tambien su commit
+inicial. Ver `GITHUB-REPOSITORIOS.md`. No hay cambios de alojamiento por esta
+solicitud; conservar los deploys indicados arriba.
 
 ## 2. Tecnologias y archivos
 
