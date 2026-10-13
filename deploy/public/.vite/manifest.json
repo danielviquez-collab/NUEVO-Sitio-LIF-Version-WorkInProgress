@@ -1,0 +1,536 @@
+{
+  "../../node_modules/vinext/dist/shims/internal/app-route-prefetch-policy.js": {
+    "file": "_next/static/chunks/app-route-prefetch-policy-C88aDH6G.js",
+    "name": "app-route-prefetch-policy",
+    "src": "../../node_modules/vinext/dist/shims/internal/app-route-prefetch-policy.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "virtual:vinext-app-browser-entry"
+    ]
+  },
+  "../../node_modules/vinext/dist/shims/layout-segment-context.js": {
+    "file": "_next/static/chunks/layout-segment-context-B8G3By_C.js",
+    "name": "layout-segment-context",
+    "src": "../../node_modules/vinext/dist/shims/layout-segment-context.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-C60lm6uB.js",
+      "virtual:vinext-app-browser-entry",
+      "_framework-D_rUT4EX.js",
+      "_navigation-errors-By4dF-Cc.js"
+    ]
+  },
+  "../../node_modules/vinext/dist/shims/streamed-icons.js": {
+    "file": "_next/static/chunks/streamed-icons-Cs-m6aYg.js",
+    "name": "streamed-icons",
+    "src": "../../node_modules/vinext/dist/shims/streamed-icons.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-C60lm6uB.js",
+      "_framework-D_rUT4EX.js"
+    ]
+  },
+  "_Icon-C6CS9jdW.js": {
+    "file": "_next/static/chunks/Icon-C6CS9jdW.js",
+    "name": "Icon",
+    "imports": [
+      "_rolldown-runtime-C60lm6uB.js",
+      "_framework-D_rUT4EX.js"
+    ]
+  },
+  "_analytics-ByIQ3Mef.js": {
+    "file": "_next/static/chunks/analytics-ByIQ3Mef.js",
+    "name": "analytics",
+    "imports": [
+      "_consent-D--9Ky-K.js"
+    ]
+  },
+  "_arrow-down-Bb-bblLB.js": {
+    "file": "_next/static/chunks/arrow-down-Bb-bblLB.js",
+    "name": "arrow-down",
+    "imports": [
+      "_createLucideIcon-oTko8QZf.js"
+    ]
+  },
+  "_arrow-right-BkDuRb0n.js": {
+    "file": "_next/static/chunks/arrow-right-BkDuRb0n.js",
+    "name": "arrow-right",
+    "imports": [
+      "_createLucideIcon-oTko8QZf.js"
+    ]
+  },
+  "_check-ZFzU1zwm.js": {
+    "file": "_next/static/chunks/check-ZFzU1zwm.js",
+    "name": "check",
+    "imports": [
+      "_createLucideIcon-oTko8QZf.js"
+    ]
+  },
+  "_consent-D--9Ky-K.js": {
+    "file": "_next/static/chunks/consent-D--9Ky-K.js",
+    "name": "consent"
+  },
+  "_createLucideIcon-oTko8QZf.js": {
+    "file": "_next/static/chunks/createLucideIcon-oTko8QZf.js",
+    "name": "createLucideIcon",
+    "imports": [
+      "_rolldown-runtime-C60lm6uB.js",
+      "_Icon-C6CS9jdW.js",
+      "_framework-D_rUT4EX.js"
+    ]
+  },
+  "_document-whatsapp-link-BaKbjxKu.js": {
+    "file": "_next/static/chunks/document-whatsapp-link-BaKbjxKu.js",
+    "name": "document-whatsapp-link",
+    "imports": [
+      "_rolldown-runtime-C60lm6uB.js",
+      "_createLucideIcon-oTko8QZf.js",
+      "_message-circle-k0cWvWPp.js",
+      "_framework-D_rUT4EX.js",
+      "_analytics-ByIQ3Mef.js"
+    ]
+  },
+  "_embla-carousel-react.esm-DYuRcuxV.js": {
+    "file": "_next/static/chunks/embla-carousel-react.esm-DYuRcuxV.js",
+    "name": "embla-carousel-react.esm",
+    "imports": [
+      "_rolldown-runtime-C60lm6uB.js",
+      "_createLucideIcon-oTko8QZf.js",
+      "_framework-D_rUT4EX.js"
+    ]
+  },
+  "_flavor-pack-DZbJqhzR.js": {
+    "file": "_next/static/chunks/flavor-pack-DZbJqhzR.js",
+    "name": "flavor-pack",
+    "imports": [
+      "_image-XbTmjEHJ.js",
+      "_framework-D_rUT4EX.js"
+    ]
+  },
+  "_form-submission-audio-BMxa73A1.js": {
+    "file": "_next/static/chunks/form-submission-audio-BMxa73A1.js",
+    "name": "form-submission-audio",
+    "imports": [
+      "_rolldown-runtime-C60lm6uB.js",
+      "_loader-circle-B8bdzvse.js",
+      "_framework-D_rUT4EX.js"
+    ]
+  },
+  "_framework-D_rUT4EX.js": {
+    "file": "_next/static/chunks/framework-D_rUT4EX.js",
+    "name": "framework",
+    "imports": [
+      "_rolldown-runtime-C60lm6uB.js"
+    ]
+  },
+  "_game-loading-CjrSzsh4.js": {
+    "file": "_next/static/chunks/game-loading-CjrSzsh4.js",
+    "name": "game-loading",
+    "imports": [
+      "_createLucideIcon-oTko8QZf.js",
+      "_x-DiaeOBRs.js",
+      "_framework-D_rUT4EX.js"
+    ],
+    "css": [
+      "_next/static/css/game-loading.CP2F5pTf.css"
+    ]
+  },
+  "_game-loading.CP2F5pTf.css": {
+    "file": "_next/static/css/game-loading.CP2F5pTf.css",
+    "src": "_game-loading.CP2F5pTf.css"
+  },
+  "_game-session-NKmoouIc.js": {
+    "file": "_next/static/chunks/game-session-NKmoouIc.js",
+    "name": "game-session"
+  },
+  "_home-entrance-CfXDiBgN.js": {
+    "file": "_next/static/chunks/home-entrance-CfXDiBgN.js",
+    "name": "home-entrance",
+    "imports": [
+      "_rolldown-runtime-C60lm6uB.js",
+      "_arrow-right-BkDuRb0n.js",
+      "_rotate-ccw-BDTx4DKT.js",
+      "_volume-x-BWyqLWyQ.js",
+      "_framework-D_rUT4EX.js",
+      "_static-link-6fm3gCbA.js"
+    ]
+  },
+  "_image-XbTmjEHJ.js": {
+    "file": "_next/static/chunks/image-XbTmjEHJ.js",
+    "name": "image",
+    "imports": [
+      "_rolldown-runtime-C60lm6uB.js",
+      "virtual:vinext-app-browser-entry",
+      "_framework-D_rUT4EX.js"
+    ]
+  },
+  "_lif-content-Bc9tJOl4.js": {
+    "file": "_next/static/chunks/lif-content-Bc9tJOl4.js",
+    "name": "lif-content"
+  },
+  "_loader-circle-B8bdzvse.js": {
+    "file": "_next/static/chunks/loader-circle-B8bdzvse.js",
+    "name": "loader-circle",
+    "imports": [
+      "_createLucideIcon-oTko8QZf.js"
+    ]
+  },
+  "_map-pin-QLoqvfKI.js": {
+    "file": "_next/static/chunks/map-pin-QLoqvfKI.js",
+    "name": "map-pin",
+    "imports": [
+      "_createLucideIcon-oTko8QZf.js"
+    ]
+  },
+  "_media-playback-DczZiq_f.js": {
+    "file": "_next/static/chunks/media-playback-DczZiq_f.js",
+    "name": "media-playback"
+  },
+  "_media-priority-fDlabOxd.js": {
+    "file": "_next/static/chunks/media-priority-fDlabOxd.js",
+    "name": "media-priority"
+  },
+  "_message-circle-k0cWvWPp.js": {
+    "file": "_next/static/chunks/message-circle-k0cWvWPp.js",
+    "name": "message-circle",
+    "imports": [
+      "_createLucideIcon-oTko8QZf.js"
+    ]
+  },
+  "_navigation-errors-By4dF-Cc.js": {
+    "file": "_next/static/chunks/navigation-errors-By4dF-Cc.js",
+    "name": "navigation-errors",
+    "imports": [
+      "_rolldown-runtime-C60lm6uB.js",
+      "_framework-D_rUT4EX.js"
+    ]
+  },
+  "_pause-BlqZth_3.js": {
+    "file": "_next/static/chunks/pause-BlqZth_3.js",
+    "name": "pause",
+    "imports": [
+      "_createLucideIcon-oTko8QZf.js"
+    ]
+  },
+  "_play-B2YTCbnV.js": {
+    "file": "_next/static/chunks/play-B2YTCbnV.js",
+    "name": "play",
+    "imports": [
+      "_createLucideIcon-oTko8QZf.js"
+    ]
+  },
+  "_rolldown-runtime-C60lm6uB.js": {
+    "file": "_next/static/chunks/rolldown-runtime-C60lm6uB.js",
+    "name": "rolldown-runtime"
+  },
+  "_rotate-ccw-BDTx4DKT.js": {
+    "file": "_next/static/chunks/rotate-ccw-BDTx4DKT.js",
+    "name": "rotate-ccw",
+    "imports": [
+      "_createLucideIcon-oTko8QZf.js"
+    ]
+  },
+  "_sachet-motion-D0DzseWZ.js": {
+    "file": "_next/static/chunks/sachet-motion-D0DzseWZ.js",
+    "name": "sachet-motion"
+  },
+  "_send-u-Ccm_sc.js": {
+    "file": "_next/static/chunks/send-u-Ccm_sc.js",
+    "name": "send",
+    "imports": [
+      "_createLucideIcon-oTko8QZf.js"
+    ]
+  },
+  "_static-link-6fm3gCbA.js": {
+    "file": "_next/static/chunks/static-link-6fm3gCbA.js",
+    "name": "static-link",
+    "imports": [
+      "_framework-D_rUT4EX.js"
+    ]
+  },
+  "_useScrollLock-DRlgq-FN.js": {
+    "file": "_next/static/chunks/useScrollLock-DRlgq-FN.js",
+    "name": "useScrollLock",
+    "imports": [
+      "_rolldown-runtime-C60lm6uB.js",
+      "_framework-D_rUT4EX.js"
+    ]
+  },
+  "_volume-x-BWyqLWyQ.js": {
+    "file": "_next/static/chunks/volume-x-BWyqLWyQ.js",
+    "name": "volume-x",
+    "imports": [
+      "_createLucideIcon-oTko8QZf.js"
+    ]
+  },
+  "_x-DiaeOBRs.js": {
+    "file": "_next/static/chunks/x-DiaeOBRs.js",
+    "name": "x",
+    "imports": [
+      "_createLucideIcon-oTko8QZf.js"
+    ]
+  },
+  "components/confession-community.tsx": {
+    "file": "_next/static/chunks/confession-community-h-YeAjG1.js",
+    "name": "confession-community",
+    "src": "components/confession-community.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-C60lm6uB.js",
+      "_createLucideIcon-oTko8QZf.js",
+      "_pause-BlqZth_3.js",
+      "_arrow-right-BkDuRb0n.js",
+      "_play-B2YTCbnV.js",
+      "_volume-x-BWyqLWyQ.js",
+      "_framework-D_rUT4EX.js",
+      "_static-link-6fm3gCbA.js",
+      "_media-playback-DczZiq_f.js",
+      "_media-priority-fDlabOxd.js"
+    ]
+  },
+  "components/confessions-content.tsx": {
+    "file": "_next/static/chunks/confessions-content-CWUXM0kj.js",
+    "name": "confessions-content",
+    "src": "components/confessions-content.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-C60lm6uB.js",
+      "_image-XbTmjEHJ.js",
+      "components/confession-community.tsx",
+      "_message-circle-k0cWvWPp.js",
+      "_send-u-Ccm_sc.js",
+      "_x-DiaeOBRs.js",
+      "_framework-D_rUT4EX.js",
+      "_form-submission-audio-BMxa73A1.js",
+      "_analytics-ByIQ3Mef.js",
+      "_media-priority-fDlabOxd.js"
+    ],
+    "css": [
+      "_next/static/css/confessions-content.DdF5T-h3.css"
+    ]
+  },
+  "components/contact-modal.tsx": {
+    "file": "_next/static/chunks/contact-modal-B7N1fhOO.js",
+    "name": "contact-modal",
+    "src": "components/contact-modal.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-C60lm6uB.js",
+      "_useScrollLock-DRlgq-FN.js",
+      "_image-XbTmjEHJ.js",
+      "_createLucideIcon-oTko8QZf.js",
+      "components/site-chrome.tsx",
+      "_check-ZFzU1zwm.js",
+      "_map-pin-QLoqvfKI.js",
+      "_send-u-Ccm_sc.js",
+      "_x-DiaeOBRs.js",
+      "_framework-D_rUT4EX.js",
+      "_form-submission-audio-BMxa73A1.js",
+      "_lif-content-Bc9tJOl4.js",
+      "_media-priority-fDlabOxd.js"
+    ]
+  },
+  "components/cookie-consent.tsx": {
+    "file": "_next/static/chunks/cookie-consent-DzJJhfQ5.js",
+    "name": "cookie-consent",
+    "src": "components/cookie-consent.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-C60lm6uB.js",
+      "virtual:vinext-app-browser-entry",
+      "_useScrollLock-DRlgq-FN.js",
+      "_createLucideIcon-oTko8QZf.js",
+      "_x-DiaeOBRs.js",
+      "_framework-D_rUT4EX.js",
+      "_consent-D--9Ky-K.js"
+    ]
+  },
+  "components/flavor-catalog.tsx": {
+    "file": "_next/static/chunks/flavor-catalog-DW4GYNHp.js",
+    "name": "flavor-catalog",
+    "src": "components/flavor-catalog.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-C60lm6uB.js",
+      "virtual:vinext-app-browser-entry",
+      "_document-whatsapp-link-BaKbjxKu.js",
+      "_x-DiaeOBRs.js",
+      "_framework-D_rUT4EX.js",
+      "_flavor-pack-DZbJqhzR.js",
+      "_analytics-ByIQ3Mef.js",
+      "_lif-content-Bc9tJOl4.js",
+      "_sachet-motion-D0DzseWZ.js"
+    ],
+    "dynamicImports": [
+      "lib/sachet-scene.ts"
+    ]
+  },
+  "components/games.tsx": {
+    "file": "_next/static/chunks/games-DMbmLtIy.js",
+    "name": "games",
+    "src": "components/games.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-C60lm6uB.js",
+      "virtual:vinext-app-browser-entry",
+      "_image-XbTmjEHJ.js",
+      "_embla-carousel-react.esm-DYuRcuxV.js",
+      "_createLucideIcon-oTko8QZf.js",
+      "_arrow-down-Bb-bblLB.js",
+      "_game-loading-CjrSzsh4.js",
+      "_loader-circle-B8bdzvse.js",
+      "_play-B2YTCbnV.js",
+      "_framework-D_rUT4EX.js",
+      "_analytics-ByIQ3Mef.js",
+      "_game-session-NKmoouIc.js",
+      "_media-priority-fDlabOxd.js"
+    ],
+    "dynamicImports": [
+      "components/gaming/game-experience.tsx"
+    ],
+    "css": [
+      "_next/static/css/games.DsdYikGp.css"
+    ]
+  },
+  "components/gaming/game-experience.tsx": {
+    "file": "_next/static/chunks/game-experience-DbdMcNRo.js",
+    "name": "game-experience",
+    "src": "components/gaming/game-experience.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-C60lm6uB.js",
+      "_embla-carousel-react.esm-DYuRcuxV.js",
+      "_createLucideIcon-oTko8QZf.js",
+      "_arrow-down-Bb-bblLB.js",
+      "_pause-BlqZth_3.js",
+      "_arrow-right-BkDuRb0n.js",
+      "_check-ZFzU1zwm.js",
+      "_game-loading-CjrSzsh4.js",
+      "_map-pin-QLoqvfKI.js",
+      "_play-B2YTCbnV.js",
+      "_rotate-ccw-BDTx4DKT.js",
+      "_volume-x-BWyqLWyQ.js",
+      "_x-DiaeOBRs.js",
+      "_framework-D_rUT4EX.js",
+      "_form-submission-audio-BMxa73A1.js",
+      "_analytics-ByIQ3Mef.js",
+      "_game-session-NKmoouIc.js"
+    ]
+  },
+  "components/home-content.tsx": {
+    "file": "_next/static/chunks/home-content-CXW-jCwM.js",
+    "name": "home-content",
+    "src": "components/home-content.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-C60lm6uB.js",
+      "_image-XbTmjEHJ.js",
+      "_embla-carousel-react.esm-DYuRcuxV.js",
+      "_createLucideIcon-oTko8QZf.js",
+      "_arrow-right-BkDuRb0n.js",
+      "components/site-chrome.tsx",
+      "_framework-D_rUT4EX.js",
+      "_home-entrance-CfXDiBgN.js",
+      "_flavor-pack-DZbJqhzR.js",
+      "_static-link-6fm3gCbA.js",
+      "_analytics-ByIQ3Mef.js",
+      "_lif-content-Bc9tJOl4.js"
+    ],
+    "css": [
+      "_next/static/css/home-content.Cb0RLkBB.css"
+    ]
+  },
+  "components/recipes-browser.tsx": {
+    "file": "_next/static/chunks/recipes-browser-B9em0Zbs.js",
+    "name": "recipes-browser",
+    "src": "components/recipes-browser.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-C60lm6uB.js",
+      "_image-XbTmjEHJ.js",
+      "_arrow-down-Bb-bblLB.js",
+      "_document-whatsapp-link-BaKbjxKu.js",
+      "_x-DiaeOBRs.js",
+      "_framework-D_rUT4EX.js",
+      "_analytics-ByIQ3Mef.js",
+      "_lif-content-Bc9tJOl4.js"
+    ]
+  },
+  "components/site-chrome.tsx": {
+    "file": "_next/static/chunks/site-chrome-DB3h7qHC.js",
+    "name": "site-chrome",
+    "src": "components/site-chrome.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-C60lm6uB.js",
+      "virtual:vinext-app-browser-entry",
+      "_image-XbTmjEHJ.js",
+      "_createLucideIcon-oTko8QZf.js",
+      "_arrow-right-BkDuRb0n.js",
+      "_map-pin-QLoqvfKI.js",
+      "_x-DiaeOBRs.js",
+      "_framework-D_rUT4EX.js",
+      "_static-link-6fm3gCbA.js",
+      "_consent-D--9Ky-K.js",
+      "_lif-content-Bc9tJOl4.js"
+    ],
+    "dynamicImports": [
+      "components/contact-modal.tsx"
+    ]
+  },
+  "components/video-interstitial.tsx": {
+    "file": "_next/static/chunks/video-interstitial-gOz26Mx9.js",
+    "name": "video-interstitial",
+    "src": "components/video-interstitial.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-C60lm6uB.js",
+      "_createLucideIcon-oTko8QZf.js",
+      "_play-B2YTCbnV.js",
+      "_volume-x-BWyqLWyQ.js",
+      "_framework-D_rUT4EX.js",
+      "_analytics-ByIQ3Mef.js",
+      "_game-session-NKmoouIc.js",
+      "_media-playback-DczZiq_f.js",
+      "_media-priority-fDlabOxd.js"
+    ]
+  },
+  "lib/sachet-scene.ts": {
+    "file": "_next/static/chunks/sachet-scene-LwohLHYr.js",
+    "name": "sachet-scene",
+    "src": "lib/sachet-scene.ts",
+    "isDynamicEntry": true,
+    "imports": [
+      "_sachet-motion-D0DzseWZ.js"
+    ]
+  },
+  "virtual:vinext-app-browser-entry": {
+    "file": "_next/static/chunks/index-B2nocuIJ.js",
+    "name": "index",
+    "src": "virtual:vinext-app-browser-entry",
+    "isEntry": true,
+    "imports": [
+      "_rolldown-runtime-C60lm6uB.js",
+      "_framework-D_rUT4EX.js",
+      "_navigation-errors-By4dF-Cc.js"
+    ],
+    "dynamicImports": [
+      "../../node_modules/vinext/dist/shims/internal/app-route-prefetch-policy.js",
+      "_home-entrance-CfXDiBgN.js",
+      "virtual:vinext-app-browser-entry",
+      "components/confessions-content.tsx",
+      "components/flavor-catalog.tsx",
+      "_Icon-C6CS9jdW.js",
+      "components/site-chrome.tsx",
+      "components/cookie-consent.tsx",
+      "components/games.tsx",
+      "components/confession-community.tsx",
+      "_image-XbTmjEHJ.js",
+      "../../node_modules/vinext/dist/shims/layout-segment-context.js",
+      "components/home-content.tsx",
+      "components/video-interstitial.tsx",
+      "../../node_modules/vinext/dist/shims/streamed-icons.js",
+      "components/recipes-browser.tsx"
+    ]
+  }
+}

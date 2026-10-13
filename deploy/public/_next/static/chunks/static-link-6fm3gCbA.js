@@ -1,0 +1,1 @@
+import{r as e}from"./framework-D_rUT4EX.js";var t=e();function n({href:e,...n}){let r=e?.startsWith(`/`)?e.replace(/\/(?=[?#]|$)/,``)||`/`:e;return(0,t.jsx)(`a`,{...n,href:r})}export{n as t};

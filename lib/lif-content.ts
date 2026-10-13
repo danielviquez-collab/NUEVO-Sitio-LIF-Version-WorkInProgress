@@ -1,0 +1,246 @@
+export type Flavor = {
+  slug: string;
+  name: string;
+  image: string | null;
+  nutrition: string | null;
+  back?: {
+    image: string | null;
+    kind: 'illustrative' | 'official';
+    medium?: 'render' | 'photo';
+    color: string;
+    nutritionArea: { left: number; top: number; width: number; height: number };
+  };
+  isNew?: boolean;
+};
+
+export const flavors: Flavor[] = [
+  {
+    slug: 'arandanos',
+    name: 'Té blanco, arándanos',
+    image: '/products/arandanos.png',
+    nutrition: '/nutrition/arandanos.pdf',
+  },
+  {
+    slug: 'frutos-rojos',
+    name: 'Té frío, frutos rojos',
+    image: '/products/frutos-rojos.png',
+    nutrition: '/nutrition/frutos-rojos.pdf',
+  },
+  {
+    slug: 'hierbabuena',
+    name: 'Limonada, hierbabuena',
+    image: '/products/hierbabuena.png',
+    nutrition: '/nutrition/hierbabuena.pdf',
+  },
+  {
+    slug: 'pitahaya',
+    name: 'Limonada, pitahaya',
+    image: '/products/pitahaya.png',
+    nutrition: '/nutrition/pitahaya.pdf',
+  },
+  {
+    slug: 'melocoton',
+    name: 'Té frío, melocotón',
+    image: '/products/melocoton.png',
+    nutrition: '/nutrition/melocoton.pdf',
+  },
+  {
+    slug: 'manzana-canela',
+    name: 'Té verde, manzana y canela',
+    image: '/products/manzana-canela.png',
+    nutrition: '/nutrition/manzana-canela.pdf',
+  },
+  {
+    slug: 'limon',
+    name: 'Té frío, limón',
+    image: '/products/limon.png',
+    nutrition: '/nutrition/limon.pdf',
+  },
+  {
+    slug: 'naranja-mandarina',
+    name: 'Naranja, mandarina',
+    image: '/products/naranja-mandarina.png',
+    nutrition: '/nutrition/naranja-mandarina.pdf',
+  },
+  {
+    slug: 'kiwi',
+    name: 'Té blanco, kiwi',
+    image: '/products/kiwi.png',
+    nutrition: '/nutrition/kiwi.pdf',
+  },
+  {
+    slug: 'frutas-mixtas',
+    name: 'Frutas mixtas',
+    image: '/products/frutas-mixtas.png',
+    nutrition: '/nutrition/frutas-mixtas.pdf',
+  },
+  { slug: 'te-verde-maracuya', name: 'Té verde, maracuyá', image: '/products/te-verde-maracuya.webp', nutrition: '/nutrition/te-verde-maracuya.pdf', isNew: true },
+  { slug: 'te-blanco-fresa', name: 'Té blanco, fresa', image: '/products/te-blanco-fresa.webp', nutrition: '/nutrition/te-blanco-fresa.pdf', isNew: true },
+  { slug: 'te-frio-manzana', name: 'Té frío, manzana', image: '/products/te-frio-manzana.webp', nutrition: '/nutrition/te-frio-manzana.pdf', isNew: true },
+];
+
+// All thirteen supplied reverse renders share the same presentation and animation.
+const backColors: Record<string, string> = {
+  arandanos: '#4864ad', 'frutos-rojos': '#ac2949', hierbabuena: '#3e8049',
+  pitahaya: '#be298b', melocoton: '#a45c32', 'manzana-canela': '#7aab31',
+  limon: '#794333', 'naranja-mandarina': '#d98921', kiwi: '#a29e27',
+  'frutas-mixtas': '#d85882', 'te-verde-maracuya': '#c58f23',
+  'te-blanco-fresa': '#cf7a89', 'te-frio-manzana': '#7b153b',
+};
+for (const flavor of flavors) {
+  flavor.back = {
+    image: `/products/backs/${flavor.slug}.webp`, kind: 'official',
+    medium: 'render', color: backColors[flavor.slug],
+    nutritionArea: { left: .48, top: .06, width: .46, height: .63 },
+  };
+}
+
+export type Recipe = {
+  slug: string;
+  title: string;
+  flavor: string;
+  category: 'Bebidas frías' | 'Postres' | 'Snacks' | 'Batidos';
+  moments: string[];
+  image: string | null;
+  imageFit?: 'contain' | 'cover';
+  yield: string;
+  prepTime?: string;
+  ingredients: string[];
+  preparation: string[];
+  note?: string;
+  source: string;
+};
+
+const recipeMedia = '/recipes';
+
+export const recipes: Recipe[] = [
+  {
+    slug: 'sorbete-limonada-pitahaya',
+    title: 'Sorbete de Limonada Pitahaya',
+    flavor: 'Limonada, pitahaya',
+    category: 'Postres',
+    moments: ['Finde chill', 'El brunch que se puso serio'],
+    image: `${recipeMedia}/sorbete-limonada-pitahaya-v1.webp`,
+    imageFit: 'contain',
+    yield: '4 porciones',
+    ingredients: [
+      '1 taza de agua (240 ml)',
+      '2 sobres de LIF Limonada de Pitahaya (40 g)',
+      '¼ de taza de zumo de limón fresco (60 ml)',
+      '2 tazas de hielo (300 g)',
+      '½ taza de pitahaya congelada en cubitos (75 g), opcional',
+    ],
+    preparation: [
+      'En un tazón, disolvé los dos sobres de LIF Limonada de Pitahaya en el agua, revolviendo bien hasta que no queden grumos.',
+      'Agregá el zumo de limón fresco a la mezcla de LIF.',
+      'En la licuadora, colocá la mezcla líquida, el hielo y, si vas a usarla, la pitahaya congelada en cubitos.',
+      'Licuá a velocidad alta hasta que la mezcla esté suave y con la consistencia de un sorbete. Es importante licuar hasta que no queden trozos grandes de hielo ni de fruta.',
+      'Serví el sorbete inmediatamente en copas o tazones. Si deseás una consistencia más firme, podés pasarlo a un recipiente apto para congelador y congelarlo por al menos 30 minutos antes de servir.',
+    ],
+    source: 'https://lif.cr/sorbete-lif-limonada-pitahaya/',
+  },
+  {
+    slug: 'margarita-frozen-hierbabuena',
+    title: 'Margarita Frozen de Limonada Hierbabuena',
+    flavor: 'Limonada, hierbabuena',
+    category: 'Bebidas frías',
+    moments: ['Happy hour en casa', 'Plan tranqui con las compas'],
+    image: `${recipeMedia}/margarita-frozen-hierbabuena-v1.webp`,
+    imageFit: 'contain',
+    yield: '1 vaso',
+    ingredients: [
+      '¼ de sobre LIF Limonada Hierbabuena (1 sobre = 4 porciones)',
+      '2 oz de tequila blanco',
+      '150 ml de agua fría',
+      '1 taza de hielo',
+      '1 cucharada de jugo de limón fresco',
+      '2 hojas de hierbabuena fresca',
+      'Azúcar blanco para escarchar y una rodaja de limón para servir',
+    ],
+    preparation: [
+      'Escarchá el borde del vaso con limón y azúcar.',
+      'En la licuadora, mezclá el agua, el LIF, el jugo de limón, la hierbabuena, el tequila y el hielo.',
+      'Licuá hasta alcanzar textura frozen.',
+      'Serví decorando con una rodaja de limón.',
+    ],
+    note: 'Receta con alcohol. Para personas adultas.',
+    source: 'https://lif.cr/margarita-frozen-lif-limonada-hierbabuena/',
+  },
+  {
+    slug: 'vasitos-gelatina-mosaico',
+    title: 'Vasitos de gelatina mosaico LIF',
+    flavor: 'Limonada pitahaya, frutos mixtos y frutos rojos',
+    category: 'Postres',
+    moments: ['Plan tranqui con las compas', 'Por la reu que se alargó'],
+    image: `${recipeMedia}/vasitos-gelatina-mosaico-v1.webp`,
+    imageFit: 'contain',
+    yield: '6–8 porciones',
+    prepTime: '20 minutos + refrigeración',
+    ingredients: [
+      '1 sobre de LIF Limonada de Pitahaya',
+      '1 sobre de LIF Frutas Mixtas',
+      '1 sobre de LIF Té Frío Frutos Rojos',
+      '8 cucharaditas (40 g) de gelatina en polvo sin sabor',
+      '1½ tazas de leche entera',
+      '3 tazas de agua caliente',
+      '½ taza de miel',
+      '1 cucharadita de extracto de vainilla',
+    ],
+    preparation: [
+      'Hacé las gelatinas de colores primero: en tres tazones separados, disolvé cada sabor de LIF con 2 cucharaditas de gelatina sin sabor y 1 taza de agua caliente. Dejá enfriar y verté cada una en un recipiente plano; refrigeralas hasta que cuajen por completo.',
+      'Una vez cuajadas, cortá las gelatinas de colores en cuadritos pequeños.',
+      'Prepará la gelatina blanca: disolvé 2 cucharaditas de gelatina sin sabor en la leche caliente. Agregá la miel y el extracto de vainilla. Dejá que se enfríe.',
+      'Armá los vasitos: poné los cuadritos de gelatina de colores en el fondo y verté encima la mezcla blanca hasta cubrirlos.',
+      'Refrigeralos por un mínimo de 2 horas hasta que cuajen.',
+      'Decorá cada vasito con un topper alusivo a la fiesta.',
+    ],
+    source: 'https://lif.cr/vasitos-de-gelatina-mosaico-lif/',
+  },
+  {
+    slug: 'frozen-yogurt-frutas-mixtas',
+    title: 'Frozen Yogurt de Frutas Mixtas',
+    flavor: 'Frutas mixtas',
+    category: 'Postres',
+    moments: ['Plan tranqui con las compas', 'El brunch que se puso serio'],
+    image: `${recipeMedia}/frozen-yogurt-frutas-mixtas-v1.webp`,
+    imageFit: 'contain',
+    yield: '2–3 porciones',
+    ingredients: [
+      '2 tazas de yogurt natural entero sin azúcar (480 g)',
+      '1 sobre de LIF Frutas Mixtas (25 g)',
+      '¼ de taza de agua (60 ml)',
+      '1 taza de hielo (150 g)',
+      '½ taza de frutas congeladas como melocotón, piña, fresas o mango (opcional)',
+    ],
+    preparation: [
+      'En un tazón pequeño, disolvé completamente el sobre de LIF en el agua. Revolvé bien hasta que no queden grumos.',
+      'En la licuadora, agregá el yogurt natural, la mezcla de LIF disuelto, el hielo y, si vas a usarlas, las frutas congeladas.',
+      'Licuá a velocidad alta hasta que la mezcla esté bien cremosa y suave, con la consistencia de un frozen yogurt. Asegurate de que todos los cristales de hielo y las frutas se hayan triturado.',
+      'Serví de inmediato o guardá la mezcla en un recipiente hermético en el congelador. Si la guardás, quizá necesités dejarla reposar unos minutos a temperatura ambiente para que se suavice.',
+    ],
+    source: 'https://lif.cr/frozen-yogurt-con-lif-de-frutas-mixtas/',
+  },
+];
+
+export const recipeCategories = ['Bebidas frías', 'Postres', 'Snacks', 'Batidos'] as const;
+export const recipeMoments = [
+  'Happy hour en casa',
+  'Pre-entreno',
+  'Plan tranqui con las compas',
+  'El brunch que se puso serio',
+  'Por la reu que se alargó',
+  'Finde chill',
+] as const;
+
+export const officialLinks = {
+  instagram: 'https://www.instagram.com/lifstevia/',
+  facebook: 'https://www.facebook.com/lifstevia/',
+  tiktok: 'https://www.tiktok.com/@lifcr',
+  youtube: 'https://youtube.com/@lif8851?si=SkODj612La_LQyBb',
+  website: 'https://lif.cr',
+  laica: 'https://laica.cr/',
+  email: 'mercadeo@laica.co.cr',
+  phone: '+506 2284-6000',
+  phoneHref: 'tel:+50622846000',
+  address: 'Av. 15, Calle 3, San José, Costa Rica',
+};

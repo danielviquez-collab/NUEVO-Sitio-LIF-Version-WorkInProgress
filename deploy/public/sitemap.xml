@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://lif.cr/</loc><changefreq>weekly</changefreq><priority>1</priority></url>
+  <url><loc>https://lif.cr/recetario/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://lif.cr/confesiones/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://lif.cr/confesiones/todas/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://lif.cr/juega/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://lif.cr/sabores/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://lif.cr/confesiones/sofia-la-compra-responsable/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://lif.cr/confesiones/andres-todo-bajo-control/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://lif.cr/confesiones/valeria-la-ceo-de-la-quincena/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://lif.cr/confesiones/diego-dijo-que-si/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+</urlset>

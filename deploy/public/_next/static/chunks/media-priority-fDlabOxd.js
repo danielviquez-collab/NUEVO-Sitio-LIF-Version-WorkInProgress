@@ -1,0 +1,1 @@
+var e=new Set,t=new Set;function n(){return e.size>0}function r(){let r=Symbol(`video-overlay`),i=n();return e.add(r),i||t.forEach(e=>e(!0)),()=>{!e.delete(r)||n()||t.forEach(e=>e(!1))}}function i(e){return t.add(e),()=>{t.delete(e)}}export{n,i as r,r as t};

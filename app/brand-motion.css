@@ -1,0 +1,46 @@
+.home-entrance { position: relative; }
+.lif-motion-logo { display: block; width: 100%; height: 100%; overflow: visible; }
+/* Animate wrappers only: the original Illustrator path matrices stay untouched. */
+.lif-motion-logo > g { transform-box: fill-box; transform-origin: center; }
+.is-playing .logo-leaf { animation: leaf-arrive 480ms cubic-bezier(.18,.8,.25,1) both; }
+.is-playing .logo-letter { animation: logo-letter-arrive 390ms ease-out both; }
+.is-playing .logo-letter-l { animation-delay: 230ms; }
+.is-playing .logo-letter-i { animation-delay: 340ms; }
+.is-playing .logo-letter-f { animation-delay: 440ms; }
+.is-playing .logo-dot { animation: logo-dot-hop 820ms 440ms both; }
+.is-playing .logo-laica { animation: logo-signature 250ms 1100ms both; }
+@keyframes leaf-arrive { from { opacity: 0; transform: translate(-18px, 20px) rotate(-6deg) scale(.94); } to { opacity: 1; transform: none; } }
+@keyframes logo-letter-arrive { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: none; } }
+@keyframes logo-dot-hop {
+  0% { opacity: 0; transform: translate(250px,-200px); animation-timing-function: ease-in; }
+  10% { opacity: 1; }
+  35% { transform: translate(128px,0); animation-timing-function: ease-out; }
+  56% { transform: translate(58px,-94px); animation-timing-function: ease-in; }
+  76% { transform: translate(0,0); animation-timing-function: ease-out; }
+  88% { transform: translate(0,-25px); animation-timing-function: ease-in; }
+  100% { opacity: 1; transform: none; }
+}
+@keyframes logo-signature { from { opacity: 0; } to { opacity: 1; } }
+.logo-entry-overlay { position: fixed; z-index: 100; inset: 0; display: grid; place-items: center; background: #fff; animation: logo-overlay-away 480ms 1400ms ease both; }
+.logo-entry-traveler { width: min(440px, 82vw); aspect-ratio: 956 / 600; animation: logo-travel 520ms 1350ms cubic-bezier(.66,0,.2,1) both; }
+.is-waiting.logo-entry-overlay, .is-waiting .logo-entry-traveler { animation: none; }
+.is-waiting .lif-motion-logo { visibility: hidden; }
+.home-entrance.is-entering .entrance-home { animation: home-enter 520ms 1350ms ease both; }
+.home-entrance.is-entering .showcase-pack .pack-image { animation-play-state: paused; }
+@keyframes logo-overlay-away { from { background: #fff; opacity: 1; } 70% { background: transparent; opacity: 1; } to { background: transparent; opacity: 0; } }
+@keyframes logo-travel { from { transform: none; } to { transform: translate(var(--logo-travel-x, 0px), var(--logo-travel-y, -35vh)) scale(var(--logo-travel-scale, .22)) rotate(-5deg); } }
+@keyframes home-enter { from { opacity: 0; } to { opacity: 1; } }
+.intro-overlay-controls { position: absolute; display: flex; align-items: center; gap: 20px; bottom: max(26px, env(safe-area-inset-bottom)); left: 50%; transform: translateX(-50%); }
+.intro-sound { display: inline-grid; place-items: center; flex: 0 0 auto; width: 36px; height: 36px; padding: 0; color: var(--ink); background: #fff; border: 1px solid #10381f26; border-radius: 50%; cursor: pointer; }
+.intro-sound svg { width: 18px; height: 18px; }
+.intro-sound:hover { background: var(--yellow); }
+.intro-skip { display: inline-flex; align-items: center; gap: 8px; padding: 8px 0; min-height: 44px; border: 0; background: transparent; color: var(--ink); cursor: pointer; font-size: 14px; }
+.intro-skip svg { width: 17px; height: 17px; }
+.intro-home-sound { position: absolute; z-index: 25; top: 132px; right: 20px; background: transparent; }
+@media(max-width: 820px) { .intro-home-sound { top: 114px; right: 12px; width: 32px; height: 32px; } }
+@media(max-width: 700px) { .intro-home-sound { top: 94px; right: 12px; } }
+@media(max-width: 380px) { .intro-home-sound { top: 88px; right: 10px; width: 30px; height: 30px; } }
+@media(prefers-reduced-motion: reduce) {
+  .lif-motion-logo > g, .home-entrance.is-entering .entrance-home, .logo-entry-traveler { animation: none !important; opacity: 1; transform: none; }
+  .logo-entry-overlay { display: none; }
+}

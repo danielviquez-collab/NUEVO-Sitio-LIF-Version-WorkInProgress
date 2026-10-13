@@ -1,0 +1,42 @@
+.form-submission-status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 180px;
+  padding: 24px 12px;
+  text-align: center;
+}
+.form-submission-status[hidden] { display: none; }
+.form-submission-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+  max-width: 36ch;
+  overflow-wrap: break-word;
+}
+.form-submission-copy > svg {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  color: var(--green);
+  animation: lif-submission-spin 1s linear infinite;
+}
+.form-submission-copy > strong { font-size: 20px; line-height: 1.4; }
+.form-submission-copy > span { font-size: 16px; line-height: 1.5; }
+.form-submission-copy > .form-submission-notice { font-size: 14px; }
+.form-with-status { position: relative; }
+.form-with-status > .form-submission-status {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+/* Preserve the form's size while replacing its fields with the pending status. */
+.form-with-status[aria-busy="true"] > :not(.form-submission-status) {
+  visibility: hidden;
+}
+@keyframes lif-submission-spin { to { transform: rotate(360deg); } }
+@media (prefers-reduced-motion: reduce) {
+  .form-submission-copy > svg { animation: none; }
+}

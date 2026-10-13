@@ -1,0 +1,381 @@
+.nav-contact-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 0 13px;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: var(--green);
+  font: 900 18px/1.5 var(--font-display);
+  white-space: nowrap;
+  cursor: pointer;
+}
+.nav-contact-button:hover {
+  color: var(--purple);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 7px;
+}
+.nav-contact-button:focus-visible,
+.lif-contact-dialog button:focus-visible,
+.lif-contact-dialog input:focus-visible,
+.lif-contact-dialog select:focus-visible,
+.lif-contact-dialog textarea:focus-visible {
+  outline: 3px solid var(--purple);
+  outline-offset: 4px;
+}
+.lif-contact-dialog {
+  width: min(860px, 92vw);
+  max-width: 92vw;
+  max-height: 86dvh;
+  margin: auto;
+  padding: 26px;
+  border: 3px solid var(--ink);
+  border-radius: 8px;
+  background: #ffdf24 url('/brand/contact-fruits-wide.webp') center/cover;
+  box-shadow: 0 15px 70px #10381f55;
+  color: var(--ink);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+.lif-contact-dialog::backdrop {
+  background: #10381f8a;
+  backdrop-filter: blur(3px);
+}
+.lif-contact-content {
+  position: relative;
+  padding: 24px;
+  background: #fffffff5;
+  border-radius: 4px;
+}
+.lif-contact-content header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 0 52px 22px 0;
+}
+.lif-contact-content header img {
+  width: 70px;
+  height: 44px;
+  object-fit: contain;
+}
+.lif-contact-content h2 {
+  font: 900 32px/1.15 var(--font-display);
+  margin: 0;
+}
+.contact-close {
+  position: absolute;
+  right: 14px;
+  top: 14px;
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border: 2px solid var(--ink);
+  border-radius: 6px;
+  background: white;
+  color: var(--ink);
+  cursor: pointer;
+}
+.contact-fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.contact-fields label {
+  display: grid;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 700;
+}
+.contact-fields label span {
+  font-size: 11px;
+  font-weight: 400;
+}
+.contact-fields input,
+.contact-fields textarea {
+  width: 100%;
+  min-width: 0;
+  padding: 10px 12px;
+  border: 1.5px solid #52705a;
+  border-radius: 4px;
+  background: white;
+  font: 400 16px/1.5 var(--font-body);
+  color: var(--ink);
+}
+.contact-fields input {
+  height: 46px;
+}
+.contact-fields textarea {
+  resize: vertical;
+  min-height: 110px;
+}
+.contact-message {
+  grid-column: 1/-1;
+}
+.contact-location {
+  min-width: 0;
+  margin: 20px 0 0;
+  padding: 0;
+  border: 0;
+}
+.contact-location legend {
+  margin-bottom: 12px;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 700;
+}
+.contact-location legend span {
+  font-size: 12px;
+  font-weight: 400;
+}
+.contact-location-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+.contact-location-field {
+  min-width: 0;
+}
+.contact-location-field > label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 13px;
+  font-weight: 700;
+}
+.contact-location-field select,
+.contact-location-control {
+  width: 100%;
+  min-width: 0;
+  height: 46px;
+  border: 1.5px solid #52705a;
+  border-radius: 4px;
+  background: white;
+  color: var(--ink);
+  font: 400 16px/1.5 var(--font-body);
+}
+.contact-location-field select {
+  appearance: none;
+  -webkit-appearance: none;
+  padding: 0 46px 0 10px;
+}
+.contact-location-province {
+  position: relative;
+}
+.contact-location-select-icon {
+  position: absolute;
+  top: 1.5px;
+  bottom: 1.5px;
+  right: 1.5px;
+  display: grid;
+  place-items: center;
+  width: 44px;
+  pointer-events: none;
+}
+.contact-location-select-icon svg {
+  width: 18px;
+  height: 18px;
+}
+.contact-location-province:has(select:disabled) .contact-location-select-icon {
+  color: #5b685c;
+}
+.contact-location-control {
+  display: flex;
+  align-items: center;
+}
+.contact-location-input {
+  flex: 1;
+  width: 0;
+  min-width: 0;
+  height: 100%;
+  padding: 0 10px;
+  border: 0;
+  border-radius: 4px;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  text-overflow: ellipsis;
+}
+.contact-location-icon {
+  display: grid;
+  place-items: center;
+  flex: 0 0 44px;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+}
+.contact-location-icon svg,
+.contact-location-option svg {
+  width: 18px;
+  height: 18px;
+}
+.contact-location-icon:hover {
+  color: var(--green);
+}
+.contact-location-control[data-disabled] {
+  background: #edf1ed;
+  color: #5b685c;
+}
+.contact-location-control[data-disabled] button {
+  cursor: default;
+}
+.contact-location-positioner {
+  z-index: 20;
+  width: var(--anchor-width);
+  max-width: var(--available-width);
+}
+.contact-location-popup {
+  max-height: min(264px, var(--available-height));
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  border: 1.5px solid #52705a;
+  border-radius: 4px;
+  background: white;
+  box-shadow: 0 6px 16px #10381f26;
+  color: var(--ink);
+  font: 400 16px/1.35 var(--font-body);
+}
+.contact-location-list {
+  padding: 4px;
+}
+.contact-location-option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  min-height: 44px;
+  padding: 8px;
+  border-radius: 3px;
+  cursor: pointer;
+  overflow-wrap: anywhere;
+}
+.contact-location-option[data-highlighted] {
+  background: #e9f5d1;
+}
+.contact-location-option[data-selected] {
+  font-weight: 700;
+}
+.contact-location-empty {
+  padding: 12px;
+  color: #52705a;
+}
+.contact-location-empty:empty {
+  padding: 0;
+}
+.contact-consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  margin: 18px 0;
+  font-size: 12px;
+  line-height: 1.5;
+}
+.contact-consent input {
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  flex: none;
+  accent-color: var(--green);
+}
+.contact-trap {
+  display: none;
+}
+.contact-submit {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 48px;
+  padding: 10px 22px;
+  border: 2px solid var(--ink);
+  border-radius: 6px;
+  background: var(--green);
+  color: white;
+  font: 800 16px var(--font-body);
+  box-shadow: 0 4px 0 var(--ink);
+  cursor: pointer;
+}
+.contact-submit:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+.contact-submit svg {
+  width: 20px;
+}
+.contact-error {
+  font-size: 13px;
+  color: #ac1e30;
+}
+.contact-official {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 18px;
+  margin-top: 26px;
+  padding-top: 18px;
+  border-top: 1px solid #ccd5cc;
+  font-style: normal;
+  font-size: 12px;
+}
+.contact-official a,
+.contact-official span {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  overflow-wrap: anywhere;
+}
+.contact-official svg {
+  width: 16px;
+  height: 16px;
+  flex: none;
+}
+.contact-success {
+  display: block;
+  padding: 30px 0;
+}
+.contact-success > svg {
+  width: 50px;
+  height: 50px;
+  color: var(--green);
+}
+.contact-success h3 {
+  font: 900 28px var(--font-display);
+}
+.contact-success p {
+  font-size: 14px;
+}
+@media (max-width: 600px) {
+  .lif-contact-dialog {
+    padding: 16px;
+    background-image: url('/brand/contact-fruits-square.webp');
+  }
+  .lif-contact-content {
+    padding: 20px 15px;
+  }
+  .lif-contact-content h2 {
+    font-size: 26px;
+  }
+  .contact-fields {
+    grid-template-columns: 1fr;
+    gap: 13px;
+  }
+  .contact-location-grid {
+    grid-template-columns: 1fr;
+    gap: 13px;
+  }
+  .lif-contact-content header img {
+    width: 52px;
+  }
+  .contact-official {
+    flex-direction: column;
+  }
+  .contact-close {
+    right: 9px;
+    top: 9px;
+  }
+}

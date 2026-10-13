@@ -1,0 +1,1 @@
+import{i as e}from"./consent-D--9Ky-K.js";function t(t,n={}){e()?.analytics&&(window.dataLayer=window.dataLayer||[],window.dataLayer.push({event:t,...n}))}export{t};

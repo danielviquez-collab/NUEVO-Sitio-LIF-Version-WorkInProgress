@@ -1,0 +1,2930 @@
+{
+  "source": "Instituto Geografico Nacional / SNIT, Aplicativo DTA",
+  "sourceUrl": "https://www.snitcr.go.cr/ico_herramientas",
+  "serviceUrl": "https://services8.arcgis.com/ZBOPqyeRLt7yJb3h/arcgis/rest/services/DTA/FeatureServer",
+  "retrievedOn": "2026-10-07",
+  "provinces": [
+    {
+      "id": "1",
+      "label": "San José"
+    },
+    {
+      "id": "2",
+      "label": "Alajuela"
+    },
+    {
+      "id": "3",
+      "label": "Cartago"
+    },
+    {
+      "id": "4",
+      "label": "Heredia"
+    },
+    {
+      "id": "5",
+      "label": "Guanacaste"
+    },
+    {
+      "id": "6",
+      "label": "Puntarenas"
+    },
+    {
+      "id": "7",
+      "label": "Limón"
+    }
+  ],
+  "cantons": [
+    {
+      "id": "101",
+      "label": "San José",
+      "province": "1"
+    },
+    {
+      "id": "102",
+      "label": "Escazú",
+      "province": "1"
+    },
+    {
+      "id": "103",
+      "label": "Desamparados",
+      "province": "1"
+    },
+    {
+      "id": "104",
+      "label": "Puriscal",
+      "province": "1"
+    },
+    {
+      "id": "105",
+      "label": "Tarrazú",
+      "province": "1"
+    },
+    {
+      "id": "106",
+      "label": "Aserrí",
+      "province": "1"
+    },
+    {
+      "id": "107",
+      "label": "Mora",
+      "province": "1"
+    },
+    {
+      "id": "108",
+      "label": "Goicoechea",
+      "province": "1"
+    },
+    {
+      "id": "109",
+      "label": "Santa Ana",
+      "province": "1"
+    },
+    {
+      "id": "110",
+      "label": "Alajuelita",
+      "province": "1"
+    },
+    {
+      "id": "111",
+      "label": "Vázquez de Coronado",
+      "province": "1"
+    },
+    {
+      "id": "112",
+      "label": "Acosta",
+      "province": "1"
+    },
+    {
+      "id": "113",
+      "label": "Tibás",
+      "province": "1"
+    },
+    {
+      "id": "114",
+      "label": "Moravia",
+      "province": "1"
+    },
+    {
+      "id": "115",
+      "label": "Montes de Oca",
+      "province": "1"
+    },
+    {
+      "id": "116",
+      "label": "Turrubares",
+      "province": "1"
+    },
+    {
+      "id": "117",
+      "label": "Dota",
+      "province": "1"
+    },
+    {
+      "id": "118",
+      "label": "Curridabat",
+      "province": "1"
+    },
+    {
+      "id": "119",
+      "label": "Pérez Zeledón",
+      "province": "1"
+    },
+    {
+      "id": "120",
+      "label": "León Cortés Castro",
+      "province": "1"
+    },
+    {
+      "id": "201",
+      "label": "Alajuela",
+      "province": "2"
+    },
+    {
+      "id": "202",
+      "label": "San Ramón",
+      "province": "2"
+    },
+    {
+      "id": "203",
+      "label": "Grecia",
+      "province": "2"
+    },
+    {
+      "id": "204",
+      "label": "San Mateo",
+      "province": "2"
+    },
+    {
+      "id": "205",
+      "label": "Atenas",
+      "province": "2"
+    },
+    {
+      "id": "206",
+      "label": "Naranjo",
+      "province": "2"
+    },
+    {
+      "id": "207",
+      "label": "Palmares",
+      "province": "2"
+    },
+    {
+      "id": "208",
+      "label": "Poás",
+      "province": "2"
+    },
+    {
+      "id": "209",
+      "label": "Orotina",
+      "province": "2"
+    },
+    {
+      "id": "210",
+      "label": "San Carlos",
+      "province": "2"
+    },
+    {
+      "id": "211",
+      "label": "Zarcero",
+      "province": "2"
+    },
+    {
+      "id": "212",
+      "label": "Sarchí",
+      "province": "2"
+    },
+    {
+      "id": "213",
+      "label": "Upala",
+      "province": "2"
+    },
+    {
+      "id": "214",
+      "label": "Los Chiles",
+      "province": "2"
+    },
+    {
+      "id": "215",
+      "label": "Guatuso",
+      "province": "2"
+    },
+    {
+      "id": "216",
+      "label": "Río Cuarto",
+      "province": "2"
+    },
+    {
+      "id": "301",
+      "label": "Cartago",
+      "province": "3"
+    },
+    {
+      "id": "302",
+      "label": "Paraíso",
+      "province": "3"
+    },
+    {
+      "id": "303",
+      "label": "La Unión",
+      "province": "3"
+    },
+    {
+      "id": "304",
+      "label": "Jiménez",
+      "province": "3"
+    },
+    {
+      "id": "305",
+      "label": "Turrialba",
+      "province": "3"
+    },
+    {
+      "id": "306",
+      "label": "Alvarado",
+      "province": "3"
+    },
+    {
+      "id": "307",
+      "label": "Oreamuno",
+      "province": "3"
+    },
+    {
+      "id": "308",
+      "label": "El Guarco",
+      "province": "3"
+    },
+    {
+      "id": "401",
+      "label": "Heredia",
+      "province": "4"
+    },
+    {
+      "id": "402",
+      "label": "Barva",
+      "province": "4"
+    },
+    {
+      "id": "403",
+      "label": "Santo Domingo",
+      "province": "4"
+    },
+    {
+      "id": "404",
+      "label": "Santa Bárbara",
+      "province": "4"
+    },
+    {
+      "id": "405",
+      "label": "San Rafael",
+      "province": "4"
+    },
+    {
+      "id": "406",
+      "label": "San Isidro",
+      "province": "4"
+    },
+    {
+      "id": "407",
+      "label": "Belén",
+      "province": "4"
+    },
+    {
+      "id": "408",
+      "label": "Flores",
+      "province": "4"
+    },
+    {
+      "id": "409",
+      "label": "San Pablo",
+      "province": "4"
+    },
+    {
+      "id": "410",
+      "label": "Sarapiquí",
+      "province": "4"
+    },
+    {
+      "id": "501",
+      "label": "Liberia",
+      "province": "5"
+    },
+    {
+      "id": "502",
+      "label": "Nicoya",
+      "province": "5"
+    },
+    {
+      "id": "503",
+      "label": "Santa Cruz",
+      "province": "5"
+    },
+    {
+      "id": "504",
+      "label": "Bagaces",
+      "province": "5"
+    },
+    {
+      "id": "505",
+      "label": "Carrillo",
+      "province": "5"
+    },
+    {
+      "id": "506",
+      "label": "Cañas",
+      "province": "5"
+    },
+    {
+      "id": "507",
+      "label": "Abangares",
+      "province": "5"
+    },
+    {
+      "id": "508",
+      "label": "Tilarán",
+      "province": "5"
+    },
+    {
+      "id": "509",
+      "label": "Nandayure",
+      "province": "5"
+    },
+    {
+      "id": "510",
+      "label": "La Cruz",
+      "province": "5"
+    },
+    {
+      "id": "511",
+      "label": "Hojancha",
+      "province": "5"
+    },
+    {
+      "id": "601",
+      "label": "Puntarenas",
+      "province": "6"
+    },
+    {
+      "id": "602",
+      "label": "Esparza",
+      "province": "6"
+    },
+    {
+      "id": "603",
+      "label": "Buenos Aires",
+      "province": "6"
+    },
+    {
+      "id": "604",
+      "label": "Montes de Oro",
+      "province": "6"
+    },
+    {
+      "id": "605",
+      "label": "Osa",
+      "province": "6"
+    },
+    {
+      "id": "606",
+      "label": "Quepos",
+      "province": "6"
+    },
+    {
+      "id": "607",
+      "label": "Golfito",
+      "province": "6"
+    },
+    {
+      "id": "608",
+      "label": "Coto Brus",
+      "province": "6"
+    },
+    {
+      "id": "609",
+      "label": "Parrita",
+      "province": "6"
+    },
+    {
+      "id": "610",
+      "label": "Corredores",
+      "province": "6"
+    },
+    {
+      "id": "611",
+      "label": "Garabito",
+      "province": "6"
+    },
+    {
+      "id": "612",
+      "label": "Monteverde",
+      "province": "6"
+    },
+    {
+      "id": "613",
+      "label": "Puerto Jiménez",
+      "province": "6"
+    },
+    {
+      "id": "701",
+      "label": "Limón",
+      "province": "7"
+    },
+    {
+      "id": "702",
+      "label": "Pococí",
+      "province": "7"
+    },
+    {
+      "id": "703",
+      "label": "Siquirres",
+      "province": "7"
+    },
+    {
+      "id": "704",
+      "label": "Talamanca",
+      "province": "7"
+    },
+    {
+      "id": "705",
+      "label": "Matina",
+      "province": "7"
+    },
+    {
+      "id": "706",
+      "label": "Guácimo",
+      "province": "7"
+    }
+  ],
+  "districts": [
+    {
+      "id": "10101",
+      "label": "Carmen",
+      "canton": "101"
+    },
+    {
+      "id": "10102",
+      "label": "Merced",
+      "canton": "101"
+    },
+    {
+      "id": "10103",
+      "label": "Hospital",
+      "canton": "101"
+    },
+    {
+      "id": "10104",
+      "label": "Catedral",
+      "canton": "101"
+    },
+    {
+      "id": "10105",
+      "label": "Zapote",
+      "canton": "101"
+    },
+    {
+      "id": "10106",
+      "label": "San Francisco de Dos Ríos",
+      "canton": "101"
+    },
+    {
+      "id": "10107",
+      "label": "Uruca",
+      "canton": "101"
+    },
+    {
+      "id": "10108",
+      "label": "Mata Redonda",
+      "canton": "101"
+    },
+    {
+      "id": "10109",
+      "label": "Pavas",
+      "canton": "101"
+    },
+    {
+      "id": "10110",
+      "label": "Hatillo",
+      "canton": "101"
+    },
+    {
+      "id": "10111",
+      "label": "San Sebastián",
+      "canton": "101"
+    },
+    {
+      "id": "10201",
+      "label": "Escazú",
+      "canton": "102"
+    },
+    {
+      "id": "10202",
+      "label": "San Antonio",
+      "canton": "102"
+    },
+    {
+      "id": "10203",
+      "label": "San Rafael",
+      "canton": "102"
+    },
+    {
+      "id": "10301",
+      "label": "Desamparados",
+      "canton": "103"
+    },
+    {
+      "id": "10302",
+      "label": "San Miguel",
+      "canton": "103"
+    },
+    {
+      "id": "10303",
+      "label": "San Juan de Dios",
+      "canton": "103"
+    },
+    {
+      "id": "10304",
+      "label": "San Rafael Arriba",
+      "canton": "103"
+    },
+    {
+      "id": "10305",
+      "label": "San Antonio",
+      "canton": "103"
+    },
+    {
+      "id": "10306",
+      "label": "Frailes",
+      "canton": "103"
+    },
+    {
+      "id": "10307",
+      "label": "Patarrá",
+      "canton": "103"
+    },
+    {
+      "id": "10308",
+      "label": "San Cristobal",
+      "canton": "103"
+    },
+    {
+      "id": "10309",
+      "label": "Rosario",
+      "canton": "103"
+    },
+    {
+      "id": "10310",
+      "label": "Damas",
+      "canton": "103"
+    },
+    {
+      "id": "10311",
+      "label": "San Rafael Abajo",
+      "canton": "103"
+    },
+    {
+      "id": "10312",
+      "label": "Gravilias",
+      "canton": "103"
+    },
+    {
+      "id": "10313",
+      "label": "Los Guido",
+      "canton": "103"
+    },
+    {
+      "id": "10401",
+      "label": "Santiago",
+      "canton": "104"
+    },
+    {
+      "id": "10402",
+      "label": "Mercedes Sur",
+      "canton": "104"
+    },
+    {
+      "id": "10403",
+      "label": "Barbacoas",
+      "canton": "104"
+    },
+    {
+      "id": "10404",
+      "label": "Grifo Alto",
+      "canton": "104"
+    },
+    {
+      "id": "10405",
+      "label": "San Rafael",
+      "canton": "104"
+    },
+    {
+      "id": "10406",
+      "label": "Candelarita",
+      "canton": "104"
+    },
+    {
+      "id": "10407",
+      "label": "Desamparaditos",
+      "canton": "104"
+    },
+    {
+      "id": "10408",
+      "label": "San Antonio",
+      "canton": "104"
+    },
+    {
+      "id": "10409",
+      "label": "Chires",
+      "canton": "104"
+    },
+    {
+      "id": "10501",
+      "label": "San Marcos",
+      "canton": "105"
+    },
+    {
+      "id": "10502",
+      "label": "San Lorenzo",
+      "canton": "105"
+    },
+    {
+      "id": "10503",
+      "label": "San Carlos",
+      "canton": "105"
+    },
+    {
+      "id": "10601",
+      "label": "Aserrí",
+      "canton": "106"
+    },
+    {
+      "id": "10602",
+      "label": "Tarbaca",
+      "canton": "106"
+    },
+    {
+      "id": "10603",
+      "label": "Vuelta de Jorco",
+      "canton": "106"
+    },
+    {
+      "id": "10604",
+      "label": "San Gabriel",
+      "canton": "106"
+    },
+    {
+      "id": "10605",
+      "label": "Legua",
+      "canton": "106"
+    },
+    {
+      "id": "10606",
+      "label": "Monterrey",
+      "canton": "106"
+    },
+    {
+      "id": "10607",
+      "label": "Salitrillos",
+      "canton": "106"
+    },
+    {
+      "id": "10701",
+      "label": "Colón",
+      "canton": "107"
+    },
+    {
+      "id": "10702",
+      "label": "Guayabo",
+      "canton": "107"
+    },
+    {
+      "id": "10703",
+      "label": "Tabarcia",
+      "canton": "107"
+    },
+    {
+      "id": "10704",
+      "label": "Piedras Negras",
+      "canton": "107"
+    },
+    {
+      "id": "10705",
+      "label": "Picagres",
+      "canton": "107"
+    },
+    {
+      "id": "10706",
+      "label": "Jaris",
+      "canton": "107"
+    },
+    {
+      "id": "10707",
+      "label": "Quitirrisí",
+      "canton": "107"
+    },
+    {
+      "id": "10801",
+      "label": "Guadalupe",
+      "canton": "108"
+    },
+    {
+      "id": "10802",
+      "label": "San Francisco",
+      "canton": "108"
+    },
+    {
+      "id": "10803",
+      "label": "Calle Blancos",
+      "canton": "108"
+    },
+    {
+      "id": "10804",
+      "label": "Mata de Plátano",
+      "canton": "108"
+    },
+    {
+      "id": "10805",
+      "label": "Ipís",
+      "canton": "108"
+    },
+    {
+      "id": "10806",
+      "label": "Rancho Redondo",
+      "canton": "108"
+    },
+    {
+      "id": "10807",
+      "label": "Purral",
+      "canton": "108"
+    },
+    {
+      "id": "10901",
+      "label": "Santa Ana",
+      "canton": "109"
+    },
+    {
+      "id": "10902",
+      "label": "Salitral",
+      "canton": "109"
+    },
+    {
+      "id": "10903",
+      "label": "Pozos",
+      "canton": "109"
+    },
+    {
+      "id": "10904",
+      "label": "Uruca",
+      "canton": "109"
+    },
+    {
+      "id": "10905",
+      "label": "Piedades",
+      "canton": "109"
+    },
+    {
+      "id": "10906",
+      "label": "Brasil",
+      "canton": "109"
+    },
+    {
+      "id": "11001",
+      "label": "Alajuelita",
+      "canton": "110"
+    },
+    {
+      "id": "11002",
+      "label": "San Josecito",
+      "canton": "110"
+    },
+    {
+      "id": "11003",
+      "label": "San Antonio",
+      "canton": "110"
+    },
+    {
+      "id": "11004",
+      "label": "Concepción",
+      "canton": "110"
+    },
+    {
+      "id": "11005",
+      "label": "San Felipe",
+      "canton": "110"
+    },
+    {
+      "id": "11101",
+      "label": "San Isidro",
+      "canton": "111"
+    },
+    {
+      "id": "11102",
+      "label": "San Rafael",
+      "canton": "111"
+    },
+    {
+      "id": "11103",
+      "label": "Dulce Nombre de Jesús",
+      "canton": "111"
+    },
+    {
+      "id": "11104",
+      "label": "Patalillo",
+      "canton": "111"
+    },
+    {
+      "id": "11105",
+      "label": "Cascajal",
+      "canton": "111"
+    },
+    {
+      "id": "11201",
+      "label": "San Ignacio",
+      "canton": "112"
+    },
+    {
+      "id": "11202",
+      "label": "Guaitil",
+      "canton": "112"
+    },
+    {
+      "id": "11203",
+      "label": "Palmichal",
+      "canton": "112"
+    },
+    {
+      "id": "11204",
+      "label": "Cangrejal",
+      "canton": "112"
+    },
+    {
+      "id": "11205",
+      "label": "Sabanillas",
+      "canton": "112"
+    },
+    {
+      "id": "11301",
+      "label": "San Juan",
+      "canton": "113"
+    },
+    {
+      "id": "11302",
+      "label": "Cinco Esquinas",
+      "canton": "113"
+    },
+    {
+      "id": "11303",
+      "label": "Anselmo Llorente",
+      "canton": "113"
+    },
+    {
+      "id": "11304",
+      "label": "León XIII",
+      "canton": "113"
+    },
+    {
+      "id": "11305",
+      "label": "Colima",
+      "canton": "113"
+    },
+    {
+      "id": "11401",
+      "label": "San Vicente",
+      "canton": "114"
+    },
+    {
+      "id": "11402",
+      "label": "San Jerónimo",
+      "canton": "114"
+    },
+    {
+      "id": "11403",
+      "label": "La Trinidad",
+      "canton": "114"
+    },
+    {
+      "id": "11501",
+      "label": "San Pedro",
+      "canton": "115"
+    },
+    {
+      "id": "11502",
+      "label": "Sabanilla",
+      "canton": "115"
+    },
+    {
+      "id": "11503",
+      "label": "Mercedes",
+      "canton": "115"
+    },
+    {
+      "id": "11504",
+      "label": "San Rafael",
+      "canton": "115"
+    },
+    {
+      "id": "11601",
+      "label": "San Pablo",
+      "canton": "116"
+    },
+    {
+      "id": "11602",
+      "label": "San Pedro",
+      "canton": "116"
+    },
+    {
+      "id": "11603",
+      "label": "San Juan de Mata",
+      "canton": "116"
+    },
+    {
+      "id": "11604",
+      "label": "San Luis",
+      "canton": "116"
+    },
+    {
+      "id": "11605",
+      "label": "Carara",
+      "canton": "116"
+    },
+    {
+      "id": "11701",
+      "label": "Santa María",
+      "canton": "117"
+    },
+    {
+      "id": "11702",
+      "label": "Jardín",
+      "canton": "117"
+    },
+    {
+      "id": "11703",
+      "label": "Copey",
+      "canton": "117"
+    },
+    {
+      "id": "11801",
+      "label": "Curridabat",
+      "canton": "118"
+    },
+    {
+      "id": "11802",
+      "label": "Granadilla",
+      "canton": "118"
+    },
+    {
+      "id": "11803",
+      "label": "Sánchez",
+      "canton": "118"
+    },
+    {
+      "id": "11804",
+      "label": "Tirrases",
+      "canton": "118"
+    },
+    {
+      "id": "11901",
+      "label": "San Isidro de El General",
+      "canton": "119"
+    },
+    {
+      "id": "11902",
+      "label": "El General",
+      "canton": "119"
+    },
+    {
+      "id": "11903",
+      "label": "Daniel Flores",
+      "canton": "119"
+    },
+    {
+      "id": "11904",
+      "label": "Rivas",
+      "canton": "119"
+    },
+    {
+      "id": "11905",
+      "label": "San Pedro",
+      "canton": "119"
+    },
+    {
+      "id": "11906",
+      "label": "Platanares",
+      "canton": "119"
+    },
+    {
+      "id": "11907",
+      "label": "Pejibaye",
+      "canton": "119"
+    },
+    {
+      "id": "11908",
+      "label": "Cajón",
+      "canton": "119"
+    },
+    {
+      "id": "11909",
+      "label": "Barú",
+      "canton": "119"
+    },
+    {
+      "id": "11910",
+      "label": "Río Nuevo",
+      "canton": "119"
+    },
+    {
+      "id": "11911",
+      "label": "Páramo",
+      "canton": "119"
+    },
+    {
+      "id": "11912",
+      "label": "La  Amistad",
+      "canton": "119"
+    },
+    {
+      "id": "12001",
+      "label": "San Pablo",
+      "canton": "120"
+    },
+    {
+      "id": "12002",
+      "label": "San Andrés",
+      "canton": "120"
+    },
+    {
+      "id": "12003",
+      "label": "Llano Bonito",
+      "canton": "120"
+    },
+    {
+      "id": "12004",
+      "label": "San Isidro",
+      "canton": "120"
+    },
+    {
+      "id": "12005",
+      "label": "Santa Cruz",
+      "canton": "120"
+    },
+    {
+      "id": "12006",
+      "label": "San Antonio",
+      "canton": "120"
+    },
+    {
+      "id": "20101",
+      "label": "Alajuela",
+      "canton": "201"
+    },
+    {
+      "id": "20102",
+      "label": "San José",
+      "canton": "201"
+    },
+    {
+      "id": "20103",
+      "label": "Carrizal",
+      "canton": "201"
+    },
+    {
+      "id": "20104",
+      "label": "San Antonio",
+      "canton": "201"
+    },
+    {
+      "id": "20105",
+      "label": "Guácima",
+      "canton": "201"
+    },
+    {
+      "id": "20106",
+      "label": "San Isidro",
+      "canton": "201"
+    },
+    {
+      "id": "20107",
+      "label": "Sabanilla",
+      "canton": "201"
+    },
+    {
+      "id": "20108",
+      "label": "San Rafael",
+      "canton": "201"
+    },
+    {
+      "id": "20109",
+      "label": "Río Segundo",
+      "canton": "201"
+    },
+    {
+      "id": "20110",
+      "label": "Desamparados",
+      "canton": "201"
+    },
+    {
+      "id": "20111",
+      "label": "Turrúcares",
+      "canton": "201"
+    },
+    {
+      "id": "20112",
+      "label": "Tambor",
+      "canton": "201"
+    },
+    {
+      "id": "20113",
+      "label": "Garita",
+      "canton": "201"
+    },
+    {
+      "id": "20114",
+      "label": "Sarapiquí",
+      "canton": "201"
+    },
+    {
+      "id": "20201",
+      "label": "San Ramón",
+      "canton": "202"
+    },
+    {
+      "id": "20202",
+      "label": "Santiago",
+      "canton": "202"
+    },
+    {
+      "id": "20203",
+      "label": "San Juan",
+      "canton": "202"
+    },
+    {
+      "id": "20204",
+      "label": "Piedades Norte",
+      "canton": "202"
+    },
+    {
+      "id": "20205",
+      "label": "Piedades Sur",
+      "canton": "202"
+    },
+    {
+      "id": "20206",
+      "label": "San Rafael",
+      "canton": "202"
+    },
+    {
+      "id": "20207",
+      "label": "San Isidro",
+      "canton": "202"
+    },
+    {
+      "id": "20208",
+      "label": "Ángeles",
+      "canton": "202"
+    },
+    {
+      "id": "20209",
+      "label": "Alfaro",
+      "canton": "202"
+    },
+    {
+      "id": "20210",
+      "label": "Volio",
+      "canton": "202"
+    },
+    {
+      "id": "20211",
+      "label": "Concepción",
+      "canton": "202"
+    },
+    {
+      "id": "20212",
+      "label": "Zapotal",
+      "canton": "202"
+    },
+    {
+      "id": "20213",
+      "label": "Peñas Blancas",
+      "canton": "202"
+    },
+    {
+      "id": "20214",
+      "label": "San Lorenzo",
+      "canton": "202"
+    },
+    {
+      "id": "20301",
+      "label": "Grecia",
+      "canton": "203"
+    },
+    {
+      "id": "20302",
+      "label": "San Isidro",
+      "canton": "203"
+    },
+    {
+      "id": "20303",
+      "label": "San José",
+      "canton": "203"
+    },
+    {
+      "id": "20304",
+      "label": "San Roque",
+      "canton": "203"
+    },
+    {
+      "id": "20305",
+      "label": "Tacares",
+      "canton": "203"
+    },
+    {
+      "id": "20307",
+      "label": "Puente de Piedra",
+      "canton": "203"
+    },
+    {
+      "id": "20308",
+      "label": "Bolivar",
+      "canton": "203"
+    },
+    {
+      "id": "20401",
+      "label": "San Mateo",
+      "canton": "204"
+    },
+    {
+      "id": "20402",
+      "label": "Desmonte",
+      "canton": "204"
+    },
+    {
+      "id": "20403",
+      "label": "Jesús María",
+      "canton": "204"
+    },
+    {
+      "id": "20404",
+      "label": "Labrador",
+      "canton": "204"
+    },
+    {
+      "id": "20501",
+      "label": "Atenas",
+      "canton": "205"
+    },
+    {
+      "id": "20502",
+      "label": "Jesús",
+      "canton": "205"
+    },
+    {
+      "id": "20503",
+      "label": "Mercedes",
+      "canton": "205"
+    },
+    {
+      "id": "20504",
+      "label": "San Isidro",
+      "canton": "205"
+    },
+    {
+      "id": "20505",
+      "label": "Concepción",
+      "canton": "205"
+    },
+    {
+      "id": "20506",
+      "label": "San José",
+      "canton": "205"
+    },
+    {
+      "id": "20507",
+      "label": "Santa Eulalia",
+      "canton": "205"
+    },
+    {
+      "id": "20508",
+      "label": "Escobal",
+      "canton": "205"
+    },
+    {
+      "id": "20601",
+      "label": "Naranjo",
+      "canton": "206"
+    },
+    {
+      "id": "20602",
+      "label": "San Miguel",
+      "canton": "206"
+    },
+    {
+      "id": "20603",
+      "label": "San José",
+      "canton": "206"
+    },
+    {
+      "id": "20604",
+      "label": "Cirrí Sur",
+      "canton": "206"
+    },
+    {
+      "id": "20605",
+      "label": "San Jerónimo",
+      "canton": "206"
+    },
+    {
+      "id": "20606",
+      "label": "San Juan",
+      "canton": "206"
+    },
+    {
+      "id": "20607",
+      "label": "El Rosario",
+      "canton": "206"
+    },
+    {
+      "id": "20608",
+      "label": "Palmitos",
+      "canton": "206"
+    },
+    {
+      "id": "20701",
+      "label": "Palmares",
+      "canton": "207"
+    },
+    {
+      "id": "20702",
+      "label": "Zaragoza",
+      "canton": "207"
+    },
+    {
+      "id": "20703",
+      "label": "Buenos Aires",
+      "canton": "207"
+    },
+    {
+      "id": "20704",
+      "label": "Santiago",
+      "canton": "207"
+    },
+    {
+      "id": "20705",
+      "label": "Candelaria",
+      "canton": "207"
+    },
+    {
+      "id": "20706",
+      "label": "Esquipulas",
+      "canton": "207"
+    },
+    {
+      "id": "20707",
+      "label": "La Granja",
+      "canton": "207"
+    },
+    {
+      "id": "20801",
+      "label": "San Pedro",
+      "canton": "208"
+    },
+    {
+      "id": "20802",
+      "label": "San Juan",
+      "canton": "208"
+    },
+    {
+      "id": "20803",
+      "label": "San Rafael",
+      "canton": "208"
+    },
+    {
+      "id": "20804",
+      "label": "Carrillos",
+      "canton": "208"
+    },
+    {
+      "id": "20805",
+      "label": "Sabana Redonda",
+      "canton": "208"
+    },
+    {
+      "id": "20901",
+      "label": "Orotina",
+      "canton": "209"
+    },
+    {
+      "id": "20902",
+      "label": "El Mastate",
+      "canton": "209"
+    },
+    {
+      "id": "20903",
+      "label": "Hacienda Vieja",
+      "canton": "209"
+    },
+    {
+      "id": "20904",
+      "label": "Coyolar",
+      "canton": "209"
+    },
+    {
+      "id": "20905",
+      "label": "La Ceiba",
+      "canton": "209"
+    },
+    {
+      "id": "21001",
+      "label": "Quesada",
+      "canton": "210"
+    },
+    {
+      "id": "21002",
+      "label": "Florencia",
+      "canton": "210"
+    },
+    {
+      "id": "21003",
+      "label": "Buenavista",
+      "canton": "210"
+    },
+    {
+      "id": "21004",
+      "label": "Aguas Zarcas",
+      "canton": "210"
+    },
+    {
+      "id": "21005",
+      "label": "Venecia",
+      "canton": "210"
+    },
+    {
+      "id": "21006",
+      "label": "Pital",
+      "canton": "210"
+    },
+    {
+      "id": "21007",
+      "label": "La Fortuna",
+      "canton": "210"
+    },
+    {
+      "id": "21008",
+      "label": "La Tigra",
+      "canton": "210"
+    },
+    {
+      "id": "21009",
+      "label": "La Palmera",
+      "canton": "210"
+    },
+    {
+      "id": "21010",
+      "label": "Venado",
+      "canton": "210"
+    },
+    {
+      "id": "21011",
+      "label": "Cutris",
+      "canton": "210"
+    },
+    {
+      "id": "21012",
+      "label": "Monterrey",
+      "canton": "210"
+    },
+    {
+      "id": "21013",
+      "label": "Pocosol",
+      "canton": "210"
+    },
+    {
+      "id": "21101",
+      "label": "Zarcero",
+      "canton": "211"
+    },
+    {
+      "id": "21102",
+      "label": "Laguna",
+      "canton": "211"
+    },
+    {
+      "id": "21103",
+      "label": "Tapesco",
+      "canton": "211"
+    },
+    {
+      "id": "21104",
+      "label": "Guadalupe",
+      "canton": "211"
+    },
+    {
+      "id": "21105",
+      "label": "Palmira",
+      "canton": "211"
+    },
+    {
+      "id": "21106",
+      "label": "Zapote",
+      "canton": "211"
+    },
+    {
+      "id": "21107",
+      "label": "Brisas",
+      "canton": "211"
+    },
+    {
+      "id": "21201",
+      "label": "Sarchí Norte",
+      "canton": "212"
+    },
+    {
+      "id": "21202",
+      "label": "Sarchí Sur",
+      "canton": "212"
+    },
+    {
+      "id": "21203",
+      "label": "Toro Amarillo",
+      "canton": "212"
+    },
+    {
+      "id": "21204",
+      "label": "San Pedro",
+      "canton": "212"
+    },
+    {
+      "id": "21205",
+      "label": "Rodríguez",
+      "canton": "212"
+    },
+    {
+      "id": "21301",
+      "label": "Upala",
+      "canton": "213"
+    },
+    {
+      "id": "21302",
+      "label": "Aguas Claras",
+      "canton": "213"
+    },
+    {
+      "id": "21303",
+      "label": "San José O Pizote",
+      "canton": "213"
+    },
+    {
+      "id": "21304",
+      "label": "Bijagua",
+      "canton": "213"
+    },
+    {
+      "id": "21305",
+      "label": "Delicias",
+      "canton": "213"
+    },
+    {
+      "id": "21306",
+      "label": "Dos Ríos",
+      "canton": "213"
+    },
+    {
+      "id": "21307",
+      "label": "Yolillal",
+      "canton": "213"
+    },
+    {
+      "id": "21308",
+      "label": "Canalete",
+      "canton": "213"
+    },
+    {
+      "id": "21401",
+      "label": "Los Chiles",
+      "canton": "214"
+    },
+    {
+      "id": "21402",
+      "label": "Caño Negro",
+      "canton": "214"
+    },
+    {
+      "id": "21403",
+      "label": "El Amparo",
+      "canton": "214"
+    },
+    {
+      "id": "21404",
+      "label": "San Jorge",
+      "canton": "214"
+    },
+    {
+      "id": "21501",
+      "label": "San Rafael",
+      "canton": "215"
+    },
+    {
+      "id": "21502",
+      "label": "Buenavista",
+      "canton": "215"
+    },
+    {
+      "id": "21503",
+      "label": "Cote",
+      "canton": "215"
+    },
+    {
+      "id": "21504",
+      "label": "Katira",
+      "canton": "215"
+    },
+    {
+      "id": "21601",
+      "label": "Río Cuarto",
+      "canton": "216"
+    },
+    {
+      "id": "21602",
+      "label": "Santa Rita",
+      "canton": "216"
+    },
+    {
+      "id": "21603",
+      "label": "Santa Isabel",
+      "canton": "216"
+    },
+    {
+      "id": "30101",
+      "label": "Oriental",
+      "canton": "301"
+    },
+    {
+      "id": "30102",
+      "label": "Occidental",
+      "canton": "301"
+    },
+    {
+      "id": "30103",
+      "label": "Carmen",
+      "canton": "301"
+    },
+    {
+      "id": "30104",
+      "label": "San Nicolás",
+      "canton": "301"
+    },
+    {
+      "id": "30105",
+      "label": "Aguacaliente o San Francisco",
+      "canton": "301"
+    },
+    {
+      "id": "30106",
+      "label": "Guadalupe o Arenilla",
+      "canton": "301"
+    },
+    {
+      "id": "30107",
+      "label": "Corralillo",
+      "canton": "301"
+    },
+    {
+      "id": "30108",
+      "label": "Tierra Blanca",
+      "canton": "301"
+    },
+    {
+      "id": "30109",
+      "label": "Dulce Nombre",
+      "canton": "301"
+    },
+    {
+      "id": "30110",
+      "label": "Llano Grande",
+      "canton": "301"
+    },
+    {
+      "id": "30111",
+      "label": "Quebradilla",
+      "canton": "301"
+    },
+    {
+      "id": "30201",
+      "label": "Paraíso",
+      "canton": "302"
+    },
+    {
+      "id": "30202",
+      "label": "Santiago",
+      "canton": "302"
+    },
+    {
+      "id": "30203",
+      "label": "Orosi",
+      "canton": "302"
+    },
+    {
+      "id": "30204",
+      "label": "Cachí",
+      "canton": "302"
+    },
+    {
+      "id": "30205",
+      "label": "Llanos de Santa Lucía",
+      "canton": "302"
+    },
+    {
+      "id": "30206",
+      "label": "Birrisito",
+      "canton": "302"
+    },
+    {
+      "id": "30301",
+      "label": "Tres Ríos",
+      "canton": "303"
+    },
+    {
+      "id": "30302",
+      "label": "San Diego",
+      "canton": "303"
+    },
+    {
+      "id": "30303",
+      "label": "San Juan",
+      "canton": "303"
+    },
+    {
+      "id": "30304",
+      "label": "San Rafael",
+      "canton": "303"
+    },
+    {
+      "id": "30305",
+      "label": "Concepción",
+      "canton": "303"
+    },
+    {
+      "id": "30306",
+      "label": "Dulce Nombre",
+      "canton": "303"
+    },
+    {
+      "id": "30307",
+      "label": "San Ramón",
+      "canton": "303"
+    },
+    {
+      "id": "30308",
+      "label": "Río Azul",
+      "canton": "303"
+    },
+    {
+      "id": "30401",
+      "label": "Juan Viñas",
+      "canton": "304"
+    },
+    {
+      "id": "30402",
+      "label": "Tucurrique",
+      "canton": "304"
+    },
+    {
+      "id": "30403",
+      "label": "Pejivalle",
+      "canton": "304"
+    },
+    {
+      "id": "30404",
+      "label": "La Victoria",
+      "canton": "304"
+    },
+    {
+      "id": "30501",
+      "label": "Turrialba",
+      "canton": "305"
+    },
+    {
+      "id": "30502",
+      "label": "La Suiza",
+      "canton": "305"
+    },
+    {
+      "id": "30503",
+      "label": "Peralta",
+      "canton": "305"
+    },
+    {
+      "id": "30504",
+      "label": "Santa Cruz",
+      "canton": "305"
+    },
+    {
+      "id": "30505",
+      "label": "Santa Teresita",
+      "canton": "305"
+    },
+    {
+      "id": "30506",
+      "label": "Pavones",
+      "canton": "305"
+    },
+    {
+      "id": "30507",
+      "label": "Tuis",
+      "canton": "305"
+    },
+    {
+      "id": "30508",
+      "label": "Tayutic",
+      "canton": "305"
+    },
+    {
+      "id": "30509",
+      "label": "Santa Rosa",
+      "canton": "305"
+    },
+    {
+      "id": "30510",
+      "label": "Tres Equis",
+      "canton": "305"
+    },
+    {
+      "id": "30511",
+      "label": "La Isabel",
+      "canton": "305"
+    },
+    {
+      "id": "30512",
+      "label": "Chirripó",
+      "canton": "305"
+    },
+    {
+      "id": "30601",
+      "label": "Pacayas",
+      "canton": "306"
+    },
+    {
+      "id": "30602",
+      "label": "Cervantes",
+      "canton": "306"
+    },
+    {
+      "id": "30603",
+      "label": "Capellades",
+      "canton": "306"
+    },
+    {
+      "id": "30701",
+      "label": "San Rafael",
+      "canton": "307"
+    },
+    {
+      "id": "30702",
+      "label": "Cot",
+      "canton": "307"
+    },
+    {
+      "id": "30703",
+      "label": "Potrero Cerrado",
+      "canton": "307"
+    },
+    {
+      "id": "30704",
+      "label": "Cipreses",
+      "canton": "307"
+    },
+    {
+      "id": "30705",
+      "label": "Santa Rosa",
+      "canton": "307"
+    },
+    {
+      "id": "30801",
+      "label": "El Tejar",
+      "canton": "308"
+    },
+    {
+      "id": "30802",
+      "label": "San Isidro",
+      "canton": "308"
+    },
+    {
+      "id": "30803",
+      "label": "Tobosi",
+      "canton": "308"
+    },
+    {
+      "id": "30804",
+      "label": "Patio de Agua",
+      "canton": "308"
+    },
+    {
+      "id": "40101",
+      "label": "Heredia",
+      "canton": "401"
+    },
+    {
+      "id": "40102",
+      "label": "Mercedes",
+      "canton": "401"
+    },
+    {
+      "id": "40103",
+      "label": "San Francisco",
+      "canton": "401"
+    },
+    {
+      "id": "40104",
+      "label": "Ulloa",
+      "canton": "401"
+    },
+    {
+      "id": "40105",
+      "label": "Varablanca",
+      "canton": "401"
+    },
+    {
+      "id": "40201",
+      "label": "Barva",
+      "canton": "402"
+    },
+    {
+      "id": "40202",
+      "label": "San Pedro",
+      "canton": "402"
+    },
+    {
+      "id": "40203",
+      "label": "San Pablo",
+      "canton": "402"
+    },
+    {
+      "id": "40204",
+      "label": "San Roque",
+      "canton": "402"
+    },
+    {
+      "id": "40205",
+      "label": "Santa Lucía",
+      "canton": "402"
+    },
+    {
+      "id": "40206",
+      "label": "San José de la Montaña",
+      "canton": "402"
+    },
+    {
+      "id": "40207",
+      "label": "Puente Salas",
+      "canton": "402"
+    },
+    {
+      "id": "40301",
+      "label": "Santo Domingo",
+      "canton": "403"
+    },
+    {
+      "id": "40302",
+      "label": "San Vicente",
+      "canton": "403"
+    },
+    {
+      "id": "40303",
+      "label": "San Miguel",
+      "canton": "403"
+    },
+    {
+      "id": "40304",
+      "label": "Paracito",
+      "canton": "403"
+    },
+    {
+      "id": "40305",
+      "label": "Santo Tomás",
+      "canton": "403"
+    },
+    {
+      "id": "40306",
+      "label": "Santa Rosa",
+      "canton": "403"
+    },
+    {
+      "id": "40307",
+      "label": "Tures",
+      "canton": "403"
+    },
+    {
+      "id": "40308",
+      "label": "Pará",
+      "canton": "403"
+    },
+    {
+      "id": "40401",
+      "label": "Santa Bárbara",
+      "canton": "404"
+    },
+    {
+      "id": "40402",
+      "label": "San Pedro",
+      "canton": "404"
+    },
+    {
+      "id": "40403",
+      "label": "San Juan",
+      "canton": "404"
+    },
+    {
+      "id": "40404",
+      "label": "Jesús",
+      "canton": "404"
+    },
+    {
+      "id": "40405",
+      "label": "Santo Domingo",
+      "canton": "404"
+    },
+    {
+      "id": "40406",
+      "label": "Purabá",
+      "canton": "404"
+    },
+    {
+      "id": "40501",
+      "label": "San Rafael",
+      "canton": "405"
+    },
+    {
+      "id": "40502",
+      "label": "San Josecito",
+      "canton": "405"
+    },
+    {
+      "id": "40503",
+      "label": "Santiago",
+      "canton": "405"
+    },
+    {
+      "id": "40504",
+      "label": "Ángeles",
+      "canton": "405"
+    },
+    {
+      "id": "40505",
+      "label": "Concepción",
+      "canton": "405"
+    },
+    {
+      "id": "40601",
+      "label": "San Isidro",
+      "canton": "406"
+    },
+    {
+      "id": "40602",
+      "label": "San José",
+      "canton": "406"
+    },
+    {
+      "id": "40603",
+      "label": "Concepción",
+      "canton": "406"
+    },
+    {
+      "id": "40604",
+      "label": "San Francisco",
+      "canton": "406"
+    },
+    {
+      "id": "40701",
+      "label": "San Antonio",
+      "canton": "407"
+    },
+    {
+      "id": "40702",
+      "label": "La Ribera",
+      "canton": "407"
+    },
+    {
+      "id": "40703",
+      "label": "La Asunción",
+      "canton": "407"
+    },
+    {
+      "id": "40801",
+      "label": "San Joaquín",
+      "canton": "408"
+    },
+    {
+      "id": "40802",
+      "label": "Barrantes",
+      "canton": "408"
+    },
+    {
+      "id": "40803",
+      "label": "Llorente",
+      "canton": "408"
+    },
+    {
+      "id": "40901",
+      "label": "San Pablo",
+      "canton": "409"
+    },
+    {
+      "id": "40902",
+      "label": "Rincón de Sabanilla",
+      "canton": "409"
+    },
+    {
+      "id": "41001",
+      "label": "Puerto Viejo",
+      "canton": "410"
+    },
+    {
+      "id": "41002",
+      "label": "La Virgen",
+      "canton": "410"
+    },
+    {
+      "id": "41003",
+      "label": "Las Horquetas",
+      "canton": "410"
+    },
+    {
+      "id": "41004",
+      "label": "Llanuras del Gaspar",
+      "canton": "410"
+    },
+    {
+      "id": "41005",
+      "label": "Cureña",
+      "canton": "410"
+    },
+    {
+      "id": "50101",
+      "label": "Liberia",
+      "canton": "501"
+    },
+    {
+      "id": "50102",
+      "label": "Cañas Dulces",
+      "canton": "501"
+    },
+    {
+      "id": "50103",
+      "label": "Mayorga",
+      "canton": "501"
+    },
+    {
+      "id": "50104",
+      "label": "Nacascolo",
+      "canton": "501"
+    },
+    {
+      "id": "50105",
+      "label": "Curubandé",
+      "canton": "501"
+    },
+    {
+      "id": "50201",
+      "label": "Nicoya",
+      "canton": "502"
+    },
+    {
+      "id": "50202",
+      "label": "Mansión",
+      "canton": "502"
+    },
+    {
+      "id": "50203",
+      "label": "San Antonio",
+      "canton": "502"
+    },
+    {
+      "id": "50204",
+      "label": "Quebrada Honda",
+      "canton": "502"
+    },
+    {
+      "id": "50205",
+      "label": "Sámara",
+      "canton": "502"
+    },
+    {
+      "id": "50206",
+      "label": "Nosara",
+      "canton": "502"
+    },
+    {
+      "id": "50207",
+      "label": "Belén de Nosarita",
+      "canton": "502"
+    },
+    {
+      "id": "50301",
+      "label": "Santa Cruz",
+      "canton": "503"
+    },
+    {
+      "id": "50302",
+      "label": "Bolsón",
+      "canton": "503"
+    },
+    {
+      "id": "50303",
+      "label": "Veintisiete de Abril",
+      "canton": "503"
+    },
+    {
+      "id": "50304",
+      "label": "Tempate",
+      "canton": "503"
+    },
+    {
+      "id": "50305",
+      "label": "Cartagena",
+      "canton": "503"
+    },
+    {
+      "id": "50306",
+      "label": "Cuajiniquil",
+      "canton": "503"
+    },
+    {
+      "id": "50307",
+      "label": "Diriá",
+      "canton": "503"
+    },
+    {
+      "id": "50308",
+      "label": "Cabo Velas",
+      "canton": "503"
+    },
+    {
+      "id": "50309",
+      "label": "Tamarindo",
+      "canton": "503"
+    },
+    {
+      "id": "50401",
+      "label": "Bagaces",
+      "canton": "504"
+    },
+    {
+      "id": "50402",
+      "label": "La Fortuna",
+      "canton": "504"
+    },
+    {
+      "id": "50403",
+      "label": "Mogote",
+      "canton": "504"
+    },
+    {
+      "id": "50404",
+      "label": "Río Naranjo",
+      "canton": "504"
+    },
+    {
+      "id": "50405",
+      "label": "Pijije",
+      "canton": "504"
+    },
+    {
+      "id": "50501",
+      "label": "Filadelfia",
+      "canton": "505"
+    },
+    {
+      "id": "50502",
+      "label": "Palmira",
+      "canton": "505"
+    },
+    {
+      "id": "50503",
+      "label": "Sardinal",
+      "canton": "505"
+    },
+    {
+      "id": "50504",
+      "label": "Belén",
+      "canton": "505"
+    },
+    {
+      "id": "50601",
+      "label": "Cañas",
+      "canton": "506"
+    },
+    {
+      "id": "50602",
+      "label": "Palmira",
+      "canton": "506"
+    },
+    {
+      "id": "50603",
+      "label": "San Miguel",
+      "canton": "506"
+    },
+    {
+      "id": "50604",
+      "label": "Bebedero",
+      "canton": "506"
+    },
+    {
+      "id": "50605",
+      "label": "Porozal",
+      "canton": "506"
+    },
+    {
+      "id": "50701",
+      "label": "Las Juntas",
+      "canton": "507"
+    },
+    {
+      "id": "50702",
+      "label": "Sierra",
+      "canton": "507"
+    },
+    {
+      "id": "50703",
+      "label": "San Juan",
+      "canton": "507"
+    },
+    {
+      "id": "50704",
+      "label": "Colorado",
+      "canton": "507"
+    },
+    {
+      "id": "50801",
+      "label": "Tilarán",
+      "canton": "508"
+    },
+    {
+      "id": "50802",
+      "label": "Quebrada Grande",
+      "canton": "508"
+    },
+    {
+      "id": "50803",
+      "label": "Tronadora",
+      "canton": "508"
+    },
+    {
+      "id": "50804",
+      "label": "Santa Rosa",
+      "canton": "508"
+    },
+    {
+      "id": "50805",
+      "label": "Líbano",
+      "canton": "508"
+    },
+    {
+      "id": "50806",
+      "label": "Tierras Morenas",
+      "canton": "508"
+    },
+    {
+      "id": "50807",
+      "label": "Arenal",
+      "canton": "508"
+    },
+    {
+      "id": "50808",
+      "label": "Cabeceras",
+      "canton": "508"
+    },
+    {
+      "id": "50901",
+      "label": "Carmona",
+      "canton": "509"
+    },
+    {
+      "id": "50902",
+      "label": "Santa Rita",
+      "canton": "509"
+    },
+    {
+      "id": "50903",
+      "label": "Zapotal",
+      "canton": "509"
+    },
+    {
+      "id": "50904",
+      "label": "San Pablo",
+      "canton": "509"
+    },
+    {
+      "id": "50905",
+      "label": "Porvenir",
+      "canton": "509"
+    },
+    {
+      "id": "50906",
+      "label": "Bejuco",
+      "canton": "509"
+    },
+    {
+      "id": "51001",
+      "label": "La Cruz",
+      "canton": "510"
+    },
+    {
+      "id": "51002",
+      "label": "Santa Cecilia",
+      "canton": "510"
+    },
+    {
+      "id": "51003",
+      "label": "La Garita",
+      "canton": "510"
+    },
+    {
+      "id": "51004",
+      "label": "Santa Elena",
+      "canton": "510"
+    },
+    {
+      "id": "51101",
+      "label": "Hojancha",
+      "canton": "511"
+    },
+    {
+      "id": "51102",
+      "label": "Monte Romo",
+      "canton": "511"
+    },
+    {
+      "id": "51103",
+      "label": "Puerto Carrillo",
+      "canton": "511"
+    },
+    {
+      "id": "51104",
+      "label": "Huacas",
+      "canton": "511"
+    },
+    {
+      "id": "51105",
+      "label": "Matambú",
+      "canton": "511"
+    },
+    {
+      "id": "60101",
+      "label": "Puntarenas",
+      "canton": "601"
+    },
+    {
+      "id": "60102",
+      "label": "Pitahaya",
+      "canton": "601"
+    },
+    {
+      "id": "60103",
+      "label": "Chomes",
+      "canton": "601"
+    },
+    {
+      "id": "60104",
+      "label": "Lepanto",
+      "canton": "601"
+    },
+    {
+      "id": "60105",
+      "label": "Paquera",
+      "canton": "601"
+    },
+    {
+      "id": "60106",
+      "label": "Manzanillo",
+      "canton": "601"
+    },
+    {
+      "id": "60107",
+      "label": "Guacimal",
+      "canton": "601"
+    },
+    {
+      "id": "60108",
+      "label": "Barranca",
+      "canton": "601"
+    },
+    {
+      "id": "60110",
+      "label": "Isla del Coco",
+      "canton": "601"
+    },
+    {
+      "id": "60111",
+      "label": "Cóbano",
+      "canton": "601"
+    },
+    {
+      "id": "60112",
+      "label": "Chacarita",
+      "canton": "601"
+    },
+    {
+      "id": "60113",
+      "label": "Chira",
+      "canton": "601"
+    },
+    {
+      "id": "60114",
+      "label": "Acapulco",
+      "canton": "601"
+    },
+    {
+      "id": "60115",
+      "label": "El Roble",
+      "canton": "601"
+    },
+    {
+      "id": "60116",
+      "label": "Arancibia",
+      "canton": "601"
+    },
+    {
+      "id": "60201",
+      "label": "Espíritu Santo",
+      "canton": "602"
+    },
+    {
+      "id": "60202",
+      "label": "San Juan Grande",
+      "canton": "602"
+    },
+    {
+      "id": "60203",
+      "label": "Macacona",
+      "canton": "602"
+    },
+    {
+      "id": "60204",
+      "label": "San Rafael",
+      "canton": "602"
+    },
+    {
+      "id": "60205",
+      "label": "San Jerónimo",
+      "canton": "602"
+    },
+    {
+      "id": "60206",
+      "label": "Caldera",
+      "canton": "602"
+    },
+    {
+      "id": "60301",
+      "label": "Buenos Aires",
+      "canton": "603"
+    },
+    {
+      "id": "60302",
+      "label": "Volcán",
+      "canton": "603"
+    },
+    {
+      "id": "60303",
+      "label": "Potrero Grande",
+      "canton": "603"
+    },
+    {
+      "id": "60304",
+      "label": "Boruca",
+      "canton": "603"
+    },
+    {
+      "id": "60305",
+      "label": "Pilas",
+      "canton": "603"
+    },
+    {
+      "id": "60306",
+      "label": "Colinas",
+      "canton": "603"
+    },
+    {
+      "id": "60307",
+      "label": "Chánguena",
+      "canton": "603"
+    },
+    {
+      "id": "60308",
+      "label": "Biolley",
+      "canton": "603"
+    },
+    {
+      "id": "60309",
+      "label": "Brunka",
+      "canton": "603"
+    },
+    {
+      "id": "60310",
+      "label": "Cabagra",
+      "canton": "603"
+    },
+    {
+      "id": "60401",
+      "label": "Miramar",
+      "canton": "604"
+    },
+    {
+      "id": "60402",
+      "label": "La Unión",
+      "canton": "604"
+    },
+    {
+      "id": "60403",
+      "label": "San Isidro",
+      "canton": "604"
+    },
+    {
+      "id": "60501",
+      "label": "Puerto Cortés",
+      "canton": "605"
+    },
+    {
+      "id": "60502",
+      "label": "Palmar",
+      "canton": "605"
+    },
+    {
+      "id": "60503",
+      "label": "Sierpe",
+      "canton": "605"
+    },
+    {
+      "id": "60504",
+      "label": "Bahía Ballena",
+      "canton": "605"
+    },
+    {
+      "id": "60505",
+      "label": "Piedras Blancas",
+      "canton": "605"
+    },
+    {
+      "id": "60506",
+      "label": "Bahía Drake",
+      "canton": "605"
+    },
+    {
+      "id": "60601",
+      "label": "Quepos",
+      "canton": "606"
+    },
+    {
+      "id": "60602",
+      "label": "Savegre",
+      "canton": "606"
+    },
+    {
+      "id": "60603",
+      "label": "Naranjito",
+      "canton": "606"
+    },
+    {
+      "id": "60701",
+      "label": "Golfito",
+      "canton": "607"
+    },
+    {
+      "id": "60703",
+      "label": "Guaycará",
+      "canton": "607"
+    },
+    {
+      "id": "60704",
+      "label": "Pavón",
+      "canton": "607"
+    },
+    {
+      "id": "60801",
+      "label": "San Vito",
+      "canton": "608"
+    },
+    {
+      "id": "60802",
+      "label": "Sabalito",
+      "canton": "608"
+    },
+    {
+      "id": "60803",
+      "label": "Aguabuena",
+      "canton": "608"
+    },
+    {
+      "id": "60804",
+      "label": "Limoncito",
+      "canton": "608"
+    },
+    {
+      "id": "60805",
+      "label": "Pittier",
+      "canton": "608"
+    },
+    {
+      "id": "60806",
+      "label": "Gutiérrez Braun",
+      "canton": "608"
+    },
+    {
+      "id": "60901",
+      "label": "Parrita",
+      "canton": "609"
+    },
+    {
+      "id": "61001",
+      "label": "Corredor",
+      "canton": "610"
+    },
+    {
+      "id": "61002",
+      "label": "La Cuesta",
+      "canton": "610"
+    },
+    {
+      "id": "61003",
+      "label": "Canoas",
+      "canton": "610"
+    },
+    {
+      "id": "61004",
+      "label": "Laurel",
+      "canton": "610"
+    },
+    {
+      "id": "61101",
+      "label": "Jacó",
+      "canton": "611"
+    },
+    {
+      "id": "61102",
+      "label": "Tárcoles",
+      "canton": "611"
+    },
+    {
+      "id": "61103",
+      "label": "Lagunillas",
+      "canton": "611"
+    },
+    {
+      "id": "61201",
+      "label": "Monteverde",
+      "canton": "612"
+    },
+    {
+      "id": "61301",
+      "label": "Puerto Jiménez",
+      "canton": "613"
+    },
+    {
+      "id": "70101",
+      "label": "Limón",
+      "canton": "701"
+    },
+    {
+      "id": "70102",
+      "label": "Valle La Estrella",
+      "canton": "701"
+    },
+    {
+      "id": "70103",
+      "label": "Río Blanco",
+      "canton": "701"
+    },
+    {
+      "id": "70104",
+      "label": "Matama",
+      "canton": "701"
+    },
+    {
+      "id": "70201",
+      "label": "Guápiles",
+      "canton": "702"
+    },
+    {
+      "id": "70202",
+      "label": "Jiménez",
+      "canton": "702"
+    },
+    {
+      "id": "70203",
+      "label": "Rita",
+      "canton": "702"
+    },
+    {
+      "id": "70204",
+      "label": "Roxana",
+      "canton": "702"
+    },
+    {
+      "id": "70205",
+      "label": "Cariari",
+      "canton": "702"
+    },
+    {
+      "id": "70206",
+      "label": "Colorado",
+      "canton": "702"
+    },
+    {
+      "id": "70207",
+      "label": "La Colonia",
+      "canton": "702"
+    },
+    {
+      "id": "70301",
+      "label": "Siquirres",
+      "canton": "703"
+    },
+    {
+      "id": "70302",
+      "label": "Pacuarito",
+      "canton": "703"
+    },
+    {
+      "id": "70303",
+      "label": "Florida",
+      "canton": "703"
+    },
+    {
+      "id": "70304",
+      "label": "Germania",
+      "canton": "703"
+    },
+    {
+      "id": "70305",
+      "label": "El Cairo",
+      "canton": "703"
+    },
+    {
+      "id": "70306",
+      "label": "Alegría",
+      "canton": "703"
+    },
+    {
+      "id": "70307",
+      "label": "Reventazón",
+      "canton": "703"
+    },
+    {
+      "id": "70401",
+      "label": "Bratsi",
+      "canton": "704"
+    },
+    {
+      "id": "70402",
+      "label": "Sixaola",
+      "canton": "704"
+    },
+    {
+      "id": "70403",
+      "label": "Cahuita",
+      "canton": "704"
+    },
+    {
+      "id": "70404",
+      "label": "Telire",
+      "canton": "704"
+    },
+    {
+      "id": "70501",
+      "label": "Matina",
+      "canton": "705"
+    },
+    {
+      "id": "70502",
+      "label": "Batán",
+      "canton": "705"
+    },
+    {
+      "id": "70503",
+      "label": "Carrandí",
+      "canton": "705"
+    },
+    {
+      "id": "70601",
+      "label": "Guácimo",
+      "canton": "706"
+    },
+    {
+      "id": "70602",
+      "label": "Mercedes",
+      "canton": "706"
+    },
+    {
+      "id": "70603",
+      "label": "Pocora",
+      "canton": "706"
+    },
+    {
+      "id": "70604",
+      "label": "Río Jiménez",
+      "canton": "706"
+    },
+    {
+      "id": "70605",
+      "label": "Duacarí",
+      "canton": "706"
+    }
+  ]
+}

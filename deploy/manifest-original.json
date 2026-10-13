@@ -1,0 +1,1031 @@
+{
+  "version": 1,
+  "builtFor": "Netlify",
+  "files": [
+    {
+      "path": "Actualizar Netlify.command",
+      "bytes": 1186,
+      "sha256": "a747418f36b268702ccd59356c3fd06485876cb23d6ef71ad47a9165846b4702"
+    },
+    {
+      "path": "ESTADO-PAQUETE.md",
+      "bytes": 1033,
+      "sha256": "27b0672e8ac5b73e3b259b0ec05b6c0bb8327eea29845eb3ded03ca1978d0da1"
+    },
+    {
+      "path": "LEEME.md",
+      "bytes": 2165,
+      "sha256": "d2c5f95443155c1a4e7faf6ae628df7a5ebe0915ce89461730eef69a3e4bdec5"
+    },
+    {
+      "path": "README.md",
+      "bytes": 24120,
+      "sha256": "66800a9cbde7c56c919cdbaea664c8af9418a516470a9d3089cb30ebef6d65bb"
+    },
+    {
+      "path": "functions/lif-api.mjs",
+      "bytes": 369506,
+      "sha256": "a25aafca21355ae25072dd0e1dcf85021b5d7aea43c4b625563290cbf9f8be13"
+    },
+    {
+      "path": "functions/lif-ranking-page.mjs",
+      "bytes": 1129978,
+      "sha256": "d243ff53122b927281562bdcee057cfb9f3b689291c0b4362eebe027f596b0d3"
+    },
+    {
+      "path": "functions/lif-sync.mjs",
+      "bytes": 356763,
+      "sha256": "163eb8b43630571f88857483978e77b08d25409140b3d14236eee937810fb07c"
+    },
+    {
+      "path": "netlify.toml",
+      "bytes": 916,
+      "sha256": "79f50c3e842324c71668284da4d524fc3c937c194327c51fac99314ea67fb201"
+    },
+    {
+      "path": "public/.vite/manifest.json",
+      "bytes": 16104,
+      "sha256": "abaf1070c39040c00e9a070e1c952019f188ead47720aef3859330a1345135c8"
+    },
+    {
+      "path": "public/404.html",
+      "bytes": 14979,
+      "sha256": "d9cd239526e566e1f84e8956724ad35f3ac9d8e9284d7baa44db405dd33c85c8"
+    },
+    {
+      "path": "public/_headers",
+      "bytes": 420,
+      "sha256": "2a504f884e59d5f05eb93a25bb9e26f9f35a5e1b7ffe6c006f61b9e953de8108"
+    },
+    {
+      "path": "public/_next/static/5f346a10-799c-4e12-9cbf-89744586e590/_buildManifest.js",
+      "bytes": 159,
+      "sha256": "47f02b34be6dc481257b6efce4c19e19111f37ef5c437f8ffed44f0da97fa9bb"
+    },
+    {
+      "path": "public/_next/static/5f346a10-799c-4e12-9cbf-89744586e590/_ssgManifest.js",
+      "bytes": 76,
+      "sha256": "653f3e53e89b4f8548ff86c19e92bb3c6b84b6be7485a320b1e00893ed877479"
+    },
+    {
+      "path": "public/_next/static/chunks/Icon-C6CS9jdW.js",
+      "bytes": 1082,
+      "sha256": "32f73f7a8429f4d80fc6b0e404b5dd1749aa475f8116bead52d2452ddd23bdfb"
+    },
+    {
+      "path": "public/_next/static/chunks/analytics-ByIQ3Mef.js",
+      "bytes": 165,
+      "sha256": "571dabf788e47b88ed28a4ed98332eb4dee5cfe62200b096861004f1d029b2fb"
+    },
+    {
+      "path": "public/_next/static/chunks/app-route-prefetch-policy-C88aDH6G.js",
+      "bytes": 937,
+      "sha256": "0b35f924e79dfdaa6b34ff9f940e1a9dd0ea2cdd49adecf5cb8a7cb0d6b61e06"
+    },
+    {
+      "path": "public/_next/static/chunks/arrow-down-Bb-bblLB.js",
+      "bytes": 165,
+      "sha256": "7c16d7ee8f3be7ce5673622d096260d339ca3189f26b7afc417292b20b35c001"
+    },
+    {
+      "path": "public/_next/static/chunks/arrow-right-BkDuRb0n.js",
+      "bytes": 165,
+      "sha256": "4684a9cebf1a7628472702ba0345daa588d37131b6de5aa40f0ef1dd1658a3e9"
+    },
+    {
+      "path": "public/_next/static/chunks/check-ZFzU1zwm.js",
+      "bytes": 124,
+      "sha256": "e9f0044328bdaf7fa1fc5cc2feda02df21ac1c48aba3da1ae7ef54353f786784"
+    },
+    {
+      "path": "public/_next/static/chunks/confession-community-h-YeAjG1.js",
+      "bytes": 19043,
+      "sha256": "6046a2dad3d4128bcc32077a539091072f99a49cc399bad4aeec0c8c43bac68f"
+    },
+    {
+      "path": "public/_next/static/chunks/confessions-content-CWUXM0kj.js",
+      "bytes": 9916,
+      "sha256": "00bafc0875fa8e46b6ab95c67e6095ae55627f5b0c00699ab6a5ca28ff749ff8"
+    },
+    {
+      "path": "public/_next/static/chunks/consent-D--9Ky-K.js",
+      "bytes": 1099,
+      "sha256": "93cbabca24bafa028f4ba207df22d1263517094d62fe54d2526d9938f69bb17a"
+    },
+    {
+      "path": "public/_next/static/chunks/contact-modal-B7N1fhOO.js",
+      "bytes": 105500,
+      "sha256": "b6db8145994e429faee92962b1c55a4e9581d1e92b878aa4f6be969bfccadb0d"
+    },
+    {
+      "path": "public/_next/static/chunks/cookie-consent-DzJJhfQ5.js",
+      "bytes": 49410,
+      "sha256": "8cc77feb287aed05c04c80ccd9c50d4229f8ac5ff22283bde353d144ec603dc3"
+    },
+    {
+      "path": "public/_next/static/chunks/createLucideIcon-oTko8QZf.js",
+      "bytes": 558,
+      "sha256": "ba3dfedf15a9ab86d14f6a675e5677c2549068138aaaca624700ce434fa21959"
+    },
+    {
+      "path": "public/_next/static/chunks/document-whatsapp-link-BaKbjxKu.js",
+      "bytes": 1320,
+      "sha256": "749fc38febe512a8c8dcac9a6d53e45552cf376be620b7cfe446938c0b27af32"
+    },
+    {
+      "path": "public/_next/static/chunks/embla-carousel-react.esm-DYuRcuxV.js",
+      "bytes": 19820,
+      "sha256": "a164a0f98b5a5901fa9fc0e465134e56b814558038d45a9ecf63f0866f4d707e"
+    },
+    {
+      "path": "public/_next/static/chunks/flavor-catalog-DW4GYNHp.js",
+      "bytes": 11548,
+      "sha256": "8da576a842088781faf963d11cce4f4548c969bed8ba575e61a8cb5eb0d51043"
+    },
+    {
+      "path": "public/_next/static/chunks/flavor-pack-DZbJqhzR.js",
+      "bytes": 807,
+      "sha256": "17ee2895c4ee593aa237277d867864b458c5de9c9fda29a0fd4b81b6f307106e"
+    },
+    {
+      "path": "public/_next/static/chunks/form-submission-audio-BMxa73A1.js",
+      "bytes": 1223,
+      "sha256": "68ac416a6c5fc31e5bf0143274d4843910b2f47a780391e700c9595e7deec8bd"
+    },
+    {
+      "path": "public/_next/static/chunks/framework-D_rUT4EX.js",
+      "bytes": 190152,
+      "sha256": "939d0fabebb3b2f01753bb866b067d8d3384fb06da19f0e6557609d3b1a9f4f7"
+    },
+    {
+      "path": "public/_next/static/chunks/game-experience-DbdMcNRo.js",
+      "bytes": 87981,
+      "sha256": "d59a211ad381ff53fd71e913715ac8bb2316138807568d52bf1dfd0cbb9f98dc"
+    },
+    {
+      "path": "public/_next/static/chunks/game-loading-CjrSzsh4.js",
+      "bytes": 8658,
+      "sha256": "91852ad5e365e060bcf0f9c2c33b4e23015fd5563475d9a2d2ee60238ed83622"
+    },
+    {
+      "path": "public/_next/static/chunks/game-session-NKmoouIc.js",
+      "bytes": 211,
+      "sha256": "5aa97d5dffeb8b23d7d8803c44c930a5657b9ded096baef22f41de18da0874cb"
+    },
+    {
+      "path": "public/_next/static/chunks/games-DMbmLtIy.js",
+      "bytes": 30568,
+      "sha256": "c372cc20cf7ace50aaaca2018f58f954e62a234c2ea329dfe33adfd6efa02f1f"
+    },
+    {
+      "path": "public/_next/static/chunks/home-content-CXW-jCwM.js",
+      "bytes": 10690,
+      "sha256": "947b9e4f68e04dfbddc000e811a8aceb31d8761ef57b3dc225dd4815122625c1"
+    },
+    {
+      "path": "public/_next/static/chunks/home-entrance-CfXDiBgN.js",
+      "bytes": 22278,
+      "sha256": "e67f6562ef2dca50acd1458c8f49ada3e69f050e3c1995520a988f2c80868f20"
+    },
+    {
+      "path": "public/_next/static/chunks/image-XbTmjEHJ.js",
+      "bytes": 46765,
+      "sha256": "aeca506e4d99ec54cdff10f90e8732c86c6edea483a1fd7ad9818cb0bd598a82"
+    },
+    {
+      "path": "public/_next/static/chunks/index-B2nocuIJ.js",
+      "bytes": 198364,
+      "sha256": "960bb1ef78b647bcb0f7266a981134df680aeb896dc018c105f72a7288044c38"
+    },
+    {
+      "path": "public/_next/static/chunks/layout-segment-context-B8G3By_C.js",
+      "bytes": 534,
+      "sha256": "275ff74b1a3b7e63fdda241ed1541f9adc132791e02899db13905d4647b024f0"
+    },
+    {
+      "path": "public/_next/static/chunks/lif-content-Bc9tJOl4.js",
+      "bytes": 7581,
+      "sha256": "f91a1facf97cc21bf37165245277956a3b071bf06a0f30d41016a8239950ae37"
+    },
+    {
+      "path": "public/_next/static/chunks/loader-circle-B8bdzvse.js",
+      "bytes": 144,
+      "sha256": "37af7ca6c213b85ca0ab6035348300d58b605db1ac061f2cf19ba81df8f62b41"
+    },
+    {
+      "path": "public/_next/static/chunks/map-pin-QLoqvfKI.js",
+      "bytes": 259,
+      "sha256": "5d36dd929c67ddde30ca1060861fa07c0743c9361253c5540872d3b541e55eae"
+    },
+    {
+      "path": "public/_next/static/chunks/media-playback-DczZiq_f.js",
+      "bytes": 486,
+      "sha256": "b8f22e0a2f651aefa4f554e9f73ce8ce4e641bf1bae7fe002d2517295dc13a41"
+    },
+    {
+      "path": "public/_next/static/chunks/media-priority-fDlabOxd.js",
+      "bytes": 258,
+      "sha256": "7199ef11fe1035eed42196442d78cffc99fe0d4ddffb4d8b33bb67111a700ecd"
+    },
+    {
+      "path": "public/_next/static/chunks/message-circle-k0cWvWPp.js",
+      "bytes": 241,
+      "sha256": "724fb2a9d0b56579d7445a91dd516db83f787eb6b11e237c8bacec3ecd6507a6"
+    },
+    {
+      "path": "public/_next/static/chunks/navigation-errors-By4dF-Cc.js",
+      "bytes": 2085,
+      "sha256": "fecef2069274e63489e8a6288f00a98cd02d6a5778c17d7e4569d2c1c322a9dd"
+    },
+    {
+      "path": "public/_next/static/chunks/pause-BlqZth_3.js",
+      "bytes": 323,
+      "sha256": "229d965df4395075a1aecc9b5331c5412f47953796c7c042d7e0be594be12dc6"
+    },
+    {
+      "path": "public/_next/static/chunks/play-B2YTCbnV.js",
+      "bytes": 190,
+      "sha256": "8752f7e779223195f5014b28066ca6bef509b03cc3a45c18f265e6b93ffe5a0a"
+    },
+    {
+      "path": "public/_next/static/chunks/recipes-browser-B9em0Zbs.js",
+      "bytes": 4485,
+      "sha256": "b0ec85a080fd3f34f10bad958a47d5333bdb056bea88f14b3423a61fa565a253"
+    },
+    {
+      "path": "public/_next/static/chunks/rolldown-runtime-C60lm6uB.js",
+      "bytes": 694,
+      "sha256": "5db5ba82eef00d1dee7e86e663098c9427d01183a88d357437daff295aec3e75"
+    },
+    {
+      "path": "public/_next/static/chunks/rotate-ccw-BDTx4DKT.js",
+      "bytes": 200,
+      "sha256": "1ccb6d4e5c5bbf56b29096191c7cb681d069a42234437815710f57ffcf11e5b2"
+    },
+    {
+      "path": "public/_next/static/chunks/sachet-motion-D0DzseWZ.js",
+      "bytes": 851,
+      "sha256": "2a24661e20552d0a6e9b25d27d7f5daa25daf65905719f95e44198ac0104e444"
+    },
+    {
+      "path": "public/_next/static/chunks/sachet-scene-LwohLHYr.js",
+      "bytes": 97359,
+      "sha256": "00cac90ac425ccb0185636b71e73e7680ac1ef1787a256a9f4f5316b272484d4"
+    },
+    {
+      "path": "public/_next/static/chunks/send-u-Ccm_sc.js",
+      "bytes": 290,
+      "sha256": "81b2435c2ac721a0efb2ef43c518fb3e243a4a2ec4c061e225b71009279216dc"
+    },
+    {
+      "path": "public/_next/static/chunks/site-chrome-DB3h7qHC.js",
+      "bytes": 20750,
+      "sha256": "b2dbaa1126fffbaf5ee0a9196072dba973767653544dc55d4539cdb7e1659379"
+    },
+    {
+      "path": "public/_next/static/chunks/static-link-6fm3gCbA.js",
+      "bytes": 191,
+      "sha256": "7d9a971fdc9d40f907248b99d73a67730792b4a72ed5e7cabfef16930102b534"
+    },
+    {
+      "path": "public/_next/static/chunks/streamed-icons-Cs-m6aYg.js",
+      "bytes": 772,
+      "sha256": "7eb2a6b44b9c0faa7300c8dd36b0fae7a35d9f65e139dd9046b3df193aa83bc8"
+    },
+    {
+      "path": "public/_next/static/chunks/useScrollLock-DRlgq-FN.js",
+      "bytes": 56968,
+      "sha256": "e46ebf9cc8f750a29102e8e83f202f71172db139d267ab8bc581ec12056a2de8"
+    },
+    {
+      "path": "public/_next/static/chunks/video-interstitial-gOz26Mx9.js",
+      "bytes": 12635,
+      "sha256": "4343b8bf744edd3642ed9d304ae35e9229223615bd0644ad407d922ec3b00164"
+    },
+    {
+      "path": "public/_next/static/chunks/volume-x-BWyqLWyQ.js",
+      "bytes": 727,
+      "sha256": "44729cf0c11fc6507e3973e25bb641708a0db6e42403eaf6c68b2e4f2ef73cd8"
+    },
+    {
+      "path": "public/_next/static/chunks/x-DiaeOBRs.js",
+      "bytes": 154,
+      "sha256": "7b69a324c079b7c0aaf819e8a9e2507dbcb6046326b1356657528edcd6a56978"
+    },
+    {
+      "path": "public/_next/static/css/confessions-content.DdF5T-h3.css",
+      "bytes": 12655,
+      "sha256": "588eb3678e59853fc9f0b496b77deed677183cf7b9d0dae3474a6b7aba374075"
+    },
+    {
+      "path": "public/_next/static/css/confessions.B644XB3Z.css",
+      "bytes": 12203,
+      "sha256": "61444dfd91cb4d6c5e5b440b64b5d77d7cccf0a7e99fe3cffa8dc6e0b9a128d0"
+    },
+    {
+      "path": "public/_next/static/css/game-loading.CP2F5pTf.css",
+      "bytes": 9023,
+      "sha256": "ecf03a35d7bb09760208b824e309ebec0bc1065b73427db3e5544ad75d22968f"
+    },
+    {
+      "path": "public/_next/static/css/games.DsdYikGp.css",
+      "bytes": 71626,
+      "sha256": "1386e44156fe20f337c322216405519d3d5d0fa21d0173477c26147e64962ad2"
+    },
+    {
+      "path": "public/_next/static/css/home-content.Cb0RLkBB.css",
+      "bytes": 16262,
+      "sha256": "6df5dc83c332a8dc2ac64a5efe6f4541c035246a1725f0d4a8cf8e3779f9f5a0"
+    },
+    {
+      "path": "public/_next/static/css/index.Droo2fWY.css",
+      "bytes": 234178,
+      "sha256": "f420411d2226ffaefcd7f1f67627e71cfd99f6cd05b58d050fd272b390104dcb"
+    },
+    {
+      "path": "public/_next/static/css/page.D6IiPim-.css",
+      "bytes": 5219,
+      "sha256": "cdefb73e029cc87def4fd7d5eb0c2efacf30f9a276592fad94e25cd6b6206e5d"
+    },
+    {
+      "path": "public/_next/static/css/section-in-progress.CM55ZBO_.css",
+      "bytes": 453,
+      "sha256": "a888508ce5b043b593f65356d0fa6767ac4dc126804742ae1de1462a21c4fc13"
+    },
+    {
+      "path": "public/audio/contact-send.wav",
+      "bytes": 18318,
+      "sha256": "e3168ad9c1feb088cb352633c7aa3da82eb777c23a404c05fb7491ea2b7101e6"
+    },
+    {
+      "path": "public/audio/lif-pour.mp3",
+      "bytes": 30972,
+      "sha256": "769a80aaa58e78be6c13d10edcbfca93c70122e30fbc1e0e971b5f50d0f51d05"
+    },
+    {
+      "path": "public/brand/bajo-en-calorias.svg",
+      "bytes": 34387,
+      "sha256": "18328927e00331f216428fa3fbcc4688ce0820981e30cfe2a2e1d0d08cfca72f"
+    },
+    {
+      "path": "public/brand/con-stevia.svg",
+      "bytes": 12555,
+      "sha256": "d0eb0be7e9f90b6d8805caef53e2964988ca45d705fc1fd9ec6b07bd16337757"
+    },
+    {
+      "path": "public/brand/contact-fruits-square.webp",
+      "bytes": 88028,
+      "sha256": "19bf06d81ecf9a8c7f482ba185ca01130b0131bb80767482f5e9f9d77af57275"
+    },
+    {
+      "path": "public/brand/contact-fruits-wide.webp",
+      "bytes": 105774,
+      "sha256": "5746e75d36256cd1e7e57ff5c362cb0687706fdb3ccd4c457c16a0bb24f36b9a"
+    },
+    {
+      "path": "public/brand/facebook.svg",
+      "bytes": 542,
+      "sha256": "b06d18d844ed621b89faffb1a33440cc0ec4f1ffea9f36191f50db19a47c59a6"
+    },
+    {
+      "path": "public/brand/frutas-desktop.webp",
+      "bytes": 154160,
+      "sha256": "5821f117bb480cfeda4cfaaa629fd993b04e53b6ae1b4bfa5f4b26c58227aa1e"
+    },
+    {
+      "path": "public/brand/frutas-mobile.webp",
+      "bytes": 85754,
+      "sha256": "75bb47e662997ed480680bcb1c26523321430754151eef2b8c7ef7a524e70255"
+    },
+    {
+      "path": "public/brand/hojita.svg",
+      "bytes": 5847,
+      "sha256": "7ff55b16230cff9ef2e9501be7eb3cabf3c9998e95ff621e660a929bd8f87f36"
+    },
+    {
+      "path": "public/brand/instagram.svg",
+      "bytes": 2101,
+      "sha256": "f53af2d1fc5292ba1433b5c1faf50005ce6a997fa302d1816989929f379a59dc"
+    },
+    {
+      "path": "public/brand/lif-apple-touch-180-v2.png",
+      "bytes": 3727,
+      "sha256": "f2a9b06c10fb71603ee0d78e60bc4d2baa7172e602cf869dfcc930a66c35490d"
+    },
+    {
+      "path": "public/brand/lif-favicon-192-v2.png",
+      "bytes": 4139,
+      "sha256": "c15e45c6509dd92e759bb4b19c8e40f25db70b29a73ce4236197bc4e783914ba"
+    },
+    {
+      "path": "public/brand/lif-favicon-32-v2.png",
+      "bytes": 658,
+      "sha256": "03eb03019a722cbcee392ab46d903746b74c34d8103a56ceca1f60b163b5f9cc"
+    },
+    {
+      "path": "public/brand/lif-official.svg",
+      "bytes": 17188,
+      "sha256": "26bd90d8ff9e410eeb5417f654b2d7f3557784045407167bfa83e7f9c344be5e"
+    },
+    {
+      "path": "public/brand/naranja.svg",
+      "bytes": 7752,
+      "sha256": "0e3e6a3560ad598ac553ce576c9c88b116b1e21754a2dabf374eca6cc3d35e52"
+    },
+    {
+      "path": "public/brand/receta-margarita.webp",
+      "bytes": 96052,
+      "sha256": "a2e408d4425071aee680821acfd98c195c87d9d41032d71760c76fed5dc5386b"
+    },
+    {
+      "path": "public/brand/tiktok.svg",
+      "bytes": 707,
+      "sha256": "6f54ac8d325faacea8935bdc44cbed60206a6b408641799e5fea1cba7c1a0af7"
+    },
+    {
+      "path": "public/brand/tuanis.svg",
+      "bytes": 12840,
+      "sha256": "1284977e80c4cf973cf5d06cfcaf31150854f9e28f80f11372bedaa9556e2fa1"
+    },
+    {
+      "path": "public/brand/work-in-progress.png",
+      "bytes": 295040,
+      "sha256": "186f162fc5ceb2ac8aef0365f328fd8f84369f23bb93490b49218f0ef6eef41b"
+    },
+    {
+      "path": "public/brand/youtube.svg",
+      "bytes": 459,
+      "sha256": "5038808acbbc4e6edda16cbeb1cc6dec80e4e4ee4e227e039c41229fa222aa8c"
+    },
+    {
+      "path": "public/campaign/actor-lego.webp",
+      "bytes": 886450,
+      "sha256": "c44c51b915533c1c96f8fd7df05226a778b23830e6b86e8d194e5de2f9683a2f"
+    },
+    {
+      "path": "public/campaign/actriz-plantas.webp",
+      "bytes": 1012918,
+      "sha256": "742243fd630c055d6ed505bfc26caf0dbb394924c86afbffcae6b578d5f351a3"
+    },
+    {
+      "path": "public/campaign/gato-lif-poster.webp",
+      "bytes": 67150,
+      "sha256": "eec1398e401ea412122fb76522603b634fe9988cfdf89d68d88ce99b791e13c2"
+    },
+    {
+      "path": "public/campaign/gato-lif.mp4",
+      "bytes": 1664852,
+      "sha256": "1239ef745effcd9b87ea9ac3f742d9a88878d15cae457d70d219ba0505c96416"
+    },
+    {
+      "path": "public/confesiones.html",
+      "bytes": 34776,
+      "sha256": "9e762b369921a3aa1fe9381d0ba7d35d3029fe564cade99f1b3cac44e083ebac"
+    },
+    {
+      "path": "public/confesiones.rsc",
+      "bytes": 7092,
+      "sha256": "a979c9225999c2be983ac28bf46b49967f0e87f2e6bc814d066cf88a15c46112"
+    },
+    {
+      "path": "public/confesiones/andres-todo-bajo-control.html",
+      "bytes": 35111,
+      "sha256": "522a9b3bd6d2569c2d037ea32a1b8d45b19bbf7997c7bad68ed7a25299a8f32e"
+    },
+    {
+      "path": "public/confesiones/andres-todo-bajo-control.rsc",
+      "bytes": 9480,
+      "sha256": "553a9159989864bcdce666088319a5eefa8757e74b8087144ee5da60360648f9"
+    },
+    {
+      "path": "public/confesiones/diego-dijo-que-si.html",
+      "bytes": 35027,
+      "sha256": "a76ce2bf49fe38dc05fdfd3e1ee7860cd4a67f8505b7f0256df592906f5fd859"
+    },
+    {
+      "path": "public/confesiones/diego-dijo-que-si.rsc",
+      "bytes": 9417,
+      "sha256": "0e4d9e42554bac486b0ef2aed544d67333e520378aaa903365be51d20a3c15f7"
+    },
+    {
+      "path": "public/confesiones/sofia-la-compra-responsable.html",
+      "bytes": 35147,
+      "sha256": "fdcec9a3ae904e39aae389a9993ad3b36395800479190d286cae9e8c4081588c"
+    },
+    {
+      "path": "public/confesiones/sofia-la-compra-responsable.rsc",
+      "bytes": 9507,
+      "sha256": "06a73367edf96bbc89a9e97147c0442056842f3b95fb46222403860ca6e7b35c"
+    },
+    {
+      "path": "public/confesiones/todas.html",
+      "bytes": 34471,
+      "sha256": "53e11df003088b28ab7f38317f9457c20e78425e91d17127f47e007c59ccba2e"
+    },
+    {
+      "path": "public/confesiones/todas.rsc",
+      "bytes": 9164,
+      "sha256": "530de2cfaa8d213ec9bccb92d36c828d4347fdefa43a9b3028db5ea8990797a1"
+    },
+    {
+      "path": "public/confesiones/valeria-la-ceo-de-la-quincena.html",
+      "bytes": 35171,
+      "sha256": "96c71beabd9feee1c6ac36c09e8649517ddb3da99fb20d0cb6a34c212a631bd6"
+    },
+    {
+      "path": "public/confesiones/valeria-la-ceo-de-la-quincena.rsc",
+      "bytes": 9525,
+      "sha256": "8b6c0c003aab6dd21029c41501c803569033e22bbf33b19a4099b51882f9b825"
+    },
+    {
+      "path": "public/fonts/Champ-Black.ttf",
+      "bytes": 75788,
+      "sha256": "1819917b45b61f84def46cbae2e10199036d460dd776e5497ed584f7d18641f8"
+    },
+    {
+      "path": "public/fonts/Poppins-Bold.ttf",
+      "bytes": 153944,
+      "sha256": "7219547ee25334cbac0fe4b3acf0bf631e48ebb622c71af038edaaa652c60875"
+    },
+    {
+      "path": "public/fonts/Poppins-Medium_1.ttf",
+      "bytes": 275044,
+      "sha256": "2f0180fd06a508c270696893eec11bb01fe595be9cb88cd2122bc33e638f6f6f"
+    },
+    {
+      "path": "public/fonts/Poppins-Regular.ttf",
+      "bytes": 158240,
+      "sha256": "707fdc5c8bab57a90061c6a8ed7b70d5ffb82fc810e994e79f90bace890c255a"
+    },
+    {
+      "path": "public/games/audio/apertura-telon-original.wav",
+      "bytes": 199590,
+      "sha256": "2df96c36be172ea81998f69ebae130c8de7916651dc6cbc487209fd841ffd656"
+    },
+    {
+      "path": "public/games/audio/applepay.mp3",
+      "bytes": 23240,
+      "sha256": "44425ec60c9694f7882f3d75ca166463c7ee4619284d32bfc878936878f90bdb"
+    },
+    {
+      "path": "public/games/audio/arranque.mp3",
+      "bytes": 68263,
+      "sha256": "936003edb50f6dcd4561eeab5bcf2797fc800ae1296c389ba1d74a2be99e3050"
+    },
+    {
+      "path": "public/games/audio/boton-click.wav",
+      "bytes": 145632,
+      "sha256": "fd20561c2448230ab4234af63f41751cf5140e41601961a1adc39c7ad21a95c9"
+    },
+    {
+      "path": "public/games/audio/boton-moneda.mp3",
+      "bytes": 22612,
+      "sha256": "d2261d3f6877ef7895b5084bca7f6f468e1fbb2d1895600391c7c0f440e7fda3"
+    },
+    {
+      "path": "public/games/audio/fl-studio-startup-sound.mp3",
+      "bytes": 31271,
+      "sha256": "9d6bb2e4561a135a71e48ddb1418101f775609b1fc5fcb159250d336a63716d0"
+    },
+    {
+      "path": "public/games/audio/food_G1U6tlb.mp3",
+      "bytes": 5660,
+      "sha256": "d4bd1bc12ddb7f041b6254659dce16ed8b13a3ab9726fcffa7d11b35f8a40abd"
+    },
+    {
+      "path": "public/games/audio/lagrimas-1.mp3",
+      "bytes": 45078,
+      "sha256": "beb920794f6c67cd947712ed2874be4cad6bddecb126538b6ca027303d97b9e3"
+    },
+    {
+      "path": "public/games/audio/lagrimas-2.mp3",
+      "bytes": 44354,
+      "sha256": "72a844656980e24cecd27536b5295f89531a0c05e3443a295be58948ebb4f8d0"
+    },
+    {
+      "path": "public/games/audio/lagrimas-3.mp3",
+      "bytes": 45919,
+      "sha256": "4316153bfb83ffd6f0f55a7c52b52488ceb1fb6240ccfca75a09aa395f93befa"
+    },
+    {
+      "path": "public/games/audio/lagrimas-oficial.mp3",
+      "bytes": 46540,
+      "sha256": "fae5595fb70018d5520b1713dd2c55f24b6510a6ea42b122af05341fa7de259d"
+    },
+    {
+      "path": "public/games/audio/minecraft-click-menu.mp3",
+      "bytes": 13871,
+      "sha256": "b7e9198a71a101a8906fb951e17751aa3d80c529e347d3c42e2aa83a4d5cee79"
+    },
+    {
+      "path": "public/games/audio/minecraft_hit_soundmp3converter.mp3",
+      "bytes": 17900,
+      "sha256": "75ec019b73e8d1dc96c2348b54069183742a84f3bcfdb60f8fc938361e3eec60"
+    },
+    {
+      "path": "public/games/audio/mouse-click.mp3",
+      "bytes": 6503,
+      "sha256": "5d90cdca8405e3db76f5153a71655a99ddfcd7a3335a0516ac82ebc536a374e3"
+    },
+    {
+      "path": "public/games/audio/msn-sound-audiotrimmer.mp3",
+      "bytes": 24935,
+      "sha256": "c390f0b9a3005e2cd44d10f2a65656a9cfd05e43aa9df114cb7c157bf2b19f24"
+    },
+    {
+      "path": "public/games/audio/ruleta.mp3",
+      "bytes": 217590,
+      "sha256": "8658282d03f96ac5f592690246608d60b0e55d0efcd645e2ab012da2c22069a0"
+    },
+    {
+      "path": "public/games/audio/turbo.mp3",
+      "bytes": 112985,
+      "sha256": "2f1addad0518d73ba41aa8e5ae28f12ffefe09461b82444c5f9b5df49e64332b"
+    },
+    {
+      "path": "public/games/audio/wrong_SriFgVc.mp3",
+      "bytes": 2107,
+      "sha256": "9f969d9ebfb1d1c5167e6fcefbbae32dd2f4a7a80952c44c87e2627730bba2bd"
+    },
+    {
+      "path": "public/games/competitor-blue.png",
+      "bytes": 410859,
+      "sha256": "04cd1eb5f62e6782aa02e01c47f9b4fbdfc3f46954c0b804320227acfc84b5ae"
+    },
+    {
+      "path": "public/games/competitor-lemonade.png",
+      "bytes": 324730,
+      "sha256": "96a2650759a458f9ca7aa20e5d8dd0914849785e6d43019bb7cbba858872298a"
+    },
+    {
+      "path": "public/games/cortina-verde-comic.webp",
+      "bytes": 72002,
+      "sha256": "cf1924fd475e9d10344ae2af3cd17aacf2d0a1cae27b48e767a8b9a4e068b67a"
+    },
+    {
+      "path": "public/gaming/podium/podium-green-stage-v1.png",
+      "bytes": 1035029,
+      "sha256": "7ddb3ed5d8a57d5e8241f7b5685ef4fe2a1c5cd95db6f42ebbc7a4522166ba1a"
+    },
+    {
+      "path": "public/gaming/podium/top-players-award-v1.png",
+      "bytes": 1570002,
+      "sha256": "bd9684ad0b4d7ce5b787d3ebc7e756e7696056f150df0e69d8da218b0211b2a2"
+    },
+    {
+      "path": "public/gracias-confesion.html",
+      "bytes": 36194,
+      "sha256": "74c4e2bfebb3d932d07862dfe87df4131dc5c79f0f160fddb7c0f43336b8f222"
+    },
+    {
+      "path": "public/gracias-confesion.rsc",
+      "bytes": 9581,
+      "sha256": "9aa3f782df19989400f10de2b179fe638431c3fd878421c7edba5bcc639e37bb"
+    },
+    {
+      "path": "public/index.html",
+      "bytes": 67737,
+      "sha256": "0d6eaa141f0f859d62fc94d2913f253006fc0414b8d3aa2cb7c58d06df09b464"
+    },
+    {
+      "path": "public/index.rsc",
+      "bytes": 6790,
+      "sha256": "4cddca11782d9c9ab5c2917e9774f5a6313df7e3f0d8e44e86b1fd456e1625f7"
+    },
+    {
+      "path": "public/juega.html",
+      "bytes": 42547,
+      "sha256": "47440e66928bba3fb3ebaca3997380d200d552d185390ce006f9bb222cacff7e"
+    },
+    {
+      "path": "public/juega.rsc",
+      "bytes": 7053,
+      "sha256": "5aebc2775410582ba2351787642fc691303a5ae71e86483a9fc0bb5bf7812dab"
+    },
+    {
+      "path": "public/lif-logo-traced.svg",
+      "bytes": 5652,
+      "sha256": "bbae54df7069f3c0b84f92ae4572b1973551d339237ac5f049ca5e95ba7ef078"
+    },
+    {
+      "path": "public/lif-logo.png",
+      "bytes": 17535,
+      "sha256": "4b2c8b992a3a058253e62841e1340906c38e67d5997ccd6b1231e66ab76b9643"
+    },
+    {
+      "path": "public/nutrition/arandanos.pdf",
+      "bytes": 89970,
+      "sha256": "746fb6a96e54bfebb37b594083bf9cd906be7dc35153dea53381b3b85a2619b0"
+    },
+    {
+      "path": "public/nutrition/frutas-mixtas.pdf",
+      "bytes": 3206644,
+      "sha256": "d7e53349b81b131fb074ede97cc0b7c986afc855d74c1bda17d4663d18a5921c"
+    },
+    {
+      "path": "public/nutrition/frutos-rojos.pdf",
+      "bytes": 90719,
+      "sha256": "357dae34505523f8ddbdfee56d746b1c892ddebb11a4ea119fdf032443782da7"
+    },
+    {
+      "path": "public/nutrition/hierbabuena.pdf",
+      "bytes": 89634,
+      "sha256": "e4a0b1b3b176f7752a18e42ec50e44efd113b003416c78dd39ba34b03bb0e544"
+    },
+    {
+      "path": "public/nutrition/kiwi.pdf",
+      "bytes": 3442658,
+      "sha256": "0a27c4c4a4147d22160138374549ca541241aaa886694b3b464538304696711c"
+    },
+    {
+      "path": "public/nutrition/limon.pdf",
+      "bytes": 3486001,
+      "sha256": "11404a9642ffbbf3727d996618846f784040368b7acf19c708d3ceeab93a1dea"
+    },
+    {
+      "path": "public/nutrition/manzana-canela.pdf",
+      "bytes": 3531013,
+      "sha256": "a36fa8b3b4c4599be53fd102fb2bb9a6a26001c54c54262b1c406fa1f58ebd60"
+    },
+    {
+      "path": "public/nutrition/melocoton.pdf",
+      "bytes": 3497353,
+      "sha256": "c137a63187e54aca02327d27df2713f9246c4622c9ef96878b369398a57da45c"
+    },
+    {
+      "path": "public/nutrition/naranja-mandarina.pdf",
+      "bytes": 3343127,
+      "sha256": "10e799f974d39da177d75e3ea7d5b56235bd527959b8ff410b7e5939fd370872"
+    },
+    {
+      "path": "public/nutrition/pitahaya.pdf",
+      "bytes": 2352316,
+      "sha256": "263695a25197b5ff2636459aff3559783ab23be733bac2d415ffbff892daec62"
+    },
+    {
+      "path": "public/nutrition/te-blanco-fresa.pdf",
+      "bytes": 2073159,
+      "sha256": "1e203b8faaa326f4b29fa4759cb9b888f9b5c4f08fa9c7a178ea7ba8ab3a141b"
+    },
+    {
+      "path": "public/nutrition/te-frio-manzana.pdf",
+      "bytes": 3564894,
+      "sha256": "6799936b20988d3e62068ce12481c8223c26fff148526bc577d4a69fb4b9e918"
+    },
+    {
+      "path": "public/nutrition/te-verde-maracuya.pdf",
+      "bytes": 2123832,
+      "sha256": "5bae8988a9c6107a70645d07ac465863dfec7ff7d01f097d2301e915aaf5fa15"
+    },
+    {
+      "path": "public/og.png",
+      "bytes": 1227862,
+      "sha256": "43e8f62ef3917229b6528377023cb3163d57838d7ab114081b21db7b7d3c8bc3"
+    },
+    {
+      "path": "public/products/arandanos.png",
+      "bytes": 501400,
+      "sha256": "694d0a8c3c18e290f558220ca2fe930fce4e94abc1821569b4a490307b3cbbc9"
+    },
+    {
+      "path": "public/products/backs/arandanos.webp",
+      "bytes": 1463116,
+      "sha256": "53a62de5672da88adaedeccc605b1a6c4b5c3eedcc84687a1de0cb062fcf2e48"
+    },
+    {
+      "path": "public/products/backs/frutas-mixtas.webp",
+      "bytes": 1112190,
+      "sha256": "24bf9d7f67d5013cb851624238b6bb3176a3c1be14a82dad870d19e956a5c525"
+    },
+    {
+      "path": "public/products/backs/frutos-rojos.webp",
+      "bytes": 1380398,
+      "sha256": "d066f21e1f6bcb06740704c644db611da63bb614d40ce63eab79389e714f0392"
+    },
+    {
+      "path": "public/products/backs/hierbabuena.webp",
+      "bytes": 1364462,
+      "sha256": "5e2a6bc747e18e5aaf7f6619a2b68c54713f4dc2faeda963ddec7346fb5af66b"
+    },
+    {
+      "path": "public/products/backs/kiwi.webp",
+      "bytes": 1129338,
+      "sha256": "2f69daf493d6b4e8281c467110993f43251766d72b45d304592b91a532aa3480"
+    },
+    {
+      "path": "public/products/backs/limon.webp",
+      "bytes": 1087386,
+      "sha256": "dbb7c2bf601c1c6914220787102e8910acd17f22b75b9136bb67f5bd688dfbe0"
+    },
+    {
+      "path": "public/products/backs/manzana-canela.webp",
+      "bytes": 1154766,
+      "sha256": "23ea1f0dcdd3fb41693f4b468a53afbc4ee0524fc86293917f8e6d1141f2da24"
+    },
+    {
+      "path": "public/products/backs/melocoton.webp",
+      "bytes": 1182134,
+      "sha256": "a0d0bd2beddd10738547d381d2f0d5d4a0bfc7eb2a82bdd01038d28dae7f2d58"
+    },
+    {
+      "path": "public/products/backs/naranja-mandarina.webp",
+      "bytes": 1210900,
+      "sha256": "ebe7e332b20e4a5b0773a09b93a1269d916db4510cc38c938d8940a8d1279168"
+    },
+    {
+      "path": "public/products/backs/pitahaya.webp",
+      "bytes": 1316030,
+      "sha256": "c09a811a9afbf3ed026bafd5b039e307e1d5dc53056af5d3b0f156435653280e"
+    },
+    {
+      "path": "public/products/backs/te-blanco-fresa.webp",
+      "bytes": 1264246,
+      "sha256": "0c300086dc5147b463f9d4cfcc5a1033ca75b7700a4791f4c7d73e4b7a360488"
+    },
+    {
+      "path": "public/products/backs/te-frio-manzana.webp",
+      "bytes": 1334078,
+      "sha256": "4117d824590815746773bb7fcab06469ee89f11060fc17877f7b893b9a7bf940"
+    },
+    {
+      "path": "public/products/backs/te-verde-maracuya.webp",
+      "bytes": 1354448,
+      "sha256": "23785ae4d313a0da9a29eafe93f0c6c580b82b10d9712814624b7f89f9eeaf64"
+    },
+    {
+      "path": "public/products/frutas-mixtas.png",
+      "bytes": 466153,
+      "sha256": "99ebfb9de1cd4a9ee15e01f5ee8595f376b84f03dec01309226d16cf0418cfaf"
+    },
+    {
+      "path": "public/products/frutos-rojos.png",
+      "bytes": 501642,
+      "sha256": "1e61ea0da54a9ceab65320bb56e2b48208e71646a888a72b1aa1ea621ca24dc1"
+    },
+    {
+      "path": "public/products/hierbabuena.png",
+      "bytes": 555492,
+      "sha256": "06053daae9d4481f1a03294039a9cc71e19fa777f4fbbb47fbea7d6422a2c837"
+    },
+    {
+      "path": "public/products/kiwi.png",
+      "bytes": 550780,
+      "sha256": "9546709f5488d19b7f22801bf083e771977b61f88f357613c1cfc7af21a2d5bf"
+    },
+    {
+      "path": "public/products/limon.png",
+      "bytes": 540398,
+      "sha256": "2273522bf5d2718c5b2ee741c63854edeecd51b3e1def3b18efa2ced48d7862d"
+    },
+    {
+      "path": "public/products/manzana-canela.png",
+      "bytes": 550037,
+      "sha256": "c5fa8d8d311b5873d8081a1d858d8949073dcc8f7376e8e8cbba1ef4d9184ab3"
+    },
+    {
+      "path": "public/products/melocoton.png",
+      "bytes": 555811,
+      "sha256": "dcd28871e3af98d2b6039623d8f36cedb8d9a82e6fa95799c5966e564dde9987"
+    },
+    {
+      "path": "public/products/naranja-mandarina.png",
+      "bytes": 521230,
+      "sha256": "781a13257323a593bcd5aa2f7c9dc42fa82d0b1ab0c94235da87d17bd57f1805"
+    },
+    {
+      "path": "public/products/pitahaya.png",
+      "bytes": 553119,
+      "sha256": "70742c982efcc9009a72060547f79c194f350e2ccde95babc9dd796acbb56e34"
+    },
+    {
+      "path": "public/products/te-blanco-fresa.webp",
+      "bytes": 210048,
+      "sha256": "f468f10d8f0dbaf7739b0f6abda177d1bc3925c383bac2afb32e33d0180873ca"
+    },
+    {
+      "path": "public/products/te-frio-manzana.webp",
+      "bytes": 233734,
+      "sha256": "44804071270327087bf1c6b96a8db779c95f44449ddc98b0eaa713ae30e34424"
+    },
+    {
+      "path": "public/products/te-verde-maracuya.webp",
+      "bytes": 220272,
+      "sha256": "3de98df88b0045c859360a15a85ab92a520427aee8006020c3868397d0baeb0b"
+    },
+    {
+      "path": "public/recetario.html",
+      "bytes": 37455,
+      "sha256": "dc6dbb0f26b7c7d4b5f60ee2d4a8d34280f95cb4336a7e1424d2614df81f4165"
+    },
+    {
+      "path": "public/recetario.rsc",
+      "bytes": 7782,
+      "sha256": "6860d185935fd5949e0532d75b592c4cf800c77074beff5ba6244209b89904fa"
+    },
+    {
+      "path": "public/recipes/frozen-yogurt-frutas-mixtas-v1.webp",
+      "bytes": 1411722,
+      "sha256": "32ba6315fb00be6f7010ed20c3b12123b6557629b006f174d6cb6498ecd6244e"
+    },
+    {
+      "path": "public/recipes/frozen-yogurt-frutas-mixtas.webp",
+      "bytes": 1488638,
+      "sha256": "725120d9b6e20824e1300cafedb97868e3f1db1aa9a35c111f490b66cfb4e016"
+    },
+    {
+      "path": "public/recipes/margarita-frozen-hierbabuena-v1.webp",
+      "bytes": 1598360,
+      "sha256": "bd6223dffaa42037426da2eb4f4a62b88ae37f76e9dc67e2d4e7bf67b976085a"
+    },
+    {
+      "path": "public/recipes/margarita-frozen-hierbabuena.webp",
+      "bytes": 1653682,
+      "sha256": "59b1e4b67e43e6eb786952c3cc02d97666adaacad656c2f1fe4038b70466c923"
+    },
+    {
+      "path": "public/recipes/pdf/frozen-yogurt-frutas-mixtas.pdf",
+      "bytes": 2880761,
+      "sha256": "5a010a08508afe87097e7e6b3e431b481e39b31f8db2366bb8c62f84cffec215"
+    },
+    {
+      "path": "public/recipes/pdf/margarita-frozen-hierbabuena.pdf",
+      "bytes": 3202165,
+      "sha256": "968820fc260f8c56a7977f9ca070cf312cc87be02e15b2dd8b7e75d78e6039b1"
+    },
+    {
+      "path": "public/recipes/pdf/sorbete-limonada-pitahaya.pdf",
+      "bytes": 2735971,
+      "sha256": "57de7f45cabd7ec376cc7242fc1e8e7ca78636c87c4a586844b0ac44948457d4"
+    },
+    {
+      "path": "public/recipes/pdf/vasitos-gelatina-mosaico.pdf",
+      "bytes": 2714100,
+      "sha256": "1b86415d5253b2e155891752cbb13eec7f7804d4f2d628d5f6c688ede6ffd035"
+    },
+    {
+      "path": "public/recipes/sorbete-limonada-pitahaya-v1.webp",
+      "bytes": 1283266,
+      "sha256": "c1ae9ac8cd24f354950111654b250c0f8829829e69578497ebd40cff1070d859"
+    },
+    {
+      "path": "public/recipes/sorbete-limonada-pitahaya.webp",
+      "bytes": 1426580,
+      "sha256": "342928f52299eb3e3aa18ecabd4eeeee0d397dde6b87d449fae41eef71a99db8"
+    },
+    {
+      "path": "public/recipes/vasitos-gelatina-mosaico-v1.webp",
+      "bytes": 1351068,
+      "sha256": "007afacd540448f4793b9aeff494d16e64f0cac84ad31dc12c4cde3d5c9844bd"
+    },
+    {
+      "path": "public/recipes/vasitos-gelatina-mosaico.webp",
+      "bytes": 1531014,
+      "sha256": "17090d0e9077b341073bcee0378d17b6a50bcc0098d8c6365f28fdef56a432c2"
+    },
+    {
+      "path": "public/robots.txt",
+      "bytes": 59,
+      "sha256": "c110eefa0a1c14a89d9d52b36e02c194e1d162677f6768b66e6d9665b94afd14"
+    },
+    {
+      "path": "public/sabores.html",
+      "bytes": 45672,
+      "sha256": "3a43d6b011e9defcf25d2d3fbe5b5761cb142e7bdb317ae72c8d7529058aaecb"
+    },
+    {
+      "path": "public/sabores.rsc",
+      "bytes": 7960,
+      "sha256": "241c8d55705b1d4e58f93981b55b69991a2a5d25115f9509a9ce78ef88e30631"
+    },
+    {
+      "path": "public/sitemap.xml",
+      "bytes": 1270,
+      "sha256": "e84f71fc0cdcef34413defe90e65074696dda7b80467459ed778f68fee0c30af"
+    },
+    {
+      "path": "public/videos/interstitial/lif-interstitial-gato.mp4",
+      "bytes": 6644393,
+      "sha256": "f0c98688bd8dfa3e6b6198216d56de6bc043a3fcf991d886cd9305b582dc92f2"
+    },
+    {
+      "path": "public/videos/interstitial/lif-interstitial-lego.mp4",
+      "bytes": 7378317,
+      "sha256": "63df8e9d7c6cf5b2cb77a428486e1985ecaa1c0a0664fbc1e30d75cab49a4c74"
+    },
+    {
+      "path": "public/videos/interstitial/lif-interstitial-plantas.mp4",
+      "bytes": 7487056,
+      "sha256": "e184670f51af30853e4dec2b73b54ac21e7cfff1d6a1994c70b284e9763722de"
+    },
+    {
+      "path": "public/vinext-client-entry-manifest.json",
+      "bytes": 65,
+      "sha256": "870786aa6d9b1020ffe81ce3e34beabaeb0518156c006a91f0a50ac5760a5061"
+    },
+    {
+      "path": "verificar-paquete.mjs",
+      "bytes": 1824,
+      "sha256": "0a0d62b3864d1d43aa97b0af971796445eb180616506c1cbe4cc36dd577b0a76"
+    }
+  ]
+}

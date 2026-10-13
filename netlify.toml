@@ -1,0 +1,51 @@
+[build]
+  command = ""
+  publish = "deploy/public"
+
+[functions]
+  directory = "deploy/functions"
+  node_bundler = "esbuild"
+
+[functions."lif-sync"]
+  schedule = "*/5 * * * *"
+
+[[redirects]]
+  from = "/juega"
+  to = "/.netlify/functions/lif-ranking-page"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/juega/"
+  to = "/.netlify/functions/lif-ranking-page"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/juega.html"
+  to = "/.netlify/functions/lif-ranking-page"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/juega.rsc"
+  to = "/.netlify/functions/lif-ranking-page?format=rsc"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/api/games/*"
+  to = "/.netlify/functions/lif-api/games/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/api/contact"
+  to = "/.netlify/functions/lif-api/contact"
+  status = 200
+  force = true
+
+[[headers]]
+  for = "/api/*"
+  [headers.values]
+    Cache-Control = "no-store"

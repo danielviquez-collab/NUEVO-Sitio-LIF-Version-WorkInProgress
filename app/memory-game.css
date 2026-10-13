@@ -1,0 +1,562 @@
+.game-live-memory_lif {
+  background: #f0f7ec;
+}
+.game-live-memory_lif .game-board-wrap {
+  overflow: visible;
+}
+.game-live-memory_lif .game-control-deck {
+  justify-content: center;
+}
+.game-live-memory_lif .game-spotlight {
+  background: radial-gradient(
+    ellipse at center,
+    #fffbcfee 0%,
+    #fffdf5db 48%,
+    #f0f7eceb 82%
+  );
+  backdrop-filter: none;
+  overflow: hidden;
+}
+.game-live-memory_lif .game-spotlight img {
+  width: auto;
+  height: min(40cqh, 260px);
+  max-width: 55%;
+  max-height: 44%;
+  position: relative;
+  z-index: 1;
+}
+.game-live-memory_lif .game-spotlight > :not(.memory-hero-particles) {
+  position: relative;
+  z-index: 1;
+}
+.memory-hero-particles {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+.memory-hero-particles i {
+  position: absolute;
+  top: 25%;
+  left: 30%;
+  width: 6px;
+  height: 6px;
+  border: 1px solid #fff;
+  background: #b0d700;
+  transform: rotate(45deg);
+  animation: memory-hero-spark 1.75s ease-out both;
+}
+.memory-hero-particles i:nth-child(2) {
+  top: 35%;
+  left: 72%;
+  animation-delay: 80ms;
+}
+.memory-hero-particles i:nth-child(3) {
+  top: 57%;
+  left: 24%;
+  animation-delay: 130ms;
+  background: #ffdf21;
+}
+.memory-hero-particles i:nth-child(4) {
+  top: 70%;
+  left: 66%;
+  animation-delay: 170ms;
+}
+.memory-hero-particles i:nth-child(5) {
+  top: 65%;
+  left: 36%;
+  animation-delay: 70ms;
+  background: #ffdf21;
+}
+.memory-hero-particles i:nth-child(6) {
+  top: 24%;
+  left: 61%;
+  animation-delay: 110ms;
+}
+.memory-hero-particles i:nth-child(7) {
+  top: 44%;
+  left: 80%;
+  animation-delay: 190ms;
+  background: #ffdf21;
+}
+.memory-hero-particles i:nth-child(8) {
+  top: 42%;
+  left: 18%;
+  animation-delay: 150ms;
+}
+@keyframes memory-hero-spark {
+  0% {
+    opacity: 0;
+    transform: translateY(10px) rotate(45deg) scale(0.5);
+  }
+  20% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-35px) rotate(150deg) scale(0.5);
+  }
+}
+.memory-surface {
+  width: min(100cqw, 128cqh);
+  height: 100cqh;
+  max-width: 900px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.memory-error-streak {
+  flex: 0 0 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  min-height: 28px;
+  font-size: 14px;
+  line-height: 1.3;
+  color: var(--ink);
+}
+.memory-error-streak strong {
+  min-width: 44px;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+.memory-error-streak[data-warning='true'],
+.memory-float-layer span[data-penalty='true'] {
+  color: #ba2440;
+}
+.memory-notice {
+  flex: 0 0 20px;
+  min-height: 20px;
+  color: #103b23;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 800;
+}
+.memory-grid {
+  flex: 1;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-rows: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+}
+.memory-card {
+  position: relative;
+  min-width: 0;
+  min-height: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  perspective: 800px;
+  touch-action: none;
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
+  transition: transform 160ms ease;
+}
+.memory-card:disabled {
+  cursor: default;
+  opacity: 1;
+}
+.memory-card:focus-visible {
+  outline: 3px solid #3500fb;
+  outline-offset: 3px;
+  border-radius: 8px;
+}
+.memory-card-body {
+  display: block;
+  position: absolute;
+  inset: 0;
+  transform-style: preserve-3d;
+  transition: transform 360ms cubic-bezier(0.2, 0.7, 0.18, 1.05);
+  transform: rotateY(0);
+}
+.memory-card[data-front='true'] .memory-card-body {
+  transform: rotateY(180deg);
+}
+.memory-face {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border: 2px solid #123a22;
+  border-radius: 8px;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  box-shadow:
+    0 3px 0 #113a24,
+    0 5px 9px #133f2425;
+}
+.memory-back {
+  background: linear-gradient(130deg, #14ad45 0%, #07923a 45%, #08742f 100%);
+  box-shadow:
+    inset 0 2px 0 #d9ffa892,
+    inset 0 -3px 0 #03471b80,
+    0 3px 0 #113a24,
+    0 5px 9px #133f2425;
+}
+.memory-back::before {
+  content: '';
+  position: absolute;
+  inset: 6px;
+  border: 1px solid #e5ffcf78;
+  border-radius: 4px;
+  background: repeating-linear-gradient(
+    135deg,
+    transparent 0 9px,
+    #ffffff09 9px 10px
+  );
+}
+.memory-back::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    115deg,
+    transparent 30%,
+    #fff3 46%,
+    transparent 57%
+  );
+  transform: translateX(-75%);
+  transition: transform 350ms ease;
+}
+.memory-back img {
+  width: 72%;
+  max-height: 63%;
+  object-fit: contain;
+  position: relative;
+  filter: drop-shadow(0 2px 0 #003e2480);
+}
+.memory-front {
+  background: #fff;
+  transform: rotateY(180deg);
+  border-color: #56805d;
+}
+.memory-front img {
+  width: 92%;
+  height: 94%;
+  object-fit: contain;
+  filter: drop-shadow(0 3px 3px #103a231c);
+}
+.memory-card[data-phase='matched'] .memory-front {
+  border-color: #009b3c;
+  box-shadow:
+    inset 0 0 0 3px #a9da00,
+    0 0 15px #9ed60066;
+}
+.memory-card[data-phase='flipping'] {
+  transform: translateY(-3px);
+}
+.memory-front::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    115deg,
+    transparent 35%,
+    #ffffffb0 48%,
+    transparent 62%
+  );
+  opacity: 0;
+}
+.memory-card[data-phase='flipping'] .memory-front::after {
+  animation: memory-foil 500ms ease-out;
+}
+.memory-card[data-phase='preview'] {
+  animation: memory-arrive 560ms ease-out both;
+  animation-delay: calc(var(--card-index, 0) * 12ms);
+}
+.memory-card[data-phase='preview'] .memory-card-body {
+  animation: memory-deal 560ms cubic-bezier(0.2, 0.7, 0.18, 1.05) both;
+  animation-delay: calc(var(--card-index, 0) * 12ms);
+}
+@keyframes memory-deal {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(180deg);
+  }
+}
+@keyframes memory-arrive {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  30% {
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes memory-foil {
+  from {
+    opacity: 0;
+    transform: translateX(-75%);
+  }
+  40% {
+    opacity: 0.65;
+  }
+  to {
+    opacity: 0;
+    transform: translateX(75%);
+  }
+}
+.memory-card[data-phase='mismatch'] .memory-front {
+  background: #f8f7f3;
+  border-color: #8b9d89;
+}
+.memory-card[data-phase='exiting'] {
+  animation: memory-exit 420ms cubic-bezier(0.4, 0, 0.3, 1) both;
+}
+@media (max-width: 700px) and (orientation: portrait) {
+  .memory-surface {
+    width: min(100cqw, 82cqh);
+    height: min(100cqh, 146cqw);
+  }
+  .memory-grid {
+    gap: 7px;
+  }
+  .memory-face {
+    border-width: 1.5px;
+  }
+}
+.memory-card[data-radar='true'] .memory-face {
+  outline: 3px solid #ffdf21;
+  outline-offset: 2px;
+}
+.memory-surface[data-spotlight='true'] .memory-grid {
+  opacity: 0.34;
+  transition: opacity 180ms ease;
+}
+.memory-float-layer {
+  position: absolute;
+  inset: 25% 0 auto;
+  pointer-events: none;
+  text-align: center;
+  z-index: 4;
+}
+.memory-float-layer span {
+  display: block;
+  color: #fff;
+  text-shadow:
+    0 2px 0 #143c24,
+    1px 0 0 #143c24,
+    -1px 0 0 #143c24;
+  font-family: var(--font-display);
+  font-size: 30px;
+  animation: memory-points 850ms ease-out both;
+}
+.memory-sparkles {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+.memory-sparkles i {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background: #ffdf21;
+  border: 1px solid #fff;
+  left: 15%;
+  top: 20%;
+  animation: memory-spark 450ms ease-out both;
+}
+.memory-sparkles i:nth-child(2) {
+  left: 80%;
+  top: 25%;
+}
+.memory-sparkles i:nth-child(3) {
+  left: 25%;
+  top: 85%;
+}
+.memory-sparkles i:nth-child(4) {
+  left: 85%;
+  top: 80%;
+}
+.game-memory-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  min-height: 52px;
+}
+.memory-peek-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 8px 15px;
+  border: 2px solid #163d24;
+  border-radius: 7px;
+  background: #fff;
+  color: #163d24;
+  box-shadow: 0 3px 0 #163d24;
+  font-weight: 800;
+}
+.memory-peek-button:disabled {
+  color: #738071;
+  box-shadow: none;
+  border-color: #b8c7b1;
+}
+.memory-peek-button svg {
+  width: 20px;
+  height: 20px;
+}
+.memory-x2 {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #3500fb;
+  font-size: 14px;
+  font-weight: 800;
+}
+.game-attempts-label {
+  display: block;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #49624d;
+  font-size: 12px;
+}
+@media (hover: hover) and (pointer: fine) {
+  .memory-card:not(:disabled):hover {
+    transform: translateY(-3px) rotate(-1deg);
+  }
+  .memory-card:not(:disabled):hover .memory-back::after {
+    transform: translateX(60%);
+  }
+}
+.memory-card:not(:disabled):active {
+  transform: translateY(1px) scale(0.97);
+}
+@keyframes memory-exit {
+  to {
+    opacity: 0;
+    transform: translateY(-8px) scale(0.9);
+  }
+}
+@keyframes memory-enter {
+  from {
+    opacity: 0;
+    transform: translateY(7px) rotateY(-12deg) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) rotateY(0) scale(1);
+  }
+}
+@keyframes memory-points {
+  0% {
+    opacity: 0;
+    transform: translateY(8px) scale(0.9);
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-45px);
+  }
+}
+@keyframes memory-spark {
+  to {
+    opacity: 0;
+    transform: translateY(-14px) scale(0.4);
+  }
+}
+@media (max-width: 600px) {
+  .memory-grid {
+    gap: 7px;
+  }
+  .memory-face {
+    border-radius: 6px;
+  }
+  .game-live-memory_lif .game-control-deck {
+    min-height: 65px;
+  }
+  .game-live-memory_lif .game-hud small {
+    font-size: 9px;
+  }
+  .game-live-memory_lif .game-hud strong {
+    font-size: 19px;
+  }
+}
+@media (orientation: landscape) and (max-height: 600px) {
+  .memory-error-streak {
+    flex-basis: 24px;
+    min-height: 24px;
+    font-size: 12px;
+  }
+  .memory-surface {
+    width: min(100cqw, 145cqh);
+    height: 100cqh;
+    max-width: 620px;
+    gap: 2px;
+  }
+  .memory-grid {
+    gap: 5px;
+  }
+  .memory-notice {
+    flex-basis: 16px;
+    min-height: 16px;
+    font-size: 10px;
+  }
+  .game-live-memory_lif .game-control-deck {
+    min-height: 44px;
+  }
+  .game-memory-controls {
+    min-height: 40px;
+  }
+  .memory-peek-button {
+    min-height: 36px;
+    padding: 4px 10px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .memory-card,
+  .memory-card-body {
+    transition-duration: 1ms;
+  }
+  .memory-card[data-phase='exiting'],
+  .memory-card[data-phase='preview'],
+  .memory-card[data-phase='preview'] .memory-card-body,
+  .memory-front::after,
+  .memory-float-layer span,
+  .memory-sparkles i,
+  .memory-hero-particles i {
+    animation-duration: 1ms;
+    animation-delay: 0ms;
+  }
+}
+.memory-preview {
+  background: #e7f0da;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+  padding: 22px 18%;
+  aspect-ratio: 600 / 280;
+}
+.memory-preview-card {
+  position: relative;
+  perspective: 600px;
+}
+.memory-preview-card[data-front='true'] .memory-card-body {
+  transform: rotateY(180deg);
+}
+.memory-preview-card[data-match='true'] {
+  opacity: 0.6;
+  transition: opacity 300ms ease;
+}
+@media (max-width: 1100px) {
+  .game-selection .memory-preview {
+    padding: 12px 8%;
+    gap: 8px;
+  }
+}

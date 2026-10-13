@@ -1,0 +1,151 @@
+.confession-hero { grid-template-columns: minmax(0, .85fr) minmax(0, 1.3fr) minmax(0, .7fr); gap: 30px; padding: 48px 4%; }
+.confession-hero h1 { font-size: 58px; }
+.confession-hero-copy > p:not(.eyebrow) { font-size: 16px; }
+.confession-video { position: relative; width: 100%; aspect-ratio: 16 / 9; background: var(--ink); align-self: center; }
+.confession-video video { display: block; width: 100%; height: 100%; object-fit: contain; }
+.video-controls { position: absolute; right: 10px; bottom: 10px; display: flex; gap: 8px; }
+.video-controls button { display: grid; place-items: center; width: 44px; height: 44px; padding: 0; border: 1px solid rgb(255 255 255 / 65%); border-radius: 50%; background: rgb(16 56 31 / 88%); color: #fff; cursor: pointer; }
+.video-controls button:hover, .video-controls button:focus-visible { background: var(--yellow); color: var(--ink); }
+.video-controls svg { width: 21px; height: 21px; }
+.video-error { position: absolute; inset: 0; display: grid; place-content: center; margin: 0; padding: 16px; text-align: center; }
+.confession-hero .confession-prompt-art { display: flex; flex-direction: column; justify-content: space-around; gap: 28px; min-height: 350px; }
+.confession-hero .confession-prompt-art > * { position: static; max-width: 100%; padding: 16px; font-size: 18px; }
+.confession-open { min-height: 54px; padding: 12px 22px; font-size: 16px; }
+.confession-open svg { width: 23px; height: 23px; }
+.confession-editorial { grid-template-columns: minmax(0, 1fr) minmax(0, .75fr); gap: 80px; padding-inline: 24px; }
+.editorial-heading > p:not(.eyebrow) { font-size: 16px; line-height: 1.65; margin: 22px 0; }
+.editorial-question { margin-top: 36px; padding-left: 24px; border-left: 5px solid var(--orange); }
+.editorial-question p { max-width: 26ch; font-family: var(--font-display); font-size: 26px; line-height: 1.2; }
+.confession-reel-sticker { width: min(100%, 330px, 42svh); justify-self: center; margin: 10px 0; padding: 10px; border: 2px solid var(--ink); border-radius: 8px; background: white; box-shadow: 10px 12px 0 var(--yellow), 13px 15px 0 var(--ink); transform: rotate(2deg); animation: lif-reel-sticker 5s ease-in-out infinite; }
+.confession-reel-sticker:has([data-playing='true']), .confession-reel-sticker:focus-within, .confession-reel-sticker:hover { animation-play-state: paused; }
+.confession-reel-sticker figcaption { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 7px 2px 14px; color: var(--green); font-family: var(--font-display); font-size: 24px; }
+.confession-reel-sticker figcaption span { max-width: 14ch; font-family: var(--font-body); font-size: 12px; font-weight: 700; line-height: 1.25; text-align: right; color: var(--ink); }
+.confession-video-reel { aspect-ratio: 9 / 16; }
+.confession-community { background: var(--lime); padding: 64px max(24px, calc((100% - 1240px) / 2)); scroll-margin-top: 100px; }
+.community-heading { margin-bottom: 38px; }
+.community-heading .eyebrow { color: var(--ink); }
+.community-heading h1, .community-heading h2 { font-family: var(--font-display); font-size: 52px; line-height: 1.05; margin: 12px 0; }
+.community-heading em { font-style: normal; color: var(--green); }
+.community-back { margin-bottom: 30px; }
+.community-rows { display: grid; gap: 36px; }
+.community-row { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: stretch; gap: 36px; }
+.community-row[hidden] { display: none; }
+.community-video-sticker, .community-story { min-width: 0; margin: 0; padding: 28px; border: 2px solid var(--ink); border-radius: 8px; box-shadow: 5px 6px 0 #10381f; }
+.community-video-sticker { display: flex; flex-direction: column; align-items: center; gap: 22px; background: white; }
+.community-video-sticker figcaption { width: 100%; margin: 0; }
+.community-video-title { display: block; margin-top: 14px; font-family: var(--font-display); font-size: 28px; line-height: 1.12; overflow-wrap: break-word; }
+.community-media { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 225px) minmax(0, 1fr); align-items: center; gap: 14px; width: 100%; margin-top: auto; }
+.community-video-sticker .confession-video { grid-column: 2; width: 100%; overflow: hidden; }
+.community-credit { grid-column: 3; display: grid; gap: 6px; margin: 0; font-size: 13px; line-height: 1.6; overflow-wrap: anywhere; }
+.community-credit span:first-child { font-weight: 700; }
+.community-credit span:last-child { color: var(--green); }
+.community-overflow { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 36px; margin-top: 36px; }
+.community-format { display: flex; align-items: center; gap: 9px; margin: 0; color: var(--green); font-family: var(--font-body); font-size: 12px; font-weight: 700; line-height: 1.5; text-transform: uppercase; }
+.community-format svg { width: 20px; height: 20px; flex: 0 0 20px; }
+.community-story { display: flex; flex-direction: column; align-items: flex-start; background: var(--paper); border-top: 8px solid var(--orange); }
+.community-story > .community-format { margin: 0 0 28px; }
+.community-row:nth-child(even) .community-video-sticker { grid-column: 2; grid-row: 1; }
+.community-row:nth-child(even) .community-story { grid-column: 1; grid-row: 1; }
+.community-story .community-byline { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px; font-weight: 800; font-size: 18px; color: var(--ink); margin: 0 0 18px; }
+.community-byline span { font-weight: 400; margin-left: 10px; font-size: 14px; }
+.community-story h3 { font-family: var(--font-display); font-size: 30px; line-height: 1.15; margin: 0 0 22px; }
+.community-story-preview { position: relative; width: 100%; flex: 1 1 0; min-height: 168px; contain: size; overflow: hidden; margin: 0 0 12px; font-size: 16px; line-height: 1.75; }
+.story-preview-copy { display: flow-root; }
+.story-preview-copy p { margin: 0 0 8px; }
+.story-preview-copy p:last-child { margin-bottom: 0; }
+.story-preview-measure { position: absolute; top: 0; left: 0; width: 100%; visibility: hidden; pointer-events: none; }
+.community-story .text-link { font-size: 16px; margin-top: 0; min-height: 44px; flex-shrink: 0; }
+.story-alias-tag { display: block; font-family: var(--font-body); font-size: 14px; font-weight: 600; line-height: 1.4; margin-bottom: 8px; }
+.community-more { display: flex; width: fit-content; max-width: 100%; margin: 36px auto 0; font-size: 18px; }
+.community-play { position: absolute; inset: 0; margin: auto; display: grid; place-items: center; width: 62px; height: 62px; background: var(--yellow); color: var(--ink); border: 3px solid white; border-radius: 50%; box-shadow: 0 2px 12px #0005; cursor: pointer; }
+.community-play svg { width: 27px; height: 27px; margin-left: 3px; }
+.community-play:hover { background: white; }
+.confession-video-community .video-controls { right: 8px; bottom: 18px; gap: 6px; }
+.confession-video-community .video-controls button { width: 44px; height: 44px; }
+.community-seek { position: absolute; bottom: 0; left: 3%; width: 94%; height: 18px; margin: 0; accent-color: var(--yellow); cursor: pointer; }
+.confession-reading { padding: 48px 24px 80px; max-width: 810px; margin: 0 auto; }
+.confession-reading header { margin: 50px 0 36px; padding-bottom: 30px; border-bottom: 5px solid var(--lime); }
+.confession-reading h1 { font-family: var(--font-display); font-size: 48px; line-height: 1.08; margin: 14px 0; }
+.confession-reading article { font-size: 18px; line-height: 1.85; }
+.confession-reading article p { margin: 0 0 22px; }
+.confession-reading article p:first-child { font-weight: 700; }
+.confession-reading .story-signoff { padding: 26px 0 26px 22px; border-left: 5px solid var(--orange); font-weight: 700; margin-top: 36px; }
+.confession-reading nav { padding-top: 36px; margin-top: 36px; border-top: 1px solid #10381f33; }
+.confession-dialog { position: fixed; inset: 0; margin: auto; width: min(600px, calc(100% - 40px)); max-height: 86svh; padding: 28px 32px; border-radius: 8px; color: var(--ink); box-shadow: 0 20px 65px #10381f40; overscroll-behavior: contain; }
+.confession-dialog-heading { position: sticky; top: -28px; z-index: 1; display: flex; justify-content: space-between; align-items: center; gap: 12px; margin: -8px 0 18px; padding-top: 8px; background: var(--paper); }
+.confession-dialog-heading .eyebrow { margin: 0; }
+.confession-dialog-heading .icon-button { flex-shrink: 0; width: 44px; height: 44px; }
+.confession-dialog h2 { font-size: 36px; margin: 0 0 16px; }
+.confession-dialog > p { font-size: 14px; line-height: 1.6; margin: 0 0 24px; }
+.confession-form fieldset { display: grid; gap: 18px; border: 0; margin: 0; padding: 0; min-width: 0; }
+.confession-form fieldset:disabled { opacity: .7; }
+.confession-form fieldset[hidden] { display: none; }
+.confession-send-status { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 18px; min-height: min(320px, 50svh); padding: 28px 0; text-align: center; }
+.confession-send-status[hidden] { display: none; }
+.confession-form input:not([type='checkbox']), .confession-form textarea { font-size: 16px; }
+.confession-form label { font-size: 14px; }
+.confession-form .consent-row { font-size: 12px; line-height: 1.6; }
+.confession-form .form-status { margin: 0; font-size: 14px; line-height: 1.6; }
+.confession-honeypot { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+.confession-upload { display: grid; gap: 8px; }
+.confession-upload input { width: 100%; padding: 10px; border: 1px solid #10381f55; background: white; }
+.confession-upload input::file-selector-button { padding: 10px; margin-right: 8px; border: 0; background: var(--lime); color: var(--ink); font: inherit; cursor: pointer; }
+.confession-upload small { font-size: 12px; font-weight: 400; }
+.confession-upload-name { display: flex; align-items: center; justify-content: space-between; gap: 12px; font-size: 13px; overflow-wrap: anywhere; }
+.confession-upload-name button { flex: 0 0 44px; }
+.confession-thanks { display: flex; flex-direction: column; align-items: center; padding: 72px 24px 90px; min-height: 620px; text-align: center; background: white; }
+.confession-thanks > img { width: 154px; height: auto; object-fit: contain; margin-bottom: 28px; }
+.confession-thanks h1 { font-family: var(--font-display); font-size: 56px; line-height: 1.02; margin: 0 0 22px; }
+.confession-thanks h1 em { font-style: normal; color: var(--green); }
+.confession-thanks > p:not(.eyebrow), .confession-thanks h2 { max-width: 42ch; font-family: var(--font-body); font-size: 16px; line-height: 1.65; }
+.confession-thanks h2 { margin: 20px 0; font-weight: 700; }
+.confession-thanks .brand-social-links { gap: 14px; margin-bottom: 32px; }
+.confession-thanks .brand-social-links a { width: 48px; height: 48px; }
+@keyframes lif-reel-sticker { 0%, 100% { transform: rotate(2deg) translateY(0); } 50% { transform: rotate(.5deg) translateY(-4px); } }
+@media(prefers-reduced-motion: reduce) { .confession-reel-sticker { animation: none; transform: none; } }
+@media(max-width: 1100px) {
+  .confession-community:not([data-all='true']) .community-row:nth-child(n+4) { display: none; }
+  .community-row { gap: 24px; }
+  .community-video-sticker, .community-story { padding: 24px; }
+  .community-video-title, .community-story h3 { font-size: 26px; }
+  .community-media { display: flex; flex-direction: column; gap: 16px; }
+  .community-video-sticker .confession-video { width: min(100%, 225px); }
+  .community-credit { text-align: center; }
+  .community-overflow { gap: 24px; }
+}
+@media(max-width: 1150px) {
+  .confession-hero { grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: 32px; }
+  .confession-hero .confession-prompt-art { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); min-height: 0; gap: 24px; margin: 12px 0; }
+  .confession-hero h1 { font-size: 56px; }
+}
+@media(max-width: 700px) {
+  .confession-editorial { grid-template-columns: minmax(0, 1fr); gap: 28px; padding: 0 12px; }
+  .confession-reel-sticker { width: min(calc(100% - 28px), 330px, 42svh); }
+  .editorial-question { margin-top: 22px; }
+  .editorial-question p { font-size: 22px; }
+  .confession-community { padding: 42px 20px; }
+  .community-heading h1, .community-heading h2 { font-size: 38px; }
+  .confession-community:not([data-all='true']) .community-row:nth-child(n+3) { display: none; }
+  .community-overflow { grid-template-columns: minmax(0, 1fr); gap: 28px; margin-top: 28px; }
+  .community-rows { gap: 28px; }
+  .community-row { grid-template-columns: minmax(0, 1fr); gap: 28px; }
+  .community-row:nth-child(n) .community-video-sticker { grid-column: 1; grid-row: 1; }
+  .community-row:nth-child(n) .community-story { grid-column: 1; grid-row: 2; }
+  .community-video-sticker, .community-story { padding: 22px; }
+  .community-video-title, .community-story h3 { font-size: 26px; }
+  .community-story-preview { flex: 0 0 200px; min-height: 200px; font-size: 15px; }
+  .confession-reading { padding: 30px 24px 55px; }
+  .confession-reading h1 { font-size: 34px; }
+  .confession-reading article { font-size: 16px; }
+  .confession-dialog { width: calc(100% - 28px); padding: 20px; max-height: 86svh; }
+  .confession-dialog-heading { top: -20px; }
+  .confession-dialog h2 { font-size: 30px; }
+  .confession-thanks { min-height: 0; padding: 50px 24px 65px; }
+  .confession-thanks h1 { font-size: 38px; }
+  .confession-hero { grid-template-columns: minmax(0, 1fr); width: calc(100% - 32px); padding: 30px 20px; gap: 28px; }
+  .confession-hero h1 { font-size: 48px; }
+  .confession-hero-copy > p:not(.eyebrow) { font-size: 15px; }
+  .confession-hero .confession-prompt-art { grid-template-columns: minmax(0, 1fr); gap: 22px; margin: 0; }
+  .confession-hero .confession-prompt-art > * { width: 86%; padding: 16px 18px; font-size: 17px; }
+  .confession-hero .confession-prompt-art > i { justify-self: end; }
+}

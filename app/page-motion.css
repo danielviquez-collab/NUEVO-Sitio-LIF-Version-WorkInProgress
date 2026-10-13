@@ -1,0 +1,57 @@
+/* Animate content groups, not page containers that host fixed dialogs. */
+.lif-site main :where(
+  .campaign-headline,
+  .campaign-products,
+  .campaign-hero > .showcase-catalog,
+  .page-hero > *,
+  .confession-hero > *,
+  .library-intro,
+  .recipe-filters,
+  .recipe-tile,
+  .catalog-heading,
+  .catalog-item,
+  .editorial-heading,
+  .community-heading,
+  .community-row,
+  .game-legacy-heading,
+  .game-legacy-action,
+  .game-ranking-heading,
+  .game-ranking-content,
+  .game-hub-rules > *,
+  .confession-reading > *,
+  .confession-thanks > *
+) {
+  animation: lif-page-arrive 560ms cubic-bezier(0.22, 0.61, 0.36, 1) backwards;
+}
+
+.lif-site main :where(
+  .campaign-products,
+  .confession-hero > .confession-video,
+  .recipe-tile,
+  .catalog-item,
+  .community-row,
+  .game-legacy-action
+) {
+  animation-duration: 620ms;
+}
+
+.recipe-dialog[open] {
+  animation: lif-page-arrive 260ms cubic-bezier(0.16, 1, 0.3, 1) backwards;
+}
+
+html[data-home-entry="content"] .home-entrance .logo-entry-overlay {
+  display: none;
+}
+
+@keyframes lif-page-arrive {
+  from { opacity: 0.18; translate: 0 28px; }
+  to { opacity: 1; translate: 0 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .lif-site main,
+  .lif-site main *,
+  .recipe-dialog[open] {
+    animation-name: none;
+  }
+}

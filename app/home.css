@@ -1,0 +1,183 @@
+.campaign-home { background: #fff; }
+.campaign-hero { position: relative; isolation: isolate; padding: 30px 24px 22px; background: #007c38; color: var(--paper); text-align: center; overflow: hidden; }
+.campaign-hero::before, .campaign-hero::after { position: absolute; z-index: -1; top: 0; bottom: 0; width: 10%; background: url('/brand/frutas-desktop.webp') center / auto 100%; content: ''; pointer-events: none; }
+.campaign-hero::before { left: 0; clip-path: polygon(0 0, 42% 0, 100% 100%, 0 100%); }
+.campaign-hero::after { right: 0; clip-path: polygon(58% 0, 100% 0, 100% 100%, 0 100%); }
+.campaign-headline { position: relative; z-index: 2; }
+.campaign-headline h1 { margin: 0 auto; max-width: 1100px; color: var(--paper); font: 900 64px/1.05 var(--font-display); letter-spacing: 0; }
+.campaign-headline h1 span { white-space: nowrap; }
+.campaign-products { position: relative; max-width: 1440px; margin: 8px auto 0; }
+.flavor-showcase { position: relative; z-index: 1; width: min(100% - 220px, 1080px); margin: 0 auto; }
+.showcase-viewport { overflow: hidden; touch-action: pan-y pinch-zoom; cursor: grab; }
+.showcase-viewport:active { cursor: grabbing; }
+.showcase-track { display: flex; height: 500px; align-items: center; }
+.showcase-flavor { position: relative; flex: 0 0 33.333333%; min-width: 0; padding: 0 14px; user-select: none; }
+.showcase-pack-motion { transform: scale(.7); will-change: transform; }
+.showcase-flavor.is-active .showcase-pack-motion { transform: scale(1); }
+.showcase-flavor.is-active.is-new .showcase-pack-motion { transform: scale(1.18); }
+.showcase-flavor.is-active { z-index: 2; }
+.showcase-pack { --pack-height: 320px; --sticker-space: 76px; min-height: 0; height: auto; width: min(100%, calc(var(--pack-height) * var(--pack-aspect))); max-width: 100%; margin: auto; transform-origin: center; }
+.showcase-flavor.is-new .showcase-pack { padding-top: var(--sticker-space); }
+.showcase-pack .pack-image { height: auto; max-height: var(--pack-height); width: 100%; aspect-ratio: var(--pack-aspect); max-width: 100%; object-fit: contain; filter: drop-shadow(0 15px 9px #003b2c40); pointer-events: none; }
+.showcase-flavor.is-new.has-arrived .showcase-pack { animation: new-flavor-heartbeat 2400ms ease-in-out infinite; }
+@keyframes new-flavor-heartbeat { 0%, 34%, 100% { transform: scale(1); } 12% { transform: scale(1.03); } 20% { transform: scale(1.008); } 26% { transform: scale(1.017); } }
+.showcase-flavor.is-new .showcase-pack::after { content: ''; position: absolute; inset: var(--sticker-space) 0 0; pointer-events: none; opacity: 0; background: linear-gradient(110deg, transparent 38%, rgb(255 255 255 / 12%) 44%, rgb(255 255 255 / 80%) 50%, rgb(255 255 255 / 12%) 56%, transparent 62%); background-size: 260% 100%; background-position: 150% 0; -webkit-mask-image: var(--pack-mask); mask-image: var(--pack-mask); -webkit-mask-size: 100% 100%; mask-size: 100% 100%; -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat; }
+.showcase-flavor.is-new.has-arrived .showcase-pack::after { animation: new-flavor-reflection 1050ms 100ms ease-in-out both; }
+@keyframes new-flavor-reflection { 0% { background-position: 150% 0; opacity: 0; } 16%, 74% { opacity: 1; } 100% { background-position: -50% 0; opacity: 0; } }
+.showcase-pack .new-sticker { top: 0; left: auto; right: -22px; width: 84px; min-height: 84px; padding: 10px; border: 3px solid var(--paper); border-radius: 50%; background: var(--yellow); color: var(--ink); font: 900 18px/1 var(--font-display); box-shadow: 2px 4px 0 var(--ink); transform: rotate(10deg); }
+.showcase-flavor.is-new.has-arrived .new-sticker { animation: new-sticker-arrival 380ms 180ms ease-out both; }
+@keyframes new-sticker-arrival { 0% { transform: translateY(7px) rotate(-6deg) scale(.82); } 65% { transform: translateY(-2px) rotate(13deg) scale(1.06); } 100% { transform: translateY(0) rotate(10deg) scale(1); } }
+.showcase-name { display: flex; align-items: center; justify-content: center; min-height: 52px; max-width: 720px; margin: 0 auto; color: #ffe000; font: 900 30px/1.1 var(--font-display); text-wrap: balance; }
+.showcase-pagination { display: flex; align-items: center; justify-content: center; min-width: 0; min-height: 40px; padding: 0; border: 0; margin: 3px 0 0; }
+.showcase-pagination button { display: grid; place-items: center; width: 24px; height: 40px; padding: 0; border: 0; background: transparent; cursor: pointer; }
+.showcase-pagination button span { width: 7px; height: 7px; border: 1px solid var(--paper); border-radius: 50%; background: transparent; transition: transform 180ms ease, background 180ms ease; }
+.showcase-pagination button[aria-current='true'] span { background: var(--yellow); border-color: var(--yellow); transform: scale(1.4); }
+.showcase-pagination button:hover span { background: var(--paper); }
+.flavor-showcase button:focus-visible, .showcase-catalog:focus-visible { outline-color: var(--yellow); }
+.showcase-catalog { display: inline-flex; gap: 6px; align-items: center; min-height: 30px; font-size: 12px; font-weight: 500; text-decoration: underline; text-underline-offset: 4px; }
+.showcase-catalog svg { width: 16px; height: 16px; }
+.campaign-artwork { position: absolute; inset: 0; pointer-events: none; }
+.campaign-decoration { position: absolute; object-fit: contain; pointer-events: none; }
+.campaign-stevia { left: 3%; top: 44px; width: 100px; height: 100px; animation: stevia-sway 8s ease-in-out infinite; }
+.campaign-calories { right: 1%; bottom: 85px; width: 140px; height: 85px; animation: calories-bob 6s -1.5s ease-in-out infinite; }
+@keyframes stevia-sway { 0%, 100% { transform: translateY(0) rotate(-10deg); } 50% { transform: translateY(-6px) rotate(5deg); } }
+@keyframes calories-bob { 0%, 100% { transform: translateY(0) rotate(5deg); } 50% { transform: translateY(-6px) rotate(-4deg); } }
+
+.campaign-play { position: relative; background: var(--purple); color: var(--paper); overflow: hidden; }
+.campaign-play-inner { display: flex; align-items: center; gap: 26px; width: min(100% - 80px, 1220px); min-height: 150px; margin: auto; padding: 28px 0; }
+.campaign-game-icon { flex: 0 0 auto; width: 64px; height: 64px; color: var(--yellow); stroke-width: 1.4; transform: rotate(-10deg); }
+.campaign-play p { margin: 0 0 7px; font-size: 13px; font-weight: 500; color: var(--yellow); }
+.campaign-play h2 { margin: 0; font: 900 36px/1.1 var(--font-display); }
+.campaign-play-button { display: inline-flex; position: relative; flex: 0 0 auto; align-items: center; justify-content: center; gap: 16px; min-height: 62px; margin-left: auto; padding: 12px 24px; border: 2px solid var(--ink); border-radius: 8px; background: var(--yellow); color: var(--ink); box-shadow: 0 6px 0 var(--ink); font: 900 22px/1.2 var(--font-display); animation: play-invitation 4200ms 1200ms ease-in-out infinite; transition: background 180ms ease, box-shadow 180ms ease; }
+.campaign-play-button svg { width: 24px; height: 24px; flex-shrink: 0; }
+.campaign-play-button:hover, .campaign-play-button:focus-visible { animation: none; background: var(--paper); box-shadow: 0 8px 0 var(--ink); transform: translateY(-2px); }
+.campaign-play-button:active { transform: translateY(4px); box-shadow: 0 2px 0 var(--ink); }
+.campaign-play-button:focus-visible { outline-color: var(--paper); outline-offset: 8px; }
+@keyframes play-invitation { 0%, 12%, 24%, 100% { transform: translateY(0); } 6%, 18% { transform: translateY(-5px); } }
+.campaign-play-button { isolation: isolate; animation-play-state: paused; }
+.campaign-play-button > * { position: relative; z-index: 1; }
+.campaign-play-button::before { content: ''; position: absolute; inset: 0; border-radius: 6px; pointer-events: none; background: linear-gradient(110deg, transparent 38%, rgb(255 255 255 / 85%) 49%, transparent 60%); background-size: 350% 100%; background-position: 150% 0; animation: arcade-reflection 4200ms 800ms ease-in-out infinite paused; }
+.campaign-play-button::after { content: ''; position: absolute; inset: -7px; border: 2px dashed var(--yellow); border-radius: 12px; opacity: .6; pointer-events: none; animation: arcade-lights 4200ms ease-in-out infinite paused; }
+.campaign-play-button .play-controller { animation: arcade-controller 4200ms 1200ms ease-in-out infinite paused; }
+.campaign-play[data-motion-active='true'] .campaign-play-button, .campaign-play[data-motion-active='true'] .campaign-play-button::before, .campaign-play[data-motion-active='true'] .campaign-play-button::after, .campaign-play[data-motion-active='true'] .play-controller { animation-play-state: running; }
+.campaign-play-button:hover::before, .campaign-play-button:focus-visible::before { animation: none; background-position: 50% 0; opacity: .45; }
+.campaign-play-button:hover::after, .campaign-play-button:focus-visible::after { border-style: solid; opacity: 1; }
+@keyframes arcade-reflection { 0%, 58% { background-position: 150% 0; opacity: 0; } 62% { opacity: .85; } 82%, 100% { background-position: -50% 0; opacity: 0; } }
+@keyframes arcade-lights { 0%, 45%, 100% { opacity: .45; box-shadow: 0 0 0 transparent; } 18%, 65% { opacity: 1; box-shadow: 0 0 14px rgb(255 224 0 / 45%); } }
+@keyframes arcade-controller { 0%, 28%, 100% { transform: rotate(0) scale(1); } 8% { transform: rotate(-12deg) scale(1.16); } 18% { transform: rotate(12deg) scale(1.16); } }
+
+.campaign-recipes { width: min(100% - 80px, 1220px); margin: auto; padding: 76px 0 88px; }
+.campaign-section-heading { display: flex; align-items: end; justify-content: space-between; gap: 30px; margin-bottom: 32px; }
+.campaign-section-heading .eyebrow { font-size: 13px; margin-bottom: 10px; }
+.campaign-section-heading h2 { margin: 0; font: 900 42px/1.1 var(--font-display); }
+.campaign-section-heading h2 em { display: block; color: var(--green); font-style: normal; }
+.campaign-section-heading .text-link { flex: 0 0 auto; font-size: 14px; }
+.campaign-recipe-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+.campaign-recipe-image { position: relative; aspect-ratio: 4 / 3; overflow: hidden; background: transparent; }
+.campaign-recipe-image img { position: absolute; inset: 6%; width: 88%; height: 88%; object-fit: contain; transition: transform 500ms ease; }
+.campaign-recipe:hover img { transform: scale(1.035); }
+.campaign-recipe-open { position: absolute; display: grid; place-items: center; width: 52px; height: 52px; right: 18px; bottom: 18px; border-radius: 50%; color: var(--ink); background: white; }
+.campaign-recipe-open svg { width: 22px; height: 22px; }
+.campaign-recipe-caption { padding: 18px 0 0; }
+.campaign-recipe-caption > span { color: var(--green); font-size: 12px; font-weight: 700; }
+.campaign-recipe h3 { margin: 6px 0 0; font: 900 26px/1.12 var(--font-display); max-width: 24ch; }
+.campaign-confession { padding: 70px 24px 65px; background: var(--yellow); text-align: center; }
+.campaign-confession-inner { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.8fr) minmax(0, 1fr); align-items: center; gap: 24px; max-width: 1280px; margin: auto; }
+.campaign-confession-copy { min-width: 0; }
+.campaign-actor { min-width: 0; }
+.campaign-actor-motion { position: relative; transform-origin: 50% 85%; animation: adulting-sway 4800ms ease-in-out infinite paused; }
+.actor-plantas .campaign-actor-motion { animation-delay: -2100ms; }
+.campaign-actor img { display: block; width: 100%; height: auto; }
+.actor-tear { position: absolute; width: 4%; height: auto; fill: #93def9; stroke: white; stroke-width: 1.4; opacity: 0; animation: adulting-tear 3600ms cubic-bezier(.3,.1,.65,1) infinite paused; }
+.actor-lego { --eye-left: 43%; --eye-right: 58%; --eye-top: 40%; }
+.actor-plantas { --eye-left: 42%; --eye-right: 56%; --eye-top: 26%; }
+.actor-tear-0, .actor-tear-2 { left: var(--eye-left); top: var(--eye-top); }
+.actor-tear-1, .actor-tear-3 { left: var(--eye-right); top: calc(var(--eye-top) + 2%); }
+.actor-tear-1 { animation-delay: 900ms; }
+.actor-tear-2 { animation-delay: 1800ms; }
+.actor-tear-3 { animation-delay: 2700ms; }
+.campaign-confession[data-motion-active='true'] .campaign-actor-motion, .campaign-confession[data-motion-active='true'] .actor-tear { animation-play-state: running; }
+@keyframes adulting-sway { 0%, 100% { transform: translateY(0) rotate(-1.5deg); } 45% { transform: translateY(-6px) rotate(1.5deg); } 55% { transform: translateY(-5px) rotate(1deg); } }
+@keyframes adulting-tear { 0%, 12% { transform: translateY(0) scale(.3); opacity: 0; } 22% { opacity: .95; } 64% { opacity: .85; } 82%, 100% { transform: translateY(42px) scale(1.1); opacity: 0; } }
+.campaign-quote { display: block; height: 52px; color: var(--purple); font: 900 110px/.95 Georgia, serif; }
+.campaign-confession .eyebrow { color: var(--ink); font-size: 13px; margin: 12px 0 15px; }
+.campaign-confession h2 { margin: 0; font: 900 44px/1.05 var(--font-display); }
+.campaign-confession p:not(.eyebrow) { margin: 18px 0 24px; font-size: 16px; }
+.campaign-confession a { display: inline-flex; align-items: center; justify-content: center; gap: 14px; min-height: 48px; font-size: 14px; font-weight: 700; border-bottom: 2px solid var(--ink); }
+.campaign-confession a svg { width: 19px; }
+.campaign-recipes.will-reveal .campaign-section-heading, .campaign-recipes.will-reveal .campaign-recipe, .campaign-confession.will-reveal .campaign-confession-inner { opacity: 0; transform: translateY(24px); transition: opacity 550ms ease, transform 650ms cubic-bezier(.2,.7,.2,1); }
+.campaign-recipes.is-revealed .campaign-section-heading, .campaign-recipes.is-revealed .campaign-recipe, .campaign-confession.is-revealed .campaign-confession-inner { opacity: 1; transform: none; }
+.campaign-recipes.is-revealed .campaign-recipe:nth-child(2) { transition-delay: 120ms; }
+
+@media(min-width: 1500px) and (min-height: 851px) { .campaign-headline h1 { font-size: 72px; } .showcase-track { height: 545px; } .showcase-pack { --pack-height: 355px; } }
+@media(max-width: 1100px) {
+  .campaign-headline h1 { font-size: 52px; }
+  .flavor-showcase { width: calc(100% - 130px); }
+  .showcase-track { height: 435px; }
+  .showcase-pack { --pack-height: 280px; }
+  .showcase-name { font-size: 26px; }
+  .campaign-stevia { left: 0; width: 72px; height: 72px; }
+  .campaign-calories { right: -12px; width: 106px; height: 68px; bottom: 92px; }
+  .showcase-pack { --sticker-space: 64px; }
+  .showcase-pack .new-sticker { right: -20px; width: 72px; min-height: 72px; font-size: 16px; }
+  .campaign-play h2 { font-size: 29px; }
+  .campaign-play-inner { width: calc(100% - 48px); gap: 18px; }
+  .campaign-game-icon { width: 46px; height: 46px; }
+  .campaign-play-button { font-size: 18px; padding: 12px 18px; gap: 10px; }
+  .campaign-recipes { width: calc(100% - 48px); }
+}
+@media(min-width: 701px) and (max-height: 850px) {
+  .campaign-hero { padding-top: 26px; padding-bottom: 18px; }
+  .campaign-headline h1 { font-size: 52px; }
+  .showcase-track { height: 440px; }
+  .showcase-pack { --pack-height: 270px; }
+  .showcase-name { font-size: 26px; min-height: 36px; }
+}
+@media(max-width: 700px) {
+  .campaign-hero { padding: 26px 0 32px; }
+  .campaign-hero::before { top: auto; height: 16px; width: 100%; background-image: url('/brand/frutas-mobile.webp'); background-size: 100% auto; clip-path: none; }
+  .campaign-hero::after { display: none; }
+  .campaign-headline { padding: 0 20px; }
+  .campaign-headline h1 { max-width: 480px; font-size: 40px; }
+  .campaign-headline h1 span { display: block; }
+  .campaign-products { margin-top: 0; padding-top: 34px; }
+  .campaign-artwork { z-index: 2; height: 78px; }
+  .campaign-stevia { width: 54px; height: 54px; top: 12px; left: 20px; }
+  .campaign-calories { width: 92px; height: 54px; top: 10px; right: 16px; bottom: auto; }
+  .flavor-showcase { width: 100%; }
+  .showcase-viewport { padding-top: 24px; }
+  .showcase-track { height: 400px; }
+  .showcase-flavor { flex-basis: 70%; padding: 0 12px; }
+  .showcase-pack { --pack-height: 250px; }
+  .showcase-pack { --sticker-space: 62px; }
+  .showcase-pack .new-sticker { right: -18px; width: 70px; min-height: 70px; font-size: 16px; }
+  .showcase-name { max-width: 330px; padding: 0 16px; min-height: 54px; font-size: 23px; }
+  .showcase-pagination button { width: 22px; height: 36px; }
+  .showcase-catalog { min-height: 30px; }
+  .campaign-play-inner { display: grid; grid-template-columns: 34px minmax(0, 1fr); gap: 12px 16px; padding: 26px 0 32px; }
+  .campaign-game-icon { width: 34px; height: 34px; }
+  .campaign-play h2 { font-size: 27px; }
+  .campaign-play p { font-size: 12px; }
+  .campaign-play-button { grid-column: 1 / -1; justify-self: center; margin: 10px 0 0; min-height: 58px; font-size: 21px; gap: 16px; padding: 12px 22px; }
+  .campaign-recipes { padding: 48px 0 50px; width: calc(100% - 40px); }
+  .campaign-section-heading { align-items: start; flex-direction: column; gap: 12px; margin-bottom: 23px; }
+  .campaign-section-heading h2 { font-size: 34px; }
+  .campaign-section-heading .text-link { min-height: 36px; font-size: 13px; }
+  .campaign-recipe-grid { grid-template-columns: 1fr; gap: 32px; }
+  .campaign-recipe h3 { font-size: 25px; }
+  .campaign-confession { padding: 44px 24px 49px; }
+  .campaign-confession-inner { grid-template-columns: 1fr 1fr; gap: 20px 12px; }
+  .campaign-confession-copy { grid-column: 1 / -1; grid-row: 1; }
+  .campaign-actor { width: 100%; max-width: 240px; justify-self: center; align-self: end; }
+  .campaign-confession h2 { font-size: 33px; }
+  .campaign-confession p:not(.eyebrow) { font-size: 14px; }
+}
+@media(max-width: 360px) { .campaign-headline h1 { font-size: 34px; } .showcase-name { font-size: 21px; } .showcase-pagination button { width: 20px; } .campaign-play h2 { font-size: 24px; } .campaign-play-button { font-size: 18px; gap: 10px; padding: 12px 16px; white-space: nowrap; } }
+@media(prefers-reduced-motion: reduce) {
+  .campaign-actor-motion, .actor-tear, .campaign-play-button::before, .campaign-play-button::after, .campaign-play-button .play-controller { animation: none; }
+  .actor-tear, .campaign-play-button::before { display: none; }
+  .showcase-pack-motion { will-change: auto; }
+  .showcase-flavor.is-new.has-arrived .showcase-pack, .showcase-flavor.is-new.has-arrived .showcase-pack::after, .showcase-flavor.is-new.has-arrived .new-sticker, .campaign-decoration, .campaign-play-button { animation: none; }
+  .campaign-recipe-image img, .showcase-pagination button span { transition: none; }
+  .campaign-recipes.will-reveal .campaign-section-heading, .campaign-recipes.will-reveal .campaign-recipe, .campaign-confession.will-reveal .campaign-confession-inner { opacity: 1; transform: none; }
+}

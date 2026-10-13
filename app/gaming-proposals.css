@@ -1,0 +1,706 @@
+.game-proposal-switcher {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  min-height: 48px;
+  background: white;
+  border-top: 1px solid #10381f14;
+}
+.game-proposal-switcher a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 48px;
+  font-size: 12px;
+  font-weight: 800;
+  border-bottom: 3px solid transparent;
+}
+.game-proposal-switcher a[aria-current='page'] {
+  color: var(--green);
+  border-color: var(--green);
+}
+.game-hero-proposal {
+  display: block;
+  min-height: 0;
+  height: 390px;
+  padding: 28px max(40px, calc((100% - 1280px) / 2));
+  background: var(--lime);
+  isolation: isolate;
+}
+.proposal-composition {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  align-items: center;
+  gap: 44px;
+  height: 100%;
+}
+.proposal-heading {
+  position: relative;
+  z-index: 2;
+}
+.proposal-heading h1 {
+  width: max-content;
+  max-width: 100%;
+  margin: 0;
+  font: 900 72px/0.94 var(--font-display);
+}
+.proposal-heading h1 .game-title-brand {
+  color: var(--green);
+}
+.proposal-heading p {
+  margin: 28px 0 0;
+  font-size: 16px;
+  line-height: 1.55;
+}
+.proposal-action {
+  display: grid;
+  justify-items: center;
+  gap: 24px;
+}
+.proposal-action .game-legacy-meta {
+  margin: 0;
+  gap: 18px;
+}
+.proposal-play {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  width: 250px;
+  height: 84px;
+  padding: 12px;
+  border: 3px solid #e9ffff;
+  border-radius: 8px;
+  background: var(--ink);
+  color: #e9ffff;
+  font: 900 40px/1 var(--font-display);
+  box-shadow:
+    inset 0 0 12px #6a4bff,
+    0 0 6px #fff,
+    0 0 14px #5435ff,
+    0 6px 0 var(--ink);
+  cursor: pointer;
+  touch-action: manipulation;
+  transition: transform 150ms ease;
+}
+.proposal-arcade .proposal-play {
+  animation: proposal-neon-frame 6.4s linear infinite;
+  animation-play-state: paused;
+}
+.proposal-play svg {
+  width: 32px;
+  height: 32px;
+  flex: none;
+}
+.proposal-arcade .proposal-play svg {
+  fill: transparent;
+  stroke-width: 2;
+  filter: drop-shadow(0 0 5px #b5ffff);
+  animation: proposal-neon-icon 6.4s linear infinite;
+  animation-play-state: paused;
+}
+.proposal-play > span {
+  -webkit-text-fill-color: var(--ink);
+  -webkit-text-stroke: 1.4px #e9ffff;
+  text-shadow:
+    0 0 4px #c2ffff,
+    0 0 11px #5a35ff,
+    0 0 20px #3304f7;
+}
+.proposal-arcade .proposal-play > span {
+  animation: proposal-neon-text 6.4s linear infinite;
+  animation-play-state: paused;
+}
+.proposal-play::after {
+  content: '';
+  position: absolute;
+  pointer-events: none;
+  inset: 7px;
+  border: 1px solid #8e7dff;
+  border-radius: 3px;
+}
+.proposal-composition[data-playing='true'] .proposal-play,
+.proposal-composition[data-playing='true'] .proposal-play > span,
+.proposal-composition[data-playing='true'] .proposal-play svg {
+  animation-play-state: running;
+}
+.proposal-play:hover:not(:disabled) {
+  transform: translateY(-3px);
+}
+.proposal-play:active:not(:disabled) {
+  transform: translateY(4px);
+}
+.proposal-play:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+.proposal-arcade .proposal-action {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 24px;
+  margin-top: 24px;
+}
+.proposal-arcade .game-legacy-meta {
+  flex-direction: column;
+  gap: 10px;
+}
+.proposal-flavors {
+  position: relative;
+  width: 100%;
+  height: 330px;
+  padding-top: 4px;
+}
+.proposal-pack-stage {
+  position: relative;
+  height: 278px;
+  width: 100%;
+}
+.proposal-pack-position {
+  position: absolute;
+  inset: 0 100px 0 24px;
+  opacity: 0;
+  transform: translate(24px, 10px) rotate(3deg) scale(0.94);
+  transition:
+    opacity 480ms ease,
+    transform 850ms cubic-bezier(0.22, 1, 0.36, 1);
+  pointer-events: none;
+}
+.proposal-pack-position[data-active='true'] {
+  opacity: 1;
+  transform: translate(0) rotate(0) scale(1);
+  z-index: 1;
+}
+.proposal-pack-position img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 12px 8px #10381f30);
+}
+.proposal-active-name {
+  height: 20px;
+  margin: 8px 0 0;
+  text-align: center;
+  font-weight: 800;
+  font-size: 14px;
+}
+.proposal-new-sticker {
+  position: absolute;
+  top: 22px;
+  right: 0;
+  z-index: 2;
+  display: grid;
+  align-content: center;
+  width: 78px;
+  height: 78px;
+  border: 3px solid white;
+  border-radius: 50%;
+  background: var(--yellow);
+  color: var(--ink);
+  box-shadow: 3px 4px 0 var(--ink);
+  text-align: center;
+  font: 900 17px/1.04 var(--font-display);
+  transform: rotate(8deg);
+}
+.proposal-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+}
+.proposal-dots button {
+  width: 28px;
+  height: 28px;
+  display: grid;
+  place-items: center;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+.proposal-dots button::after {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #10381f60;
+  transition:
+    width 180ms ease,
+    background 180ms ease;
+}
+.proposal-dots button[aria-current='true']::after {
+  width: 18px;
+  border-radius: 4px;
+  background: var(--ink);
+}
+.proposal-flavor-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+.proposal-arena .proposal-composition {
+  grid-template-columns: minmax(0, 0.9fr) 190px minmax(0, 1.1fr);
+  gap: 28px;
+}
+.proposal-arena .proposal-heading h1 {
+  font-size: 66px;
+}
+.proposal-arena .proposal-play {
+  width: 160px;
+  height: 160px;
+  flex-direction: column;
+  gap: 10px;
+  border: 8px solid var(--ink);
+  border-radius: 50%;
+  background: var(--purple);
+  color: var(--yellow);
+  font-size: 30px;
+  box-shadow:
+    0 7px 0 #1b008b,
+    0 11px 0 var(--ink),
+    inset 0 4px 0 #ffffff70,
+    0 20px 24px #10381f30;
+}
+.proposal-arena .proposal-play > span {
+  -webkit-text-fill-color: initial;
+  -webkit-text-stroke: 0;
+  text-shadow: 0 2px 0 #1b008b;
+}
+.proposal-arena .proposal-play svg {
+  width: 34px;
+  height: 34px;
+}
+.proposal-arena .proposal-play::after {
+  inset: 6px;
+  border: 2px dashed #ffdf2aaa;
+  border-radius: 50%;
+  animation: proposal-rim 14s linear infinite;
+  animation-play-state: paused;
+}
+.proposal-arena
+  .proposal-composition[data-playing='true']
+  .proposal-play::after {
+  animation-play-state: running;
+}
+.proposal-arena .game-legacy-meta {
+  flex-direction: column;
+}
+.proposal-flavors-arena {
+  height: 322px;
+  padding-top: 62px;
+}
+.proposal-flavors-arena .proposal-new-sticker,
+.proposal-flavors-power .proposal-new-sticker {
+  width: auto;
+  height: 34px;
+  top: 4px;
+  left: 50%;
+  right: auto;
+  border-radius: 4px;
+  padding: 0 14px;
+  display: flex;
+  gap: 4px;
+  transform: translateX(-50%) rotate(-4deg);
+  font-size: 14px;
+  border-width: 2px;
+  white-space: nowrap;
+}
+.proposal-flavors-arena .proposal-new-sticker br,
+.proposal-flavors-power .proposal-new-sticker br {
+  display: none;
+}
+.proposal-flavors-arena .proposal-pack-stage {
+  display: flex;
+  align-items: center;
+  height: 208px;
+}
+.proposal-flavors-arena .proposal-pack-position {
+  position: relative;
+  flex: 1;
+  inset: auto;
+  width: 0;
+  height: 188px;
+  opacity: 0.72;
+  transform: translateY(8px) scale(0.94);
+  transition:
+    opacity 400ms ease,
+    transform 650ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+.proposal-flavors-arena .proposal-pack-position:first-child {
+  transform: translate(12px, 12px) rotate(-12deg) scale(0.94);
+}
+.proposal-flavors-arena .proposal-pack-position:last-child {
+  transform: translate(-12px, 12px) rotate(12deg) scale(0.94);
+}
+.proposal-flavors-arena .proposal-pack-position[data-active='true'] {
+  opacity: 1;
+  transform: translateY(-3px) scale(1.16);
+}
+.proposal-flavors-arena .proposal-pack-position[data-active='true'] img {
+  animation: proposal-pack-breathe 4s ease-in-out infinite;
+  animation-play-state: paused;
+}
+.proposal-flavors-arena[data-playing='true']
+  .proposal-pack-position[data-active='true']
+  img {
+  animation-play-state: running;
+}
+.proposal-power .proposal-composition {
+  grid-template-columns: minmax(0, 0.82fr) 180px minmax(0, 1.2fr);
+  gap: 24px;
+}
+.proposal-power .proposal-heading h1 {
+  font-size: 66px;
+}
+.proposal-power .proposal-play {
+  width: 146px;
+  height: 100px;
+  border: 3px solid var(--ink);
+  background: var(--yellow);
+  color: var(--ink);
+  flex-direction: column;
+  gap: 6px;
+  font-size: 30px;
+  box-shadow:
+    0 7px 0 #df9200,
+    0 11px 0 var(--ink),
+    inset 0 4px 0 #ffffff9e;
+}
+.proposal-power .proposal-play > span {
+  -webkit-text-fill-color: initial;
+  -webkit-text-stroke: 0;
+  text-shadow: none;
+}
+.proposal-power .proposal-play svg {
+  width: 26px;
+  height: 26px;
+}
+.proposal-power .proposal-play::after {
+  inset: 5px;
+  border-color: #10381f40;
+  background: linear-gradient(
+    110deg,
+    transparent 30%,
+    #ffffff8a 50%,
+    transparent 70%
+  );
+  background-size: 300% 100%;
+  animation: proposal-button-pass 4s ease-in-out infinite;
+  animation-play-state: paused;
+}
+.proposal-power
+  .proposal-composition[data-playing='true']
+  .proposal-play::after {
+  animation-play-state: running;
+}
+.proposal-power .game-legacy-meta {
+  flex-direction: column;
+}
+.proposal-flavors-power {
+  min-width: 0;
+  height: 320px;
+  padding-top: 40px;
+}
+.proposal-sequence-viewport {
+  width: 100%;
+  overflow: hidden;
+  touch-action: pan-y pinch-zoom;
+}
+.proposal-sequence-track {
+  display: flex;
+  align-items: center;
+  height: 228px;
+}
+.proposal-sequence-slide {
+  flex: 0 0 48%;
+  min-width: 0;
+  height: 224px;
+  display: flex;
+  justify-content: center;
+}
+.proposal-sequence-pack {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transform: translateY(10px) scale(0.72);
+  opacity: 0.6;
+  transition:
+    transform 650ms cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 500ms ease;
+  filter: drop-shadow(0 9px 6px #10381f30);
+}
+.proposal-sequence-pack[data-active='true'] {
+  transform: translateY(0) scale(1);
+  opacity: 1;
+}
+.proposal-arrow {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  flex: none;
+  border: 1px solid #10381f50;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--ink);
+  cursor: pointer;
+}
+.proposal-arrow:hover {
+  background: var(--yellow);
+}
+.proposal-arrow svg {
+  width: 20px;
+  height: 20px;
+}
+.proposal-flavors-power .proposal-active-name {
+  min-width: 158px;
+}
+@keyframes proposal-neon-text {
+  0%,
+  63%,
+  69%,
+  100% {
+    -webkit-text-stroke-color: #e9ffff;
+    text-shadow:
+      0 0 4px #c2ffff,
+      0 0 11px #5a35ff,
+      0 0 20px #3304f7;
+  }
+  64%,
+  68% {
+    -webkit-text-stroke-color: #64817d;
+    text-shadow: none;
+  }
+}
+@keyframes proposal-neon-icon {
+  0%,
+  63%,
+  69%,
+  100% {
+    color: #e9ffff;
+    filter: drop-shadow(0 0 5px #b5ffff);
+  }
+  64%,
+  68% {
+    color: #64817d;
+    filter: none;
+  }
+}
+@keyframes proposal-neon-frame {
+  0%,
+  63%,
+  69%,
+  100% {
+    border-color: #e9ffff;
+    box-shadow:
+      inset 0 0 12px #6a4bff,
+      0 0 6px white,
+      0 0 14px #5435ff,
+      0 6px 0 var(--ink);
+  }
+  64%,
+  68% {
+    border-color: #64817d;
+    box-shadow: 0 6px 0 var(--ink);
+  }
+}
+@keyframes proposal-rim {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes proposal-pack-breathe {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  45% {
+    transform: scale(1.025);
+  }
+}
+@keyframes proposal-button-pass {
+  0%,
+  55% {
+    background-position: 150% 0;
+  }
+  85%,
+  100% {
+    background-position: -50% 0;
+  }
+}
+@media (max-width: 1100px) {
+  .game-hero-proposal {
+    height: 360px;
+    padding: 22px 32px;
+  }
+  .proposal-composition {
+    gap: 24px;
+  }
+  .proposal-heading h1 {
+    font-size: 60px;
+  }
+  .proposal-heading p {
+    font-size: 14px;
+    margin-top: 24px;
+  }
+  .proposal-arcade .proposal-action {
+    gap: 15px;
+  }
+  .proposal-arcade .proposal-play {
+    width: 190px;
+    height: 68px;
+    font-size: 31px;
+  }
+  .proposal-arcade .game-legacy-meta {
+    font-size: 11px;
+    gap: 8px;
+  }
+  .proposal-arcade .game-legacy-meta svg {
+    width: 15px;
+    height: 15px;
+  }
+  .proposal-arena .proposal-composition,
+  .proposal-power .proposal-composition {
+    grid-template-columns: minmax(0, 0.9fr) 146px minmax(0, 1fr);
+    gap: 18px;
+  }
+  .proposal-arena .proposal-heading h1,
+  .proposal-power .proposal-heading h1 {
+    font-size: 54px;
+  }
+  .proposal-arena .proposal-play {
+    width: 132px;
+    height: 132px;
+    font-size: 25px;
+  }
+  .proposal-power .proposal-play {
+    width: 130px;
+    height: 96px;
+    font-size: 27px;
+  }
+  .proposal-flavors-arena .proposal-pack-position {
+    height: 172px;
+  }
+  .proposal-sequence-slide {
+    flex-basis: 62%;
+  }
+}
+@media (max-width: 760px) {
+  .game-proposal-switcher {
+    gap: 18px;
+  }
+  .game-proposal-switcher a {
+    font-size: 11px;
+    gap: 5px;
+  }
+  .game-hero-proposal {
+    height: auto;
+    padding: 34px 24px 28px;
+  }
+  .proposal-composition,
+  .proposal-arena .proposal-composition,
+  .proposal-power .proposal-composition {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 25px;
+  }
+  .proposal-heading {
+    text-align: center;
+  }
+  .proposal-heading h1,
+  .proposal-arena .proposal-heading h1,
+  .proposal-power .proposal-heading h1 {
+    margin: 0 auto;
+    font-size: 60px;
+  }
+  .proposal-heading p {
+    margin: 24px 0 0;
+    font-size: 15px;
+  }
+  .proposal-arcade .proposal-action {
+    justify-content: center;
+    margin-top: 22px;
+    gap: 16px;
+  }
+  .proposal-arcade .game-legacy-meta {
+    font-size: 12px;
+  }
+  .proposal-flavors {
+    width: min(100%, 430px);
+    justify-self: center;
+    height: 258px;
+  }
+  .proposal-flavors-arcade .proposal-pack-stage {
+    height: 212px;
+  }
+  .proposal-flavors-arcade .proposal-pack-position {
+    inset: 0 76px 0 10px;
+  }
+  .proposal-new-sticker {
+    width: 64px;
+    height: 64px;
+    top: 10px;
+    font-size: 14px;
+  }
+  .proposal-arena .proposal-action,
+  .proposal-power .proposal-action {
+    grid-row: 3;
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+  }
+  .proposal-arena .game-legacy-meta,
+  .proposal-power .game-legacy-meta {
+    font-size: 12px;
+  }
+  .proposal-arena .proposal-play {
+    width: 124px;
+    height: 124px;
+    font-size: 24px;
+  }
+  .proposal-flavors-arena {
+    height: 268px;
+    padding-top: 48px;
+  }
+  .proposal-flavors-arena .proposal-pack-stage {
+    height: 173px;
+  }
+  .proposal-flavors-arena .proposal-pack-position {
+    height: 161px;
+  }
+  .proposal-flavors-power {
+    height: 274px;
+    width: min(100%, 480px);
+    padding-top: 42px;
+  }
+  .proposal-sequence-track {
+    height: 182px;
+  }
+  .proposal-sequence-slide {
+    height: 178px;
+    flex-basis: 50%;
+  }
+  .proposal-power .proposal-play {
+    width: 148px;
+    height: 82px;
+    flex-direction: row;
+    font-size: 27px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .proposal-play,
+  .proposal-play > span,
+  .proposal-play svg,
+  .proposal-play::after,
+  .proposal-flavors-arena .proposal-pack-position[data-active='true'] img {
+    animation: none !important;
+  }
+  .proposal-pack-position,
+  .proposal-sequence-pack,
+  .proposal-dots button::after {
+    transition: none;
+  }
+}
